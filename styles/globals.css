@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border font-['Josefin_Sans'] font-semibold;
+  }
+}
+
+@layer components {
+  .childItem > li {
+    @apply cursor-pointer transition  hover:text-[#FB2E86] focus:text-[#FB2E86];
+  }
+
+  .btn {
+    @apply text-base font-medium p-3 w-28;
+  }
+
+  .btn--primary {
+    @apply bg-[#FB2E86] text-white;
+  }
+  .mainHeading {
+    @apply w-full h-14 items-center justify-center  flex font-semibold text-4xl text-[#151875];
+  }
+}
+
+/* duration-[.2s] */
