@@ -9,7 +9,7 @@ import PicTwo from "../img/pic-2.webp";
 import PicThree from "../img/pic-3.webp";
 import PicFour from "../img/pic-4.webp";
 
-const Carousel = () => {
+const SectionTwo = () => {
   return (
     <section className=" max-w-6xl mx-auto py-3 mt-10 ">
       <h1 className="mainHeading">Featured Products</h1>
@@ -23,4 +23,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default SectionTwo;

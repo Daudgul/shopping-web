@@ -13,8 +13,14 @@
     @apply cursor-pointer transition  hover:text-[#FB2E86] focus:text-[#FB2E86];
   }
 
+  .MuiTabs {
+    @apply justify-center;
+  }
   .btn {
-    @apply text-base font-medium p-3 w-28;
+    @apply text-base font-medium p-3 w-28 min-w-fit;
+  }
+  .tab-items {
+    @apply text-xl font-black capitalize focus:underline text-[#151875] mx-4;
   }
 
   .btn--primary {
@@ -22,6 +28,9 @@
   }
   .mainHeading {
     @apply w-full h-14 items-center justify-center  flex font-semibold text-4xl text-[#151875];
+  }
+  .queryItems {
+    @apply flex items-center justify-end flex-col text-center text-[#151875] pb-8 p-4;
   }
 }
 

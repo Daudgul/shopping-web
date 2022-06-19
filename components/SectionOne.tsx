@@ -6,12 +6,15 @@ import sideImg from "../img/lamp.webp";
 const SectionOne = () => {
   return (
     <section className="w-full bg-[#f2f0ff] ">
-      <div className=" flex justify-between items-center max-w-6xl mx-auto py-3  ">
+      <div
+        className=" flex justify-between items-center max-w-6xl mx-auto py-3"
+        style={{ maxHeight: "500px" }}
+      >
         <div className=" space-y-3 ">
           <h2 className="text-[#FB2E86] font-semibold ">
             Best Furniture For Your Castle...
           </h2>
-          <h1 className=" text-4xl">
+          <h1 className=" text-4xl md:text-6xl">
             New Funrniture Collection Trends in 2020
           </h1>
 
@@ -21,9 +24,9 @@ const SectionOne = () => {
           </p>
           <button className="btn btn--primary">Shop Now</button>
         </div>
-        <div className="relative">
+        <div className="relative lg:h-full lg:w-full ">
           <div
-            className="w-4/5 h-4/5  z-20 bg-[#eeddfb] absolute right-2 top-8 "
+            className="w-4/5 h-4/5  z-20 bg-[#eeddfb] absolute right-6 top-8 "
             style={{ borderRadius: "40% 60% 52% 48% / 44% 60% 40% 56% " }}
           >
             {""}
