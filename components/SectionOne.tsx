@@ -5,7 +5,7 @@ import sideImg from "../img/lamp.webp";
 
 const SectionOne = () => {
   return (
-    <section className="w-full bg-[#f2f0ff] ">
+    <section className="flex w-full bg-[#f2f0ff] ">
       <div
         className=" flex justify-between items-center max-w-6xl mx-auto py-3"
         style={{ maxHeight: "500px" }}
@@ -32,7 +32,7 @@ const SectionOne = () => {
             {""}
           </div>
           <div
-            className="w-full h-full z-10 bg-[#f0e5fd] absolute "
+            className="w-full h-full  z-10 bg-[#f0e5fd] absolute "
             style={{ borderRadius: "36% 64% 31% 69% / 56% 46% 54% 44%" }}
           >
             {""}

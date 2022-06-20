@@ -27,10 +27,19 @@
     @apply bg-[#FB2E86] text-white;
   }
   .mainHeading {
-    @apply w-full h-14 items-center justify-center  flex font-semibold text-4xl text-[#151875];
+    @apply w-full h-14 items-center justify-center  flex font-semibold text-4xl text-[#151875] mb-6;
   }
   .queryItems {
-    @apply flex items-center justify-end flex-col text-center text-[#151875] pb-8 p-4;
+    @apply flex items-center justify-end flex-col text-center text-[#151875] pb-8 p-4 my-10;
+  }
+  .mainContent {
+    @apply flex  justify-center flex-col space-y-5 text-[#151875] pb-8 p-4;
+  }
+  .CardItemsTwo {
+    @apply space-y-2 text-[#151875] pb-8 p-4;
+  }
+  .spanDot {
+    @apply h-3 w-3 border border-rose-500 rounded-full inline-block mr-2 cursor-pointer;
   }
 }
 

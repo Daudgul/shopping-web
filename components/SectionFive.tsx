@@ -6,13 +6,13 @@ import productPic from "../img/img-1.png";
 const SectionFive = () => {
   return (
     <section className="w-full  bg-[#f2f0ff] ">
-      <div className="max-w-6xl h-96 mx-auto py-3">
+      <div className="max-w-6xl mx-auto py-3 my-12">
         <Grid container columnSpacing={4}>
           <Grid item sm={6}>
             <div className="relative justify-center flex items-center">
               <div
                 className="w-4/5 h-4/5 z-10 bg-[#eeddfb] absolute "
-                style={{ borderRadius: "36% 64% 31% 69% / 56% 46% 54% 44%" }}
+                style={{ borderRadius: "34% 88% 55% 63% / 58% 69% 67% 65%" }}
               >
                 {""}
               </div>
@@ -25,21 +25,29 @@ const SectionFive = () => {
               />
             </div>
           </Grid>
-          <Grid item sm={6}>
-            <h3>Unique Features Of leatest & Trending Product</h3>
+          <Grid className="mainContent" item sm={6}>
+            <h3 className=" md:text-4xl font-semibold">
+              Unique Features Of leatest & Trending Product
+            </h3>
 
-            <ul>
-              <li>
-                Arms ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio, maiores?
+            <ul className=" text-sm list-disc">
+              <li className="text-[#FB2E86] font-extrabold md:text-3xl">
+                <span className="text-[#151875] text-sm">
+                  Arms ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio, maiores?
+                </span>
               </li>
-              <li>
-                All ipsum dolor, sit amet consectetur adipisicing elit. Qui sint
-                in tenetur eaque repellendus ab dolorem velit voluptas nulla
-                laborum!
+              <li className=" font-extrabold md:text-3xl">
+                <span className="text-[#151875] text-sm">
+                  All ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                  sint in tenetur eaque repellendus ab dolorem velit voluptas
+                  nulla laborum!
+                </span>
               </li>
-              <li>
-                Rainforced, ipsum dolor sit amet consectetur adipisicing elit.
+              <li className="text-[#09d15d] font-extrabold md:text-3xl">
+                <span className="text-[#151875] text-sm">
+                  Rainforced, ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
               </li>
             </ul>
             <div className="flex space-x-6">
