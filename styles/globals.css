@@ -41,6 +41,9 @@
   .spanDot {
     @apply h-3 w-3 border border-rose-500 rounded-full inline-block mr-2 cursor-pointer;
   }
+  .input {
+    @apply w-full rounded bg-[#333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];
+  }
 }
 
 /* duration-[.2s] */

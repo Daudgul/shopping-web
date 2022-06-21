@@ -13,7 +13,7 @@ const SectionTwo = () => {
   return (
     <section className=" max-w-6xl mx-auto py-3 mt-10 ">
       <h1 className="mainHeading">Featured Products</h1>
-      <div className="flex justify-between flex-wrap">
+      <div className="flex justify-around md:justify-between flex-wrap">
         <Card image={PicOne.src} />
         <Card image={PicTwo.src} />
         <Card image={PicThree.src} />

@@ -14,6 +14,7 @@ import {
   Select,
   SelectChangeEvent,
 } from "@mui/material";
+import Link from "next/link";
 
 const Header = () => {
   const [age, setAge] = React.useState("");
@@ -73,31 +74,39 @@ const Header = () => {
                 <MenuItem value={30}>Thirty</MenuItem>
               </Select>
             </FormControl> */}
-            <div>
-              Login{"  "}
-              <span>
-                <PermIdentityOutlinedIcon />
-              </span>
-            </div>
-            <div>
-              Whishlist{"  "}
-              <span>
-                <FavoriteBorderOutlinedIcon />
-              </span>
-            </div>
-            <div>
-              <span>
+            <Link href="/login">
+              <div className=" cursor-pointer">
+                Login
+                <span>
+                  <PermIdentityOutlinedIcon />
+                </span>
+              </div>
+            </Link>
+            <Link href="/whishlist">
+              <div className=" cursor-pointer">
+                Whishlist{"  "}
+                <span>
+                  <FavoriteBorderOutlinedIcon />
+                </span>
+              </div>
+            </Link>
+            <Link href="/baskit">
+              <div className=" cursor-pointer">
                 <AddShoppingCartOutlinedIcon />
-              </span>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
       <div className=" flex justify-between items-center max-w-6xl mx-auto  flex-col sm:flex-row h-16 ">
         <div className="flex space-x-10  ">
           <h1 className="font-semibold text-3xl">Hekto</h1>
-          <ul className=" childItem flex justify-between items-center space-x-5 font-semibold ">
-            <li>Home</li>
+          <ul className=" childItem flex justify-between items-center space-x-5 font-semibold  ">
+            <Link href="/">
+              <span className="childItem cursor-pointer transition  hover:text-[#FB2E86]  active:text-red-600 visited:text-yellow-200">
+                Home
+              </span>
+            </Link>
             <li>Pages</li>
             <li>Produts</li>
             <li>Blog</li>
