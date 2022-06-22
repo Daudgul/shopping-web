@@ -17,14 +17,14 @@
     @apply justify-center;
   }
   .btn {
-    @apply text-base font-medium p-3 w-28 min-w-fit;
+    @apply text-base font-medium py-2 px-3 w-28 min-w-fit;
   }
   .tab-items {
     @apply text-xl font-black capitalize focus:underline text-[#151875] mx-4;
   }
 
   .btn--primary {
-    @apply bg-[#FB2E86] text-white;
+    @apply bg-[#FB2E86] text-white rounded-sm hover:bg-pink-600;
   }
   .mainHeading {
     @apply w-full h-14 items-center justify-center  flex font-semibold text-4xl text-[#151875] mb-6;
@@ -43,6 +43,12 @@
   }
   .input {
     @apply w-full rounded bg-[#333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];
+  }
+  .cartTotal {
+    @apply flex border-b-2 border-dotted justify-between text-lg text-[#151875];
+  }
+  .customDiv {
+    @apply w-4 h-4 rounded-full bg-[#2f1ac4];
   }
 }
 

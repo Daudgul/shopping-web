@@ -3,7 +3,7 @@ import React from "react";
 import productOne from "../img/img-3.png";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import SearchIcon from "@mui/icons-material/Search";
+import SavedSearchIcon from "@mui/icons-material/SavedSearch";
 
 const Card: React.FC<{ image: string }> = ({ image }) => {
   return (
@@ -13,7 +13,7 @@ const Card: React.FC<{ image: string }> = ({ image }) => {
           <div className=" text-sky-400 space-x-4  translate-y-0.5 scale-75 opacity-0 group-hover:opacity-100   -mb-4 ">
             <AddShoppingCartOutlinedIcon />
             <FavoriteBorderOutlinedIcon />
-            <SearchIcon />
+            <SavedSearchIcon />
           </div>
           <Image
             src={image}
@@ -22,7 +22,7 @@ const Card: React.FC<{ image: string }> = ({ image }) => {
             height={250}
             className="scale-90 group-hover:scale-75 transition duration-500 "
           />
-          <button className=" -mt-6 opacity-0 group-hover:opacity-100 text-xs p-2 w-22 rounded bg-[#09d15d] mx-auto text-white">
+          <button className=" -mt-6 opacity-0 group-hover:opacity-100 text-xs p-2  rounded bg-[#09d15d] hover:bg-green-600 mx-auto text-white">
             View Detail
           </button>
         </div>
@@ -30,10 +30,10 @@ const Card: React.FC<{ image: string }> = ({ image }) => {
           <h2 className=" text-xl text-[#FB2E86] group-hover:text-white mt-1 ">
             Cantilever chair
           </h2>
-          <div>
-            <span className=" bg-slate-600"></span>
-            <span>{""}</span>
-            <span>{""}</span>
+          <div className="flex space-x-1">
+            <div className=" bg-sky-400 w-4 h-1 rounded-md"> </div>
+            <div className=" bg-pink-600 w-4 h-1 rounded-md">{""}</div>
+            <div className=" bg-yellow-400 w-4 h-1 rounded-md">{""}</div>
           </div>
           <p>Code - Y523201</p>
           <p className="pb-2">$42.00</p>

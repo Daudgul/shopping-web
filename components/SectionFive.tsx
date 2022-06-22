@@ -11,7 +11,7 @@ const SectionFive = () => {
           <Grid item sm={6}>
             <div className="relative justify-center flex items-center">
               <div
-                className="w-4/5 h-4/5 z-10 bg-[#eeddfb] absolute "
+                className="w-4/5 h-full z-10 bg-[#eeddfb] absolute "
                 style={{ borderRadius: "34% 88% 55% 63% / 58% 69% 67% 65%" }}
               >
                 {""}
