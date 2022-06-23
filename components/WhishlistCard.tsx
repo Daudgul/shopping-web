@@ -18,7 +18,7 @@ const WhishlistCard = () => {
             <h6 className="text-[#FB3E86] line-through">$104.00</h6>
             <Rating className="text-sm" name="read-only" value={4} readOnly />
           </div>
-          <p className=" text-purple-200">
+          <p className=" text-[#2f1ac4]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
             officia nesciunt inventore! Ratione provident labore adipisci cum
             repudiandae magni tempora?

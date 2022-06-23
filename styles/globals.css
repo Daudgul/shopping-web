@@ -17,7 +17,7 @@
     @apply justify-center;
   }
   .btn {
-    @apply text-base font-medium py-2 px-3 w-28 min-w-fit;
+    @apply text-base font-medium py-2 px-5 w-28 min-w-fit;
   }
   .tab-items {
     @apply text-xl font-black capitalize focus:underline text-[#151875] mx-4;
@@ -30,7 +30,7 @@
     @apply w-full h-14 items-center justify-center  flex font-semibold text-4xl text-[#151875] mb-6;
   }
   .queryItems {
-    @apply flex items-center justify-end flex-col text-center text-[#151875] pb-8 p-4 my-10;
+    @apply flex items-center justify-end flex-col text-center text-[#151875] pb-8 p-4 my-10 hover:scale-105 hover:shadow-lg duration-200 hover:border-b-4 border-[#f6b76a];
   }
   .mainContent {
     @apply flex  justify-center flex-col space-y-5 text-[#151875] pb-8 p-4;

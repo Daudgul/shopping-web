@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import PageInfo from "./PageInfo";
 import ShoppingListCard from "./ShoppingListCard";
@@ -44,10 +45,12 @@ const BaskitSectionOne = () => {
               <h4>Total</h4>
               <h6>$305</h6>
             </div>
-            <button className="w-full py-2 rounded-sm hover:bg-green-500 bg-[#19d16f] text-white">
-              {" "}
+            <Button
+              href="/order"
+              className="w-full py-2 rounded-sm hover:bg-green-500 bg-[#19d16f] text-white capitalize"
+            >
               Proceed To Checkout
-            </button>
+            </Button>
           </div>
         </div>
       </div>

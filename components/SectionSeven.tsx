@@ -60,7 +60,7 @@ const SectionSeven = () => {
                     20% Discount Of All Products
                   </h3>
                   <h4 className="text-[#FB2E86] text-lg">Eams Sofa Compact</h4>
-                  <div className="text-[#dcd4ef] text-sm">
+                  <div className="text-[#2f1ac4] text-sm">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Accusamus maxime sapiente soluta iusto illum molestiae,
@@ -116,7 +116,7 @@ const SectionSeven = () => {
                     20% Discount Of All Products
                   </h3>
                   <h4 className="text-[#FB2E86] text-lg">Eams Sofa Compact</h4>
-                  <div className="text-[#dcd4ef] text-sm">
+                  <div className="text-[#2f1ac4] text-sm">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Accusamus maxime sapiente soluta iusto illum molestiae,
@@ -172,7 +172,7 @@ const SectionSeven = () => {
                     20% Discount Of All Products
                   </h3>
                   <h4 className="text-[#FB2E86] text-lg">Eams Sofa Compact</h4>
-                  <div className="text-[#dcd4ef] text-sm">
+                  <div className="text-[#2f1ac4] text-sm">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Accusamus maxime sapiente soluta iusto illum molestiae,

@@ -107,10 +107,18 @@ const Header = () => {
                 Home
               </span>
             </Link>
-            <li>Pages</li>
-            <li>Produts</li>
+
             <li>Blog</li>
-            <li>Shop</li>
+
+            <Link href="/productdetail">
+              <a>Pages </a>
+            </Link>
+            <Link href="/products">
+              <a>Products </a>
+            </Link>
+            <Link href="/about">
+              <a>About Us</a>
+            </Link>
             <Link href="/contact">
               <a>Content</a>
             </Link>

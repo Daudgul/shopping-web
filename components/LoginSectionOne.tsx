@@ -40,11 +40,11 @@ const LoginSectionOne = () => {
           </p>
         </form>
         <div className="flex justify-around my-28 mx-10">
-          <Image src={logo1} height={130} width={160} />
-          <Image src={logo2} height={130} width={160} />
-          <Image src={logo3} height={130} width={160} />
-          <Image src={logo4} height={130} width={160} />
-          <Image src={logo5} height={130} width={160} />
+          <Image src={logo1} height={100} width={160} />
+          <Image src={logo2} height={100} width={160} />
+          <Image src={logo3} height={100} width={160} />
+          <Image src={logo4} height={100} width={160} />
+          <Image src={logo5} height={100} width={160} />
         </div>
       </div>
     </section>

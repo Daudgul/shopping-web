@@ -12,6 +12,7 @@ import SectionFive from "../components/SectionFive";
 import SectionSix from "../components/SectionSix";
 import SectionSeven from "../components/SectionSeven";
 import SectionEight from "../components/SectionEight";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <SectionSix />
       <SectionSeven />
       <SectionEight />
+      <Footer />
     </div>
   );
 };
