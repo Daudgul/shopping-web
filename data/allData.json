@@ -1,0 +1,715 @@
+[
+  {
+    "title": "Dictum morbi",
+    "id": 1,
+    "imgUrl": "/imgs/bag1.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 5,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Dictum chair",
+
+    "id": 2,
+    "imgUrl": "/imgs/bag2.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic chair",
+
+    "id": 3,
+    "imgUrl": "/imgs/bag3.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic chair",
+
+    "id": 4,
+    "imgUrl": "/imgs/bag4.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic chair",
+
+    "id": 5,
+    "imgUrl": "/imgs/bag5.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic chair",
+
+    "id": 6,
+    "imgUrl": "/imgs/bag6.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic chair",
+
+    "id": 7,
+    "imgUrl": "/imgs/bag7.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic chair",
+
+    "id": 8,
+    "imgUrl": "/imgs/camera1.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic chair",
+
+    "id": 9,
+    "imgUrl": "/imgs/camera2.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 10,
+    "imgUrl": "/imgs/camera3.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 11,
+    "imgUrl": "/imgs/camera4.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 12,
+    "imgUrl": "/imgs/camera5.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 13,
+    "imgUrl": "/imgs/cctv-camera1.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 14,
+    "imgUrl": "/imgs/cctv-camera2.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 15,
+    "imgUrl": "/imgs/cctv-camera3.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 16,
+    "imgUrl": "/imgs/chair14.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 17,
+    "imgUrl": "/imgs/chair15.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+
+    "id": 18,
+    "imgUrl": "/imgs/chair16.png",
+    "price": 26,
+    "oldPrise": 52,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+
+  {
+    "title": "Wooden Chair",
+
+    "imgUrl": "/imgs/chair17.png",
+    "id": 19,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+
+    "price": 42,
+    "oldPrise": 52
+  },
+  {
+    "title": "Wooden Chair",
+    "imgUrl": "/imgs/clint1.png",
+    "id": 20,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+
+    "price": 42,
+    "oldPrise": 52
+  },
+  {
+    "title": "Wooden Chair",
+    "imgUrl": "/imgs/clint2.png",
+    "id": 21,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+
+    "price": 42,
+    "oldPrise": 52
+  },
+  {
+    "title": "Relaxing Chair",
+    "imgUrl": "/imgs/clint3.png",
+    "id": 22,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+
+    "price": 42,
+    "oldPrise": 52
+  },
+
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/couch.png",
+
+    "id": 23,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 66,
+    "imgUrl": "/imgs/couch.png",
+    "id": 24,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/couch2.png",
+
+    "id": 25,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/couch3.png",
+    "id": 26,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/couch4.png",
+    "id": 27,
+    "rating": 1,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/couch5.png",
+    "id": 28,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/couch6.png",
+    "id": 29,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 6,
+    "imgUrl": "/imgs/earpod1.png",
+    "id": 30,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/earpod2.png",
+    "id": 31,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/earpod3.png",
+    "id": 32,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/earpod4.png",
+    "id": 33,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/earpod5.png",
+    "id": 34,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/exclusiveChair1.png",
+    "id": 35,
+    "rating": 5,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 6,
+    "imgUrl": "/imgs/exclusiveChair2.png",
+    "id": 36,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/exclusiveChair3.png",
+    "id": 37,
+    "rating": 5,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/featuredProductsChair1.png",
+    "id": 38,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/featuredProductsChair2.png",
+    "id": 39,
+    "rating": 5,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/featuredProductsChair3.png",
+    "id": 40,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/featuredProductsChair4.png",
+    "id": 41,
+    "rating": 5,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 6,
+    "imgUrl": "/imgs/head-phone1.png",
+    "id": 42,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/head-phone2.png",
+    "id": 43,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/head-phone3.png",
+    "id": 44,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/head-phone4.png",
+    "id": 45,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Comfort Handy Crafts",
+    "price": 42,
+    "oldPrise": 65,
+    "imgUrl": "/imgs/head-phone5.png",
+    "id": 46,
+    "rating": 1,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+
+  {
+    "imgUrl": "/imgs/head-phone6.png",
+    "title": "Cantilever chair",
+    "price": 26,
+    "oldPrise": 42,
+    "id": 47,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/latestProduct (0).png",
+    "title": "Cantilever chair",
+    "price": 26,
+    "oldPrise": 42,
+    "id": 48,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/latestProduct (1).png",
+    "title": "Cantilever chair",
+    "price": 26,
+    "oldPrise": 42,
+    "id": 49,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/latestProduct (2).png",
+    "title": "Cantilever chair",
+    "price": 26,
+    "oldPrise": 42,
+    "id": 50,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Stylish chair",
+    "imgUrl": "/imgs/latestProduct (3).png",
+    "price": 32,
+    "oldPrise": 42,
+    "id": 51,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Relaxing Chair",
+    "imgUrl": "/imgs/latestProduct (4).png",
+    "price": 32,
+    "oldPrise": 42,
+    "id": 52,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "plastic Chair",
+    "imgUrl": "/imgs/latestProduct (5).png",
+    "price": 32,
+    "oldPrise": 42,
+    "rating": 2,
+    "id": 53,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+
+  {
+    "title": "Wood Chair",
+    "id": 54,
+    "rating": 3,
+    "price": 40,
+    "oldPrise": 42,
+    "imgUrl": "/imgs/smart-watch1.png",
+
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Plastic Chair",
+    "id": 55,
+    "rating": 3,
+    "price": 25,
+    "oldPrise": 42,
+    "imgUrl": "/imgs/smart-watch2.png",
+
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Sofa Collection",
+    "id": 56,
+    "rating": 4,
+    "price": 62,
+    "oldPrise": 42,
+
+    "imgUrl": "/imgs/smart-watch3.png",
+
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+
+  {
+    "title": "Wooden Chair",
+    "imgUrl": "/imgs/smart-watch4.png",
+
+    "price": 56,
+    "oldPrise": 75,
+
+    "id": 110,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Wooden Chair",
+    "imgUrl": "/imgs/smart-watch5.png",
+
+    "price": 56,
+    "oldPrise": 75,
+
+    "id": 111,
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Wooden Chair",
+    "imgUrl": "/imgs/smart-watch6.png",
+
+    "price": 56,
+    "oldPrise": 75,
+
+    "id": 112,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Wooden Chair",
+    "imgUrl": "/imgs/smart-watch7.png",
+
+    "price": 56,
+    "oldPrise": 75,
+
+    "id": 113,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Stylish Chair",
+    "imgUrl": "/imgs/trendingProduct(1).png",
+
+    "price": 56,
+    "oldPrise": 75,
+
+    "id": 114,
+    "rating": 5,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Stylish Chair",
+    "imgUrl": "/imgs/trendingProduct(2).png",
+    "price": 56,
+    "oldPrise": 75,
+
+    "rating": 1,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "plastic Student Chair",
+    "imgUrl": "/imgs/trendingProduct(3).png",
+    "price": 56,
+    "oldPrise": 75,
+
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Stylish Chair",
+    "imgUrl": "/imgs/trendingProduct(4).png",
+    "price": 56,
+    "oldPrise": 75,
+
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Stylish Clock",
+    "imgUrl": "/imgs/trendingProduct(5).png",
+    "price": 56,
+    "oldPrise": 75,
+
+    "rating": 1,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Stylish Drawer",
+    "imgUrl": "/imgs/watch1.png",
+    "price": 56,
+    "oldPrise": 75,
+
+    "rating": 2,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Wooden Chair",
+    "imgUrl": "/imgs/watch2.png",
+    "price": 56,
+    "oldPrise": 75,
+
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Stylish Chair",
+    "imgUrl": "/imgs/watch3.png",
+    "price": 56,
+    "oldPrise": 75,
+
+    "id": 61,
+    "rating": 1,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+
+  {
+    "title": "black stylish bag",
+    "imgUrl": "/imgs/watch4.png",
+    "price": 76,
+    "oldPrise": 95,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/watch5.png",
+    "title": "school bag",
+    "price": 76,
+    "oldPrise": 95,
+    "rating": 5,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/watch6.png",
+    "title": "blue school bag",
+    "price": 86,
+    "oldPrise": 116,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/watch7.png",
+    "title": "black school bag",
+    "price": 7,
+    "oldPrise": 13,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/watch8.png",
+    "title": "doraemon school bag",
+    "price": 85,
+    "oldPrise": 105,
+    "rating": 5,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/watch9.png",
+    "title": "mickey mouse school bag",
+    "price": 90,
+    "oldPrise": 104,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "imgUrl": "/imgs/watch10.png",
+    "title": "ladies purse",
+    "price": 76,
+    "oldPrise": 96,
+    "rating": 3,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  }
+]

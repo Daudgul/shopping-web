@@ -5,7 +5,17 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import Image from "next/image";
 import { IconButton } from "@mui/material";
 
-const ProductsCard: React.FC<{ image: string }> = ({ image }) => {
+type StoreItemProps = {
+  title: string;
+  price: number;
+  imgUrl: string;
+  oldPrise: number;
+  rating: number;
+  details: string;
+};
+
+const ProductsCard = ({ title, oldPrise, price, imgUrl }: StoreItemProps) => {
+  console.log(imgUrl);
   return (
     <div className="group cursor-pointer my-2 ">
       <div className=" flex bg-[#f7f8f7] group-hover:bg-inherit  ">
@@ -21,23 +31,25 @@ const ProductsCard: React.FC<{ image: string }> = ({ image }) => {
           </IconButton>
         </div>
         <img
-          src="image"
+          src={imgUrl}
           alt="product"
           width={210}
           height={260}
-          className="scale-90   "
+          className="scale-90 w-[210px] h-[260px]    "
         />
       </div>
       <div className="flex mt-3 justify-between items-center flex-col  text-[#151875] mb-5 space-y-1">
-        <h3>Comfort Handy Craft</h3>
+        <h3>{title}</h3>
         <div className="flex space-x-2">
           <div className="w-3 h-3 rounded-full bg-pink-500 "></div>
           <div className="w-3 h-3 rounded-full bg-orange-300 "></div>
           <div className="w-3 h-3 rounded-full bg-purple-500 "></div>
         </div>
         <h3>
-          $42:00{" "}
-          <span className=" text-xs text-[#FB2E86] line-through">$65:00</span>
+          ${price}
+          <span className=" text-xs text-[#FB2E86] line-through">
+            ${oldPrise}
+          </span>
         </h3>
       </div>
     </div>
