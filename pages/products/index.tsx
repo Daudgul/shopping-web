@@ -1,11 +1,12 @@
 import { Pagination } from "@mui/material";
 import React, { useState } from "react";
-import Header from "../components/Header";
-import PageInfo from "../components/PageInfo";
-import ProductsCard from "../components/ProductsCard";
+import Header from "../../components/Header";
+import PageInfo from "../../components/PageInfo";
+import ProductsCard from "../../components/ProductsCard";
 import productOne from "../img/img-3.png";
-import { Data } from "../components/data";
-import storeItems from "../data/allData.json";
+import { Data } from "../../components/data";
+import storeItems from "../../data/allData.json";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 const Products = () => {
   let [page, setPage] = useState(1);
 
@@ -14,6 +15,8 @@ const Products = () => {
   const handleChange = (event: any, value: any) => {
     setPage(value);
   };
+
+  // ?????????????
 
   return (
     <div>
@@ -48,5 +51,8 @@ const Products = () => {
 
 export default Products;
 function usePagination(data: any, PER_PAGE: number) {
+  throw new Error("Function not implemented.");
+}
+function id(id: any) {
   throw new Error("Function not implemented.");
 }

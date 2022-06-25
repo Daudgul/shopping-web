@@ -4,13 +4,10 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import Card from "./Card";
-import PicOne from "../img/pic-1.webp";
-import PicTwo from "../img/pic-2.webp";
-import PicThree from "../img/pic-3.webp";
-import PicFour from "../img/pic-4.webp";
-import { Grid, Stack } from "@mui/material";
+
+import { Grid } from "@mui/material";
 import CardTwo from "./CardTwo";
+import Data from "../data/allData.json";
 
 const SectionThree = () => {
   const [value, setValue] = React.useState("1");
@@ -18,11 +15,14 @@ const SectionThree = () => {
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
+  const newArrival = Data.filter((item) => {
+    return item.category?.includes("NewArrival");
+  });
 
   return (
     <>
       <div className="max-w-6xl mx-auto py-3 mt-10">
-        <h1 className="mainHeading">Featured Products</h1>
+        <h1 className="mainHeading">Latest Products</h1>
         <Box sx={{ width: "100%", typography: "body1" }}>
           <TabContext value={value}>
             <Box>
@@ -43,34 +43,39 @@ const SectionThree = () => {
             </Box>
             <TabPanel value="1">
               <Grid container columnSpacing={4}>
-                <Grid item sm={6} md={4}>
-                  <CardTwo image={PicOne.src} />
-                </Grid>
-                <Grid item sm={6} md={4}>
-                  <CardTwo image={PicThree.src} />
-                </Grid>
-                <Grid item sm={6} md={4}>
-                  <CardTwo image={PicTwo.src} />
-                </Grid>
-                <Grid item sm={6} md={4}>
-                  <CardTwo image={PicFour.src} />
-                </Grid>
-                <Grid item sm={6} md={4}>
-                  <CardTwo image={PicFour.src} />
-                </Grid>
-                <Grid item sm={6} md={4}>
-                  <CardTwo image={PicFour.src} />
-                </Grid>
+                {newArrival.map((item) => (
+                  <Grid key={item.id} item sm={6} md={4}>
+                    <CardTwo {...item} />
+                  </Grid>
+                ))}
               </Grid>
             </TabPanel>
             <TabPanel value="2">
-              <Card image={PicThree.src} />
+              <Grid container columnSpacing={4}>
+                {newArrival.map((item) => (
+                  <Grid key={item.id} item sm={6} md={4}>
+                    <CardTwo {...item} />
+                  </Grid>
+                ))}
+              </Grid>
             </TabPanel>
             <TabPanel value="3">
-              <Card image={PicFour.src} />
+              <Grid container columnSpacing={4}>
+                {newArrival.map((item) => (
+                  <Grid key={item.id} item sm={6} md={4}>
+                    <CardTwo {...item} />
+                  </Grid>
+                ))}
+              </Grid>
             </TabPanel>
             <TabPanel value="4">
-              <Card image={PicFour.src} />
+              <Grid container columnSpacing={4}>
+                {newArrival.map((item) => (
+                  <Grid key={item.id} item sm={6} md={4}>
+                    <CardTwo {...item} />
+                  </Grid>
+                ))}
+              </Grid>
             </TabPanel>
           </TabContext>
         </Box>

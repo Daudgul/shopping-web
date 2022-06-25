@@ -6,6 +6,7 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import SearchIcon from "@mui/icons-material/Search";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import {
+  Badge,
   Box,
   FormControl,
   InputLabel,
@@ -15,9 +16,11 @@ import {
   SelectChangeEvent,
 } from "@mui/material";
 import Link from "next/link";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 const Header = () => {
   const [age, setAge] = React.useState("");
+  const { cartQuantity } = useShoppingCart();
 
   const handleChange = (event: SelectChangeEvent) => {
     setAge(event.target.value);
@@ -92,7 +95,9 @@ const Header = () => {
             </Link>
             <Link href="/baskit">
               <div className=" cursor-pointer">
-                <AddShoppingCartOutlinedIcon />
+                <Badge badgeContent={cartQuantity} color="secondary">
+                  <AddShoppingCartOutlinedIcon />
+                </Badge>
               </div>
             </Link>
           </div>

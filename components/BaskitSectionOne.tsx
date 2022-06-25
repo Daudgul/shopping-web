@@ -1,9 +1,11 @@
 import { Button } from "@mui/material";
 import React from "react";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 import PageInfo from "./PageInfo";
 import ShoppingListCard from "./ShoppingListCard";
 
 const BaskitSectionOne = () => {
+  const { cartItems } = useShoppingCart();
   return (
     <section>
       <div className=" w-full  bg-[#f2f0ff] ">
@@ -18,10 +20,13 @@ const BaskitSectionOne = () => {
             <h4 className="w-[80px]">Total</h4>
           </div>
           <div>
+            {cartItems.map((item) => (
+              <ShoppingListCard key={item.id} {...item} />
+            ))}
+            {/* <ShoppingListCard />
             <ShoppingListCard />
             <ShoppingListCard />
-            <ShoppingListCard />
-            <ShoppingListCard />
+            <ShoppingListCard /> */}
           </div>
           <div className="flex justify-between mt-12">
             <button className="btn btn--primary">Update Cart</button>

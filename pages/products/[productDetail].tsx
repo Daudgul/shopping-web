@@ -2,18 +2,26 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Box, Button, Card, Grid, Rating, Tab } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import CardTwo from "../components/CardTwo";
-import Header from "../components/Header";
-import PageInfo from "../components/PageInfo";
-import Pic from "../img/img-2.png";
-import logo1 from "../img/logo1.png";
-import logo2 from "../img/logo2.png";
-import logo3 from "../img/logo3.png";
-import logo4 from "../img/logo4.png";
-import logo5 from "../img/logo5.png";
+import Header from "../../components/Header";
+import PageInfo from "../../components/PageInfo";
 
-const productdetail = () => {
+import logo1 from "../../img/logo1.png";
+import logo2 from "../../img/logo2.png";
+import logo3 from "../../img/logo3.png";
+import logo4 from "../../img/logo4.png";
+import logo5 from "../../img/logo5.png";
+import storeItems from "../../data/allData.json";
+import { useRouter } from "next/router";
+
+const productDetail = () => {
   const [value, setValue] = React.useState("1");
+  const router = useRouter();
+  const itemId = router.query.productDetail;
+
+  const sameProduct = (id: number | string) => {
+    return storeItems.filter((cur) => cur.id === id).pop();
+  };
+  const dataMatch = sameProduct(+itemId);
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -25,19 +33,24 @@ const productdetail = () => {
       <section>
         <div className="max-w-6xl mx-auto my-20">
           <div className="flex w-full h-[450px] p-10 shadow-lg items-center space-x-10 text-[#151875]">
-            <Image src={Pic} height={400} width={400} />
+            <img
+              src={dataMatch?.imgUrl}
+              alt="product"
+              className="scale-90 w-[400px] h-[400px]    "
+            />
+            {/* <Image src={dataMatch?.imgUrl} height={400} width={400} /> */}
             <div className=" space-y-2">
-              <h1 className="text-2xl ">Playwood arm chair</h1>
-              <Rating value={4} className="text-sm" />
+              <h1 className="text-2xl ">{dataMatch?.title}</h1>
+              <Rating value={dataMatch?.rating} className="text-sm" />
               <h6 className="">
-                $32.00{" "}
-                <span className="text-[#FB2E86] line-through">$48.00</span>
+                ${dataMatch?.price.toFixed(2)}
+                <span className="text-[#FB2E86] line-through">
+                  {" "}
+                  ${dataMatch?.oldPrise.toFixed(2)}
+                </span>
               </h6>
               <h6>Color</h6>
-              <p className=" text-blue-600 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.at
-                pariatur voluptatum quia aliquid.
-              </p>
+              <p className=" text-blue-600 text-sm">{dataMatch?.details}</p>
               <Button href="/baskit">Add To Cart</Button>
               <h6>Categories:</h6>
               <h6>Tags</h6>
@@ -141,4 +154,4 @@ const productdetail = () => {
   );
 };
 
-export default productdetail;
+export default productDetail;

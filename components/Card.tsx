@@ -4,8 +4,17 @@ import productOne from "../img/img-3.png";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
+type StoreItemProps = {
+  id: number;
+  title: string;
+  price: number;
+  imgUrl: string;
+  oldPrise: number;
+  rating: number;
+  details: string;
+};
 
-const Card: React.FC<{ image: string }> = ({ image }) => {
+const Card = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   return (
     <div>
       <div className="flex rounded flex-col w-60 my-8 cursor-pointer group shadow-2xl   ">
@@ -15,12 +24,10 @@ const Card: React.FC<{ image: string }> = ({ image }) => {
             <FavoriteBorderOutlinedIcon />
             <SavedSearchIcon />
           </div>
-          <Image
-            src={image}
+          <img
+            src={imgUrl}
             alt="product"
-            width={180}
-            height={250}
-            className="scale-90 group-hover:scale-75 transition duration-500 "
+            className="scale-90 group-hover:scale-75 transition duration-500 h-[250px] w-[180px] "
           />
           <button className=" -mt-6 opacity-0 group-hover:opacity-100 text-xs p-2  rounded bg-[#09d15d] hover:bg-green-600 mx-auto text-white">
             View Detail
@@ -28,7 +35,7 @@ const Card: React.FC<{ image: string }> = ({ image }) => {
         </div>
         <div className="  w-60 flex flex-col justify-center text-[#151875] items-center space-y-1 group-hover:text-white group-hover:bg-[#2f1ac4] mt-1 transition duration-200">
           <h2 className=" text-xl text-[#FB2E86] group-hover:text-white mt-1 ">
-            Cantilever chair
+            {title}
           </h2>
           <div className="flex space-x-1">
             <div className=" bg-sky-400 w-4 h-1 rounded-md"> </div>
@@ -36,7 +43,7 @@ const Card: React.FC<{ image: string }> = ({ image }) => {
             <div className=" bg-yellow-400 w-4 h-1 rounded-md">{""}</div>
           </div>
           <p>Code - Y523201</p>
-          <p className="pb-2">$42.00</p>
+          <p className="pb-2"> ${price}</p>
         </div>
       </div>
     </div>

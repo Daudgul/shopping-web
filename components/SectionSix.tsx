@@ -8,56 +8,29 @@ import Image from "next/image";
 import chairPic1 from "../img/exclusiveChair1.webp";
 import chairPic2 from "../img/exclusiveChair2.webp";
 import chairPic3 from "../img/exclusiveChair3.webp";
+import Data from "../data/allData.json";
 
 const SectionSix = () => {
+  const Trending = Data.filter((item) => {
+    return item.category?.includes("Trending");
+  });
   return (
     <section className=" max-w-6xl mx-auto py-3 my-12 ">
       <h1 className="mainHeading">Trending Products</h1>
       <Grid container rowSpacing={4} columnSpacing={3}>
-        <Grid item sm={6} md={3}>
-          <Paper
-            className="space-y-2 text-[#151875] pb-8 p-4"
-            sx={{
-              width: "1/4",
-              height: "350px",
-            }}
-          >
-            <CardThree image={PicOne.src} />
-          </Paper>
-        </Grid>
-        <Grid item sm={6} md={3}>
-          <Paper
-            className="space-y-2 text-[#151875] pb-8 p-4"
-            sx={{
-              width: "1/4",
-              height: "350px",
-            }}
-          >
-            <CardThree image={PicOne.src} />
-          </Paper>
-        </Grid>
-        <Grid item sm={6} md={3}>
-          <Paper
-            className="space-y-2 text-[#151875] pb-8 p-4"
-            sx={{
-              width: "1/4",
-              height: "350px",
-            }}
-          >
-            <CardThree image={PicOne.src} />
-          </Paper>
-        </Grid>
-        <Grid item sm={6} md={3}>
-          <Paper
-            className="space-y-2 text-[#151875] pb-8 p-4"
-            sx={{
-              width: "1/4",
-              height: "350px",
-            }}
-          >
-            <CardThree image={PicOne.src} />
-          </Paper>
-        </Grid>
+        {Trending.map((item) => (
+          <Grid key={item.id} item sm={6} md={3}>
+            <Paper
+              className="space-y-2 text-[#151875] pb-8 p-4"
+              sx={{
+                width: "1/4",
+                height: "350px",
+              }}
+            >
+              <CardThree {...item} />
+            </Paper>
+          </Grid>
+        ))}
       </Grid>
 
       {/* Making a flex container where we show our 2nd list of this section */}
