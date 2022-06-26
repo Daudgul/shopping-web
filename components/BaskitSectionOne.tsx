@@ -1,5 +1,4 @@
 import { Button } from "@mui/material";
-import React from "react";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import PageInfo from "./PageInfo";
 import ShoppingListCard from "./ShoppingListCard";
@@ -23,10 +22,6 @@ const BaskitSectionOne = () => {
             {cartItems.map((item) => (
               <ShoppingListCard key={item.id} {...item} />
             ))}
-            {/* <ShoppingListCard />
-            <ShoppingListCard />
-            <ShoppingListCard />
-            <ShoppingListCard /> */}
           </div>
           <div className="flex justify-between mt-12">
             <button className="btn btn--primary">Update Cart</button>

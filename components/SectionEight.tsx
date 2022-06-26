@@ -18,11 +18,6 @@ const SectionEight = () => {
             ))}
           </div>
         </div>
-        <div>
-          <span className="spanDot"></span>
-          <span className="spanDot"></span>
-          <span className="spanDot"></span>
-        </div>
       </div>
     </section>
   );

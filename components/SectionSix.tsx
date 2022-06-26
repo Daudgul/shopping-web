@@ -1,7 +1,6 @@
-import { Grid, Paper } from "@mui/material";
+import { Button, Grid, Paper } from "@mui/material";
 import React from "react";
 import CardThree from "./CardThree";
-import PicOne from "../img/pic-1.webp";
 import trendingPOne from "../img/trendingPOne.webp";
 import trendingPTwo from "../img/trendingPTwo.webp";
 import Image from "next/image";
@@ -43,9 +42,16 @@ const SectionSix = () => {
             <h1 className="text-2xl text-[#151875] whitespace-nowrap">
               23% off in all products
             </h1>
-            <button className="text-[#FB2E86] underline underline-offset-4  ">
-              Shoup Now
-            </button>
+            <Button
+              href="/products"
+              sx={{
+                textTransform: "capitalize",
+                textDecorationLine: "underline",
+                textUnderlineOffset: "4px",
+              }}
+            >
+              Shop Now
+            </Button>
           </div>
           <div className=" flex w-full justify-end ml-6 -m-6">
             <Image
@@ -64,9 +70,16 @@ const SectionSix = () => {
             <h1 className="text-2xl text-[#151875] whitespace-nowrap">
               23% off in all products
             </h1>
-            <button className="text-[#FB2E86] underline mr-20 underline-offset-4 ">
-              Shoup Now
-            </button>
+            <Button
+              href="/products"
+              sx={{
+                textTransform: "capitalize",
+                textDecorationLine: "underline",
+                textUnderlineOffset: "4px",
+              }}
+            >
+              Shop Now
+            </Button>
           </div>
           <div className=" flex w-full justify-end ml-2 -mb-12">
             <Image

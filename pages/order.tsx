@@ -31,7 +31,15 @@ const OrderCompleted = () => {
             completed within 3-6 hours. You will receive an email confirmation
             when your order is completed.
           </p>
-          <Button href="/" className="btn btn--primary capitalize">
+          <Button
+            variant="contained"
+            sx={{
+              textTransform: "capitalize",
+              width: "300px",
+            }}
+            href="/"
+            className="btn btn--primary capitalize"
+          >
             Continue Shopping
           </Button>
           <div className="absolute -bottom-12 -right-12">

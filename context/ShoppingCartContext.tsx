@@ -10,14 +10,22 @@ type CartItem = {
   id: number;
   quantity: number;
 };
+type FavoriteItem = {
+  id: number;
+  quantity: number;
+};
 
 type ShoppingCartContext = {
   getItemQuantity: (id: number) => number;
   increaseCartQuantity: (id: number) => void;
+  addFavoritreItem: (id: number) => void;
   decreaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
+  removeFavItem: (id: number) => void;
   cartQuantity: number;
+  clearCart: () => void;
   cartItems: CartItem[];
+  favoriteItems: FavoriteItem[];
 };
 
 export function useShoppingCart() {
@@ -26,6 +34,7 @@ export function useShoppingCart() {
 
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [favoriteItems, setFavoriteItems] = useState<FavoriteItem[]>([]);
 
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,
@@ -70,6 +79,29 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
       return currItems.filter((item) => item.id !== id);
     });
   }
+  function addFavoritreItem(id: number) {
+    setFavoriteItems((currItems) => {
+      if (currItems.find((item) => item.id === id) == null) {
+        return [...currItems, { id, quantity: 1 }];
+      } else {
+        return currItems.map((item) => {
+          if (item.id === id) {
+            return { ...item, quantity: item.quantity + 1 };
+          } else {
+            return item;
+          }
+        });
+      }
+    });
+  }
+  function removeFavItem(id: number) {
+    setFavoriteItems((currItems) => {
+      return currItems.filter((item) => item.id !== id);
+    });
+  }
+  function clearCart() {
+    return setCartItems([]);
+  }
 
   return (
     <ShoppingCartContext.Provider
@@ -80,6 +112,10 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
         removeFromCart,
         cartQuantity,
         cartItems,
+        addFavoritreItem,
+        favoriteItems,
+        removeFavItem,
+        clearCart,
       }}
     >
       {children}

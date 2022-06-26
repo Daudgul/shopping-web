@@ -33,7 +33,7 @@
     @apply flex items-center justify-end flex-col text-center text-[#151875] pb-8 p-4 my-10 hover:scale-105 hover:shadow-lg duration-200 hover:border-b-4 border-[#f6b76a];
   }
   .mainContent {
-    @apply flex  justify-center flex-col space-y-5 text-[#151875] pb-8 p-4;
+    @apply space-y-5 text-[#151875] pb-8 p-4;
   }
   .CardItemsTwo {
     @apply space-y-2 text-[#151875] pb-8 p-4;

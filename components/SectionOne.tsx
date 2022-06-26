@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import productPic from "../img/img-1.png";
@@ -22,7 +23,16 @@ const SectionOne = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
             distinctio recusandae sequi sunt unde, dolorum, nobispit !
           </p>
-          <button className="btn btn--primary">Shop Now</button>
+          <Button
+            variant="contained"
+            href="/products"
+            sx={{
+              textTransform: "capitalize",
+              px: "28px",
+            }}
+          >
+            Shop Now
+          </Button>
         </div>
         <div className="relative lg:h-full lg:w-full ">
           <div

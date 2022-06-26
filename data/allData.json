@@ -229,13 +229,14 @@
     "imgUrl": "/imgs/couch.png",
     "id": 23,
     "rating": 3,
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    "category": "Unique"
   },
   {
     "title": "Relaxing Couch",
     "price": 42,
     "oldPrise": 66,
-    "imgUrl": "/imgs/couch.png",
+    "imgUrl": "/imgs/couch1.png",
     "id": 24,
     "rating": 3,
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."

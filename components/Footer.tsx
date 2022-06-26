@@ -16,6 +16,8 @@ const Footer = () => {
 
             <Button
               className="btn btn--primary capitalize mt-5"
+              variant="contained"
+              sx={{ textTransform: "capitalize" }}
               href="/products"
             >
               Shoup Now

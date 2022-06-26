@@ -32,6 +32,7 @@ const SectionThree = () => {
                 TabIndicatorProps={{
                   style: {
                     display: "none",
+                    textTransform: "capitalize",
                   },
                 }}
               >
@@ -42,7 +43,7 @@ const SectionThree = () => {
               </TabList>
             </Box>
             <TabPanel value="1">
-              <Grid container columnSpacing={4}>
+              <Grid container columnSpacing={4} sx={{ mx: "auto" }}>
                 {newArrival.map((item) => (
                   <Grid key={item.id} item sm={6} md={4}>
                     <CardTwo {...item} />

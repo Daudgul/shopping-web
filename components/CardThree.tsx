@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 type StoreItemProps = {
@@ -12,22 +13,27 @@ type StoreItemProps = {
 
 const CardThree = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   return (
-    <div className="group cursor-pointer ">
-      <div className=" flex bg-[#f7f8f7]   ">
+    <div className="group ">
+      <div className=" flex bg-[#f7f8f7] flex-col ">
         <img
           src={imgUrl}
           alt="product"
-          width={220}
-          height={250}
-          className="w-[220px] h-[250px]"
+          className="w-[220px] h-[250px] scale-90 object-contain"
         />
+        <Button
+          href="/products"
+          variant="contained"
+          sx={{ textTransform: "capitalize", mt: "-18px" }}
+        >
+          Shop Now
+        </Button>
       </div>
       <div className=" mt-3 flex flex-col items-center  text-[#151875] ">
         <h3>{title}</h3>
         <h3>
-          ${price}{" "}
+          ${price}.00
           <span className=" text-xs text-[#ada9ab] line-through">
-            ${oldPrise}
+            ${oldPrise}.00
           </span>
         </h3>
       </div>

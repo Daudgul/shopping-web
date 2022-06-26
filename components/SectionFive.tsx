@@ -2,8 +2,12 @@ import { Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import productPic from "../img/img-1.png";
+import Data from "../data/allData.json";
 
 const SectionFive = () => {
+  const Unique = Data.filter((item) => {
+    return item.category?.includes("Unique");
+  });
   return (
     <section className="w-full  bg-[#f2f0ff] ">
       <div className="max-w-6xl mx-auto py-3 my-12">
@@ -16,16 +20,17 @@ const SectionFive = () => {
               >
                 {""}
               </div>
-
-              <Image
-                className=" z-30 "
-                src={productPic}
-                width={350}
-                height={350}
-              />
+              {Unique.map((item) => (
+                <Image
+                  className=" z-30 "
+                  src={item.imgUrl}
+                  width={350}
+                  height={350}
+                />
+              ))}
             </div>
           </Grid>
-          <Grid className="mainContent" item sm={6}>
+          <Grid className="mainContent  " item sm={6}>
             <h3 className=" md:text-4xl font-semibold">
               Unique Features Of leatest & Trending Product
             </h3>

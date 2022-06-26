@@ -9,7 +9,7 @@ import PicOne from "../img/pic-1.webp";
 import PicTwo from "../img/pic-2.webp";
 import PicThree from "../img/pic-3.webp";
 import PicFour from "../img/pic-4.webp";
-import { Grid, Paper, Stack } from "@mui/material";
+import { Button, Grid, Paper, Stack } from "@mui/material";
 import CardTwo from "./CardTwo";
 import Image from "next/image";
 import MainPic1 from "../img/ProductPic2.webp";
@@ -96,9 +96,15 @@ const SectionSeven = () => {
                     </ul>
                   </div>
                   <div className="flex space-x-6">
-                    <button className="btn btn--primary rounded w-48">
+                    <Button
+                      href="/products"
+                      variant="contained"
+                      sx={{
+                        textTransform: "capitalize",
+                      }}
+                    >
                       Shop Now
-                    </button>
+                    </Button>
                   </div>
                 </Grid>
                 <Grid item sm={6}>

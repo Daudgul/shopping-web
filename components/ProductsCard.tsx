@@ -6,7 +6,6 @@ import Image from "next/image";
 import { IconButton } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import storeItems from "../data/allData.json";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 type StoreItemProps = {
@@ -34,12 +33,8 @@ const ProductsCard = ({
   };
 
   ////////////////////////////////////////
-  const {
-    getItemQuantity,
-    increaseCartQuantity,
-    decreaseCartQuantity,
-    removeFromCart,
-  } = useShoppingCart();
+  const { getItemQuantity, increaseCartQuantity, addFavoritreItem } =
+    useShoppingCart();
   const quantity = getItemQuantity(id);
 
   return (
@@ -56,15 +51,13 @@ const ProductsCard = ({
             <SavedSearchIcon onClick={() => takeToProductDetail(id)} />
           </IconButton>
           <IconButton size="small">
-            <FavoriteBorderOutlinedIcon />
+            <FavoriteBorderOutlinedIcon onClick={() => addFavoritreItem(id)} />
           </IconButton>
         </div>
         <img
           src={imgUrl}
           alt="product"
-          width={210}
-          height={260}
-          className="scale-90 w-[210px] h-[260px]    "
+          className="scale-90 w-[210px] h-[260px] object-contain   "
         />
       </div>
       <div className="flex mt-3 justify-between items-center flex-col  text-[#151875] mb-5 space-y-1">

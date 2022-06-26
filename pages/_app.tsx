@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { createTheme, colors, ThemeProvider } from "@mui/material";
 import { ShoppingCartProvider } from "../context/ShoppingCartContext";
+import { AuthProvider } from "../hooks/useAuth";
 
 const theme = createTheme({
   palette: {
@@ -22,7 +23,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <ShoppingCartProvider>
-        <Component {...pageProps} />
+        <AuthProvider>
+          <Component {...pageProps} />
+        </AuthProvider>
       </ShoppingCartProvider>
     </ThemeProvider>
   );
