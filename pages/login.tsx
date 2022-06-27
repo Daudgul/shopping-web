@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import LoginSectionOne from "../components/LoginSectionOne";
 import Image from "next/image";
 import React, { useState } from "react";
 import logo1 from "../img/logo1.png";

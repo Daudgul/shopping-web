@@ -5,16 +5,7 @@ import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutl
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
-import {
-  Badge,
-  Box,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  NativeSelect,
-  Select,
-  SelectChangeEvent,
-} from "@mui/material";
+import { Badge, SelectChangeEvent } from "@mui/material";
 import Link from "next/link";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
@@ -45,38 +36,6 @@ const Header = () => {
           </div>
 
           <div className="flex space-x-5 items-center">
-            {/* <FormControl
-              className=" outline-none border-none"
-              color={"secondary"}
-              sx={{
-                m: 1,
-                minWidth: 120,
-                border: "none",
-                outline: "none ",
-                clolor: "white",
-              }}
-              size="small"
-            >
-              <InputLabel id="demo-select-small">Age</InputLabel>
-              <Select
-                labelId="demo-select-small"
-                id="demo-select-small"
-                value={age}
-                onChange={handleChange}
-                color={"secondary"}
-                sx={{
-                  m: 1,
-                  minWidth: 120,
-                  border: "none",
-                  outline: "none ",
-                  clolor: "white",
-                }}
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </FormControl> */}
             <Link href="/login">
               <div className=" cursor-pointer">
                 Login
@@ -113,11 +72,6 @@ const Header = () => {
               </span>
             </Link>
 
-            <li>Blog</li>
-
-            <Link href="/productdetail">
-              <a>Pages </a>
-            </Link>
             <Link href="/products">
               <a>Products </a>
             </Link>
