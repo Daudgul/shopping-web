@@ -76,7 +76,7 @@ const index = () => {
               onClick={() => setLogin(true)}
               className=" bg-[#FB2E86] hover:bg-pink-600 w-full text-white py-2 rounded-sm"
             >
-              {login ? "signUp" : "signIn"}
+              Log In
             </button>
             <p>
               Don't have an Account?{" "}
