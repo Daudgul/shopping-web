@@ -18,10 +18,14 @@ const productDetail = () => {
   const router = useRouter();
   const itemId = router.query.productDetail;
 
-  const sameProduct = (id: number | string) => {
+  const id = itemId || "";
+  const newId = +id;
+
+  const sameProduct = (id: number) => {
     return storeItems.filter((cur) => cur.id === id).pop();
   };
-  const dataMatch = sameProduct(+itemId);
+
+  const dataMatch = sameProduct(newId);
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);

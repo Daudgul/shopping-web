@@ -20,7 +20,7 @@ const Footer = () => {
               sx={{ textTransform: "capitalize" }}
               href="/products"
             >
-              Shoup Now
+              Shop Now
             </Button>
           </div>
         </div>

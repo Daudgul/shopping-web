@@ -46,11 +46,13 @@ const Card = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
               <SavedSearchIcon onClick={() => takeToProductDetail(id)} />
             </IconButton>
           </div>
-          <img
-            src={imgUrl}
-            alt="product"
-            className="scale-90 group-hover:scale-75 transition duration-500 h-[250px] w-[180px] "
-          />
+          <div className="w-full flex items-center justify-center">
+            <img
+              src={imgUrl}
+              alt="product"
+              className="scale-90 group-hover:scale-75 transition duration-500 h-[250px] w-[180px] object-contain "
+            />
+          </div>
           <button
             onClick={() => takeToProductDetail(id)}
             className=" -mt-6 opacity-0 group-hover:opacity-100 text-xs p-2  rounded bg-[#09d15d] hover:bg-green-600 mx-auto text-white"

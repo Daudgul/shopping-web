@@ -1,7 +1,6 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import productPic from "../img/img-1.png";
 import Data from "../data/allData.json";
 
 const SectionFive = () => {
@@ -24,8 +23,8 @@ const SectionFive = () => {
                 <Image
                   className=" z-30 "
                   src={item.imgUrl}
-                  width={350}
-                  height={350}
+                  width={450}
+                  height={450}
                 />
               ))}
             </div>
