@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import img from "../img/img-1.png";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";

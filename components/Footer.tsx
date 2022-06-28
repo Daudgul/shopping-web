@@ -1,7 +1,5 @@
 import { Button } from "@mui/material";
-import Image from "next/image";
 import React from "react";
-import background from "../img/sink.jpg";
 
 const Footer = () => {
   return (

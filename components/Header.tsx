@@ -5,13 +5,20 @@ import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutl
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
-import { Badge, SelectChangeEvent } from "@mui/material";
+import { Badge, Button, SelectChangeEvent, Tooltip } from "@mui/material";
+import PersonOffOutlinedIcon from "@mui/icons-material/PersonOffOutlined";
 import Link from "next/link";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+import useAuth from "../hooks/useAuth";
 
 const Header = () => {
   const [age, setAge] = React.useState("");
   const { cartQuantity } = useShoppingCart();
+  const { user, logout } = useAuth();
+  const id = user?.email || "";
+  const length = id.indexOf("@");
+  const userName = id.slice(0, length);
+  // console.log(slice);
 
   const handleChange = (event: SelectChangeEvent) => {
     setAge(event.target.value);
@@ -23,27 +30,39 @@ const Header = () => {
           <div className="flex space-x-10 items-center ">
             <h3>
               <span>
-                <EmailOutlinedIcon />
+                <EmailOutlinedIcon />{" "}
               </span>
-              {"  "} daudgul@gmail.com
+              {user === null ? "Please Log In to your account" : user.email}
             </h3>
             <h3>
               <span>
-                <WifiCalling3OutlinedIcon />
+                <PermIdentityOutlinedIcon />{" "}
+                {userName ? `Hello ${userName}` : "Welcome Back"}
               </span>
-              {"  "} +91-9012261447
             </h3>
           </div>
-
+          {}
           <div className="flex space-x-5 items-center">
-            <Link href="/login">
-              <div className=" cursor-pointer">
-                Login
-                <span>
-                  <PermIdentityOutlinedIcon />
-                </span>
-              </div>
-            </Link>
+            {user === null ? (
+              <Link href="/login">
+                <div className=" cursor-pointer">
+                  Login
+                  <span>
+                    <PermIdentityOutlinedIcon />
+                  </span>
+                </div>
+              </Link>
+            ) : (
+              <Tooltip title="Logout this page now?">
+                <button onClick={logout}>
+                  Log out{" "}
+                  <span>
+                    <PersonOffOutlinedIcon />
+                  </span>{" "}
+                </button>
+              </Tooltip>
+            )}
+
             <Link href="/whishlist">
               <div className=" cursor-pointer">
                 Whishlist{"  "}

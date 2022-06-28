@@ -32,6 +32,7 @@ const OrderCompleted = () => {
             when your order is completed.
           </p>
           <Button
+            disableElevation
             variant="contained"
             sx={{
               textTransform: "capitalize",

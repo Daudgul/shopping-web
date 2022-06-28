@@ -58,7 +58,6 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       }),
     [auth]
   );
-
   const signUp = async (email: string, password: string) => {
     setLoading(true);
 

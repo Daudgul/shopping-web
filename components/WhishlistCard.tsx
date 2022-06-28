@@ -5,7 +5,7 @@ import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import storeItems from "../data/allData.json";
 import { IconButton, Rating, Tooltip } from "@mui/material";
 import { useShoppingCart } from "../context/ShoppingCartContext";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 type CartItemProps = {
   id: number;

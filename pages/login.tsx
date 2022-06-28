@@ -17,20 +17,21 @@ interface Inputs {
 
 const index = () => {
   const [login, setLogin] = useState<boolean>(false);
-  const { signIn, signUp, logout } = useAuth();
+  const { signIn, signUp } = useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data);
     if (login) {
       await signIn(data.email, data.password);
     } else {
       await signUp(data.email, data.password);
     }
   };
+
+  console.log(login);
   return (
     <>
       <Header />

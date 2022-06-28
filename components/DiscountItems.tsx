@@ -4,13 +4,8 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import Card from "./FeaturedCard";
-import PicOne from "../img/pic-1.webp";
-import PicTwo from "../img/pic-2.webp";
-import PicThree from "../img/pic-3.webp";
-import PicFour from "../img/pic-4.webp";
-import { Button, Grid, Paper, Stack } from "@mui/material";
-import CardTwo from "./LatestPCard";
+
+import { Button, Grid } from "@mui/material";
 import Image from "next/image";
 import MainPic1 from "../img/ProductPic2.webp";
 import MainPic2 from "../img/ProductPic3.webp";

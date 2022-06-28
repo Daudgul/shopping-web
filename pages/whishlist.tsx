@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
+import NoItems from "../components/NoItems";
 import PageInfo from "../components/PageInfo";
 import WhishlistCard from "../components/WhishlistCard";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 const whishlist = () => {
   const { favoriteItems } = useShoppingCart();
+
   return (
     <>
       <Header />
@@ -31,6 +33,7 @@ const whishlist = () => {
               </span>{" "}
             </h3>
           </div>
+          {favoriteItems.length === 0 && <NoItems />}
           <div className="my-16">
             {favoriteItems.map((item) => (
               <WhishlistCard key={item.id} {...item} />
