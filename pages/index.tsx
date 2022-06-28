@@ -8,9 +8,9 @@ import UniqueFeatures from "../components/UniqueFeatures";
 import TopCategory from "../components/TopCategory";
 import TrendingProducts from "../components/TrendingProducts";
 import DiscountItems from "../components/DiscountItems";
-import FeaturedProducts from "../components/featuredProducts";
-import LatestProducts from "../components/latestProducts";
-import ShopexOffer from "../components/shopexOffer";
+import FeaturedProducts from "../components/FeaturedProducts";
+import LatestProducts from "../components/LatestProducts";
+import ShopexOffer from "../components/ShopexOffer";
 
 const Home: NextPage = () => {
   return (
