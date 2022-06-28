@@ -55,7 +55,14 @@ const productDetail = () => {
               </h6>
               <h6>Color</h6>
               <p className=" text-blue-600 text-sm">{dataMatch?.details}</p>
-              <Button href="/baskit">Add To Cart</Button>
+              <Button
+                disableElevation
+                variant="contained"
+                sx={{ textTransform: "capitalize" }}
+                href="/baskit"
+              >
+                Add To Cart
+              </Button>
               <h6>Categories:</h6>
               <h6>Tags</h6>
             </div>

@@ -10,7 +10,7 @@ const theme = createTheme({
       main: "#FB2E86",
     },
     secondary: {
-      main: colors.orange[500],
+      main: "#4ade80",
     },
   },
 

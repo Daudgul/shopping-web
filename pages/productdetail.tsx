@@ -2,7 +2,6 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Box, Button, Card, Grid, Rating, Tab } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import CardTwo from "../components/CardTwo";
 import Header from "../components/Header";
 import PageInfo from "../components/PageInfo";
 import Pic from "../img/img-2.png";

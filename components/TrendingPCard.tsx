@@ -1,6 +1,4 @@
 import { Button } from "@mui/material";
-import Image from "next/image";
-import React from "react";
 type StoreItemProps = {
   id: number;
   title: string;
@@ -11,7 +9,13 @@ type StoreItemProps = {
   details: string;
 };
 
-const CardThree = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
+const TrendingPCard = ({
+  id,
+  title,
+  oldPrise,
+  price,
+  imgUrl,
+}: StoreItemProps) => {
   return (
     <div className="group ">
       <div className=" flex bg-[#f7f8f7] flex-col ">
@@ -21,6 +25,7 @@ const CardThree = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
           className="w-[220px] h-[250px] scale-90 object-contain"
         />
         <Button
+          disableElevation
           href="/products"
           variant="contained"
           sx={{ textTransform: "capitalize", mt: "-18px" }}
@@ -41,4 +46,4 @@ const CardThree = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   );
 };
 
-export default CardThree;
+export default TrendingPCard;

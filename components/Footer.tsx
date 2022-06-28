@@ -15,7 +15,7 @@ const Footer = () => {
             <h1 className="text-4xl text-white">Our Newslater</h1>
 
             <Button
-              className="btn btn--primary capitalize mt-5"
+              disableElevation
               variant="contained"
               sx={{ textTransform: "capitalize" }}
               href="/products"

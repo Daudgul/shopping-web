@@ -35,6 +35,7 @@ const baskit = () => {
             </div>
             <div className="flex justify-between mt-12">
               <Button
+                disableElevation
                 href="/"
                 sx={{ textTransform: "capitalize" }}
                 variant="contained"
@@ -42,6 +43,7 @@ const baskit = () => {
                 Update Cart
               </Button>
               <Button
+                disableElevation
                 onClick={() => clearCart()}
                 sx={{ textTransform: "capitalize" }}
                 variant="contained"
@@ -72,7 +74,11 @@ const baskit = () => {
                 <h6>${total + 14.4}</h6>
               </div>
               <Button
+                disableElevation
                 href="/order"
+                variant="contained"
+                color="secondary"
+                sx={{ textTransform: "capitalize" }}
                 className="w-full py-2 rounded-sm hover:bg-green-500 bg-[#19d16f] text-white capitalize"
               >
                 Proceed To Checkout

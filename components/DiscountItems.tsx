@@ -4,20 +4,20 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import Card from "./Card";
+import Card from "./FeaturedCard";
 import PicOne from "../img/pic-1.webp";
 import PicTwo from "../img/pic-2.webp";
 import PicThree from "../img/pic-3.webp";
 import PicFour from "../img/pic-4.webp";
 import { Button, Grid, Paper, Stack } from "@mui/material";
-import CardTwo from "./CardTwo";
+import CardTwo from "./LatestPCard";
 import Image from "next/image";
 import MainPic1 from "../img/ProductPic2.webp";
 import MainPic2 from "../img/ProductPic3.webp";
 import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
 import productPic from "../img/img-1.png";
 
-const SectionSeven = () => {
+const DiscountItems = () => {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -97,6 +97,7 @@ const SectionSeven = () => {
                   </div>
                   <div className="flex space-x-6">
                     <Button
+                      disableElevation
                       href="/products"
                       variant="contained"
                       sx={{
@@ -158,9 +159,16 @@ const SectionSeven = () => {
                     </ul>
                   </div>
                   <div className="flex space-x-6">
-                    <button className="btn btn--primary rounded w-48">
+                    <Button
+                      disableElevation
+                      href="/products"
+                      variant="contained"
+                      sx={{
+                        textTransform: "capitalize",
+                      }}
+                    >
                       Shop Now
-                    </button>
+                    </Button>
                   </div>
                 </Grid>
                 <Grid item sm={6}>
@@ -214,9 +222,16 @@ const SectionSeven = () => {
                     </ul>
                   </div>
                   <div className="flex space-x-6">
-                    <button className="btn btn--primary rounded w-48">
+                    <Button
+                      disableElevation
+                      href="/products"
+                      variant="contained"
+                      sx={{
+                        textTransform: "capitalize",
+                      }}
+                    >
                       Shop Now
-                    </button>
+                    </Button>
                   </div>
                 </Grid>
                 <Grid item sm={6}>
@@ -247,4 +262,4 @@ const SectionSeven = () => {
   );
 };
 
-export default SectionSeven;
+export default DiscountItems;

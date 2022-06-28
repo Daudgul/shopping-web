@@ -41,7 +41,13 @@ const AcoutUs = () => {
             magni illo nostrum perspiciatis voluptas. Pariatur iure quidem
             minima iste quasi.
           </p>
-          <Button className="btn btn--primary capitalize" href="/contact">
+          <Button
+            disableElevation
+            sx={{ textTransform: "capitalize" }}
+            variant="contained"
+            className="btn btn--primary capitalize"
+            href="/contact"
+          >
             Contact Us
           </Button>
         </div>
@@ -143,9 +149,9 @@ const AcoutUs = () => {
           <div className="w-[220px] h-[100px] flex items-center">
             <Image src={clientThree} width={60} height={60} alt="cllintOne" />
             <div className="mx-3 -translate-y-3">
-              <Image src={clientTwo} width={60} height={60} alt="cllintOne" />
+              <Image src={clientTwo} width={60} height={60} alt="cllintTwo" />
             </div>
-            <Image src={clientOne} width={60} height={60} alt="cllintOne" />
+            <Image src={clientOne} width={60} height={60} alt="cllintThree" />
           </div>
           <h6 className="text-xl">Selina Gomez</h6>
           <p className="text-xs text-[#2f1ac4]">Ceo At Webcy digital</p>

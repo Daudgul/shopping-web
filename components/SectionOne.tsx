@@ -2,7 +2,6 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import productPic from "../img/img-1.png";
-import sideImg from "../img/lamp.webp";
 
 const SectionOne = () => {
   return (
@@ -24,6 +23,7 @@ const SectionOne = () => {
             distinctio recusandae sequi sunt unde, dolorum, nobispit !
           </p>
           <Button
+            disableElevation
             variant="contained"
             href="/products"
             sx={{

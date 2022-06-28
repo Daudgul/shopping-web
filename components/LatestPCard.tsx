@@ -18,7 +18,13 @@ type StoreItemProps = {
   details: string;
 };
 
-const CardTwo = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
+const LatestPCard = ({
+  id,
+  title,
+  oldPrise,
+  price,
+  imgUrl,
+}: StoreItemProps) => {
   const { increaseCartQuantity, addFavoritreItem } = useShoppingCart();
   const item = storeItems.find((i) => i.id === id);
   if (item == null) return null;
@@ -62,4 +68,4 @@ const CardTwo = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   );
 };
 
-export default CardTwo;
+export default LatestPCard;

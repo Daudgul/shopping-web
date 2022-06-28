@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Data from "../data/allData.json";
 
-const SectionFive = () => {
+const UniqueFeatures = () => {
   const Unique = Data.filter((item) => {
     return item.category?.includes("Unique");
   });
@@ -68,4 +68,4 @@ const SectionFive = () => {
   );
 };
 
-export default SectionFive;
+export default UniqueFeatures;

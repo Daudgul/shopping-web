@@ -1,6 +1,6 @@
 import { Button, Grid, Paper } from "@mui/material";
 import React from "react";
-import CardThree from "./CardThree";
+import TrendingPCard from "./TrendingPCard";
 import trendingPOne from "../img/trendingPOne.webp";
 import trendingPTwo from "../img/trendingPTwo.webp";
 import Image from "next/image";
@@ -9,7 +9,7 @@ import chairPic2 from "../img/exclusiveChair2.webp";
 import chairPic3 from "../img/exclusiveChair3.webp";
 import Data from "../data/allData.json";
 
-const SectionSix = () => {
+const TrendingProducts = () => {
   const Trending = Data.filter((item) => {
     return item.category?.includes("Trending");
   });
@@ -26,7 +26,7 @@ const SectionSix = () => {
                 height: "350px",
               }}
             >
-              <CardThree {...item} />
+              <TrendingPCard {...item} />
             </Paper>
           </Grid>
         ))}
@@ -43,6 +43,7 @@ const SectionSix = () => {
               23% off in all products
             </h1>
             <Button
+              disableElevation
               href="/products"
               sx={{
                 textTransform: "capitalize",
@@ -71,6 +72,7 @@ const SectionSix = () => {
               23% off in all products
             </h1>
             <Button
+              disableElevation
               href="/products"
               sx={{
                 textTransform: "capitalize",
@@ -151,4 +153,4 @@ const SectionSix = () => {
   );
 };
 
-export default SectionSix;
+export default TrendingProducts;

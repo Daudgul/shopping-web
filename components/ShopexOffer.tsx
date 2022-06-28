@@ -1,7 +1,7 @@
 import { Grid, Paper } from "@mui/material";
 import React from "react";
 
-const SectionFour = () => {
+const ShopexOffer = () => {
   return (
     <div className="max-w-6xl mx-auto py-3 mt-10">
       <h1 className="mainHeading">What Shopex Offer!</h1>
@@ -73,4 +73,4 @@ const SectionFour = () => {
   );
 };
 
-export default SectionFour;
+export default ShopexOffer;

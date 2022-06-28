@@ -1,6 +1,3 @@
-import Image from "next/image";
-import React from "react";
-import productOne from "../img/img-3.png";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
@@ -18,7 +15,13 @@ type StoreItemProps = {
   details: string;
 };
 
-const Card = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
+const FeaturedCard = ({
+  id,
+  title,
+  oldPrise,
+  price,
+  imgUrl,
+}: StoreItemProps) => {
   const { increaseCartQuantity, addFavoritreItem } = useShoppingCart();
   const item = storeItems.find((i) => i.id === id);
   if (item == null) return null;
@@ -77,4 +80,4 @@ const Card = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   );
 };
 
-export default Card;
+export default FeaturedCard;

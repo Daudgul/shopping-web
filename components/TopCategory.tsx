@@ -1,9 +1,8 @@
 import React from "react";
-import CardFour from "./CardFour";
-import PicFour from "../img/pic-4.webp";
+import TopCard from "./TopCard";
 import Data from "../data/allData.json";
 
-const SectionEight = () => {
+const TopCategory = () => {
   const TopCategory = Data.filter((item) => {
     return item.category?.includes("TopCategory");
   });
@@ -14,7 +13,7 @@ const SectionEight = () => {
         <div className=" flex items-center justify-center">
           <div className="flex flex-col md:flex-row md:space-x-7">
             {TopCategory.map((item) => (
-              <CardFour key={item.id} {...item} />
+              <TopCard key={item.id} {...item} />
             ))}
           </div>
         </div>
@@ -23,4 +22,4 @@ const SectionEight = () => {
   );
 };
 
-export default SectionEight;
+export default TopCategory;

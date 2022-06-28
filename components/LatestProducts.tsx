@@ -6,10 +6,10 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 
 import { Grid } from "@mui/material";
-import CardTwo from "./CardTwo";
 import Data from "../data/allData.json";
+import LatestPCard from "./LatestPCard";
 
-const SectionThree = () => {
+const LatestProducts = () => {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -46,7 +46,7 @@ const SectionThree = () => {
               <Grid container columnSpacing={4} sx={{ mx: "auto" }}>
                 {newArrival.map((item) => (
                   <Grid key={item.id} item sm={6} md={4}>
-                    <CardTwo {...item} />
+                    <LatestPCard {...item} />
                   </Grid>
                 ))}
               </Grid>
@@ -55,7 +55,7 @@ const SectionThree = () => {
               <Grid container columnSpacing={4}>
                 {newArrival.map((item) => (
                   <Grid key={item.id} item sm={6} md={4}>
-                    <CardTwo {...item} />
+                    <LatestPCard {...item} />
                   </Grid>
                 ))}
               </Grid>
@@ -64,7 +64,7 @@ const SectionThree = () => {
               <Grid container columnSpacing={4}>
                 {newArrival.map((item) => (
                   <Grid key={item.id} item sm={6} md={4}>
-                    <CardTwo {...item} />
+                    <LatestPCard {...item} />
                   </Grid>
                 ))}
               </Grid>
@@ -73,7 +73,7 @@ const SectionThree = () => {
               <Grid container columnSpacing={4}>
                 {newArrival.map((item) => (
                   <Grid key={item.id} item sm={6} md={4}>
-                    <CardTwo {...item} />
+                    <LatestPCard {...item} />
                   </Grid>
                 ))}
               </Grid>
@@ -85,4 +85,4 @@ const SectionThree = () => {
   );
 };
 
-export default SectionThree;
+export default LatestProducts;

@@ -11,7 +11,7 @@ type StoreItemProps = {
   details: string;
 };
 
-const CardFour = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
+const TopCard = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   return (
     <div className="group">
       <div className=" bg-purple-500 rounded-full">
@@ -24,11 +24,12 @@ const CardFour = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
             height={150}
           />
           <Button
+            disableElevation
+            variant="contained"
             href="/products"
+            color="secondary"
             sx={{
               textTransform: "capitalize",
-              backgroundColor: "lightgreen",
-              color: "white",
             }}
             className="w-auto  h-auto px-3 py-2 rounded -mt-3 bg-green-400 group-hover:mt-0 group-hover:opacity-100 opacity-0 duration-200 capitalize"
           >
@@ -49,4 +50,4 @@ const CardFour = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   );
 };
 
-export default CardFour;
+export default TopCard;
