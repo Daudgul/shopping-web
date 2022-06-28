@@ -12,17 +12,12 @@ import { useShoppingCart } from "../context/ShoppingCartContext";
 import useAuth from "../hooks/useAuth";
 
 const Header = () => {
-  const [age, setAge] = React.useState("");
   const { cartQuantity } = useShoppingCart();
   const { user, logout } = useAuth();
   const id = user?.email || "";
   const length = id.indexOf("@");
   const userName = id.slice(0, length);
-  // console.log(slice);
 
-  const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value);
-  };
   return (
     <header>
       <div className="w-full bg-[#7e33e0] ">
@@ -92,13 +87,19 @@ const Header = () => {
             </Link>
 
             <Link href="/products">
-              <a>Products </a>
+              <span className="childItem cursor-pointer transition  hover:text-[#FB2E86]  active:text-red-600 visited:text-yellow-200">
+                Products
+              </span>
             </Link>
             <Link href="/about">
-              <a>About Us</a>
+              <span className="childItem cursor-pointer transition  hover:text-[#FB2E86]  active:text-red-600 visited:text-yellow-200">
+                About Us
+              </span>
             </Link>
             <Link href="/contact">
-              <a>Content</a>
+              <span className="childItem cursor-pointer transition  hover:text-[#FB2E86]  active:text-red-600 visited:text-yellow-200">
+                Content
+              </span>
             </Link>
           </ul>
         </div>
