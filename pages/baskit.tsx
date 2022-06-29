@@ -16,7 +16,7 @@ const baskit = () => {
         <div className=" w-full  bg-[#f2f0ff] ">
           <PageInfo title={"Shopping Cart"} />
         </div>
-        <div className="max-w-6xl mx-auto my-20 md:flex space-x-10">
+        <div className="max-w-6xl mx-auto my-20 lg:flex space-x-10">
           {cartItems.length === 0 ? <NoItems /> : <BaskitSectionOne />}
         </div>
       </section>

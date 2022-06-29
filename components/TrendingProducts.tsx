@@ -16,7 +16,7 @@ const TrendingProducts = () => {
   return (
     <section className=" max-w-6xl mx-auto py-3 my-12 ">
       <h1 className="mainHeading">Trending Products</h1>
-      <Grid container rowSpacing={4} columnSpacing={3}>
+      <Grid justifyContent="center" container rowSpacing={4} columnSpacing={3}>
         {Trending.map((item) => (
           <Grid key={item.id} item sm={6} md={3}>
             <Paper
@@ -34,12 +34,12 @@ const TrendingProducts = () => {
 
       {/* Making a flex container where we show our 2nd list of this section */}
 
-      <div className="w-full flex h-80 my-10 sm:flex-wrap space-x-5">
+      <div className="w-full flex sm:flex-row my-10 flex-col space-x-5">
         {/*/////////////// 1st flex container ///////////////////  */}
 
         <div className=" flex-1 p-7 w-full bg-[#eeeffb] shadow my-6 ">
           <div className=" -mb-10 mt-1">
-            <h1 className="text-2xl text-[#151875] whitespace-nowrap">
+            <h1 className="sm:text-2xl text-[#151875] whitespace-nowrap">
               23% off in all products
             </h1>
             <Button
@@ -64,11 +64,11 @@ const TrendingProducts = () => {
           </div>
         </div>
 
-        {/* /////////////////////// @2nd flex container //////////////*/}
+        {/* /////////////////////// @2nd flex container \\\\\\\\\\\\\\\\\\\\\\\\\\\*/}
 
         <div className=" flex-1 p-7 w-full bg-[#eeeffb] shadow my-6   md:overflow-hidden">
           <div className="  mt-1">
-            <h1 className="text-2xl text-[#151875] whitespace-nowrap">
+            <h1 className="sm:text-2xl text-[#151875] whitespace-nowrap">
               23% off in all products
             </h1>
             <Button

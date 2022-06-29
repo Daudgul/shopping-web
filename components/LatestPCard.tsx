@@ -35,8 +35,8 @@ const LatestPCard = ({
   };
   return (
     <div className="group ">
-      <div className=" flex bg-[#f7f8f7] group-hover:bg-inherit  ">
-        <div className="flex flex-col justify-end space-y-3 ml-3 mb-3 text-[#151875] opacity-0 group-hover:opacity-100">
+      <div className=" flex bg-[#f7f8f7] flex-col sm:flex-row group-hover:bg-inherit  ">
+        <div className="flex sm:flex-col justify-end space-y-3 ml-3 mb-3 text-[#151875] opacity-0 group-hover:opacity-100">
           <IconButton size="small">
             <AddShoppingCartOutlinedIcon
               onClick={() => increaseCartQuantity(id)}

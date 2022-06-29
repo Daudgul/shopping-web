@@ -43,7 +43,7 @@ const BaskitSectionOne = () => {
           </Button>
         </div>
       </div>
-      <div className="w-[400px] ">
+      <div className="sm:w-[400px] ">
         <h3 className="w-full flex justify-center text-xl mb-10 text-[#151875]">
           Cart Totals
         </h3>

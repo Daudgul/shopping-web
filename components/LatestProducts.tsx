@@ -61,7 +61,7 @@ const LatestProducts = () => {
               </Grid>
             </TabPanel>
             <TabPanel value="3">
-              <Grid container columnSpacing={4}>
+              <Grid justifyContent="center" container columnSpacing={4}>
                 {newArrival.map((item) => (
                   <Grid key={item.id} item sm={6} md={4}>
                     <LatestPCard {...item} />

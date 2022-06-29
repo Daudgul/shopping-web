@@ -18,9 +18,9 @@ const AcoutUs = () => {
       <Header />
       <PageInfo title=" About Us" />
       <section className=" max-w-6xl mx-auto flex flex-col md:flex-row my-20">
-        <div className="w-[500px] mr-6 ">
-          <div className="bg-[#2f1ac4] rounded w-[480px] h-[360px] ">
-            <div className=" w-[480px] h-[340px] rounded translate-x-4   flex ">
+        <div className="sm:w-[500px] mr-6 ">
+          <div className="bg-[#2f1ac4] rounded sm:w-[480px] sm:h-[360px] ">
+            <div className=" sm:w-[480px]  sm:h-[340px] rounded translate-x-4   flex ">
               <Image
                 className="rounded "
                 src={image}
@@ -31,7 +31,7 @@ const AcoutUs = () => {
             </div>
           </div>
         </div>
-        <div className="w-[500px] flex flex-col justify-center space-y-8">
+        <div className="sm:w-[500px] flex flex-col justify-center space-y-8">
           <h1 className="text-4xl text-[#151875]">
             Know About Our E-comerce Business, History
           </h1>

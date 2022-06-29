@@ -21,8 +21,8 @@ const Header = () => {
   return (
     <header>
       <div className="w-full bg-[#7e33e0] ">
-        <div className=" flex text-[#fff] h-12 justify-between items-center max-w-6xl mx-auto ">
-          <div className="flex space-x-10 items-center ">
+        <div className=" flex text-[#fff] justify-between items-center max-w-6xl mx-auto  py-2">
+          <div className=" space-x-10 items-center hidden sm:flex ">
             <h3>
               <span>
                 <EmailOutlinedIcon />{" "}
@@ -30,14 +30,14 @@ const Header = () => {
               {user === null ? "Please Log In to your account" : user.email}
             </h3>
             <h3>
-              <span>
-                <PermIdentityOutlinedIcon />{" "}
+              <PermIdentityOutlinedIcon />{" "}
+              <span className=" ">
                 {userName ? `Hello ${userName}` : "Welcome Back"}
               </span>
             </h3>
           </div>
           {}
-          <div className="flex space-x-5 items-center">
+          <div className="flex space-x-5 items-center mx-auto sm:mx-0 ">
             {user === null ? (
               <Link href="/login">
                 <div className=" cursor-pointer">
@@ -76,10 +76,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className=" flex justify-between items-center max-w-6xl mx-auto  flex-col sm:flex-row h-16 ">
-        <div className="flex space-x-10  ">
-          <h1 className="font-semibold text-3xl">Hekto</h1>
-          <ul className=" childItem flex justify-between items-center space-x-5 font-semibold  ">
+      <div className=" flex justify-between items-center max-w-6xl mx-auto  flex-col sm:flex-row my-3 ">
+        <div className="flex space-x-10 flex-col sm:flex-row  ">
+          <h1 className="font-semibold text-3xl mx-auto">Hekto</h1>
+          <ul className=" childItem flex justify-between items-center space-x-5 font-semibold   ">
             <Link href="/">
               <span className="childItem cursor-pointer transition  hover:text-[#FB2E86]  active:text-red-600 visited:text-yellow-200">
                 Home

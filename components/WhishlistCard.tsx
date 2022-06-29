@@ -28,7 +28,7 @@ const WhishlistCard = ({ id, quantity }: CartItemProps) => {
           width={300}
           height={250}
           alt="product img"
-          className="h-[250px] w-[300px] object-contain"
+          className="sm:h-[250px] sm:w-[300px] h-20 w-20 object-contain"
         />
         <div className="text-[#151875] space-y-2 justify-center flex flex-col">
           <h4 className="text-xl">{item.title}</h4>

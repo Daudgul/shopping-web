@@ -7,7 +7,7 @@ const SectionOne = () => {
   return (
     <section className="flex w-full bg-[#f2f0ff] ">
       <div
-        className=" flex justify-between items-center max-w-6xl mx-auto py-3"
+        className=" flex justify-between flex-col sm:flex-row items-center max-w-6xl mx-auto py-3"
         style={{ maxHeight: "500px" }}
       >
         <div className=" space-y-3 ">
@@ -34,7 +34,10 @@ const SectionOne = () => {
             Shop Now
           </Button>
         </div>
-        <div className="relative lg:h-full lg:w-full ">
+
+        {/* ////////////////////////   Part two   ///////////////////////////////// */}
+
+        <div className="relative lg:h-full lg:w-full hidden sm:block ">
           <div
             className="w-4/5 h-4/5  z-20 bg-[#eeddfb] absolute right-6 top-8 "
             style={{ borderRadius: "40% 60% 52% 48% / 44% 60% 40% 56% " }}
@@ -53,7 +56,12 @@ const SectionOne = () => {
           >
             50% <span> 0ff</span>
           </div>
-          <Image className=" z-30 " src={productPic} width={500} height={500} />
+          <Image
+            className=" z-30  "
+            src={productPic}
+            width={500}
+            height={500}
+          />
         </div>
       </div>
     </section>

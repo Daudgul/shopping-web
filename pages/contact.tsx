@@ -10,8 +10,8 @@ const Contact = () => {
       <Header />
       <PageInfo title={"Contact Us"} />
 
-      <section className="max-w-6xl mx-auto mt-16 flex justify-between">
-        <div className="text-[#2f1ac4] space-y-5 w-[500px] mr-4">
+      <section className="max-w-6xl mx-auto mt-16 sm:flex justify-between">
+        <div className="text-[#2f1ac4] space-y-5 sm:w-[500px] mr-4">
           <h1 className="text-2xl text-[#151875]">Information About Us</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="customDiv bg-sky-400"></div>
           </div>
         </div>
-        <div className="w-[500px] space-y-5 ">
+        <div className="sm:w-[500px] space-y-5 ">
           <h1 className="text-2xl text-[#151875]">Contect Way</h1>
           <div className="flex space-x-5">
             <div className="flex text-sm text-[#2f1ac4] space-x-3">
@@ -61,15 +61,15 @@ const Contact = () => {
         </div>
       </section>
       <section className="max-w-6xl mx-auto mt-20 mb-40 flex justify-between text-[#2f1ac4] flex-col md:flex-row">
-        <div className="w-[500px] space-y-5">
+        <div className="sm:w-[500px] space-y-5">
           <h1 className="text-2xl text-[#151875]">Get In Touch</h1>
           <p>
             All pobis quis ab et repellat nam dicta iste, tenetur nesciunt
             aperiam quae sapiente obcaecati porro voluptatum! Cumque incidunt
             voluptatem accusamus voluptatum?
           </p>
-          <form className="w-[500px] mb-16 space-y-8">
-            <div className="flex justify-between mt-5">
+          <form className="sm:w-[500px] mb-16 space-y-8">
+            <div className="sm:flex justify-between mt-5">
               <input
                 className="inline-block p-2 pr-12  border rounded-sm"
                 type="text"
