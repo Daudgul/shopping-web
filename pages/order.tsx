@@ -1,7 +1,6 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import Header from "../components/Header";
 import PageInfo from "../components/PageInfo";
 import Check from "../img/checkmark.webp";
 import logo1 from "../img/logo1.png";
@@ -16,7 +15,6 @@ const OrderCompleted = () => {
   return (
     <>
       <section>
-        <Header />
         <PageInfo title="Order Completed" />
       </section>
       <section className="max-w-6xl mx-auto flex justify-center flex-col items-center mt-20">

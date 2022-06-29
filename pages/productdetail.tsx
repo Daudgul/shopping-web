@@ -2,7 +2,6 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Box, Button, Card, Grid, Rating, Tab } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import Header from "../components/Header";
 import PageInfo from "../components/PageInfo";
 import Pic from "../img/img-2.png";
 import logo1 from "../img/logo1.png";
@@ -19,7 +18,6 @@ const productdetail = () => {
   };
   return (
     <div>
-      <Header />
       <PageInfo title="Product Details" />
       <section>
         <div className="max-w-6xl mx-auto my-20">

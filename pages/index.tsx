@@ -15,7 +15,6 @@ import ShopexOffer from "../components/ShopexOffer";
 const Home: NextPage = () => {
   return (
     <div className="">
-      <Header />
       <SectionOne />
       <FeaturedProducts />
       <LatestProducts />

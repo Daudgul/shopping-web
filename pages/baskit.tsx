@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import PageInfo from "../components/PageInfo";
 import NoItems from "../components/NoItems";
@@ -11,7 +10,6 @@ const baskit = () => {
 
   return (
     <div>
-      <Header />
       <section>
         <div className=" w-full  bg-[#f2f0ff] ">
           <PageInfo title={"Shopping Cart"} />

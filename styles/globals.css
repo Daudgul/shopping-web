@@ -9,8 +9,8 @@
 }
 
 @layer components {
-  .childItem > li {
-    @apply cursor-pointer transition  hover:text-[#FB2E86] focus:text-[#FB2E86];
+  .childItem {
+    @apply transition  hover:text-[#FB2E86];
   }
 
   .MuiTabs {

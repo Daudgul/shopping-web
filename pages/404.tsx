@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Header from "../components/Header";
 import PageInfo from "../components/PageInfo";
 import image from "../img/img404.png";
 
 const ErrorPage = () => {
   return (
     <>
-      <Header />
       <div className=" w-full  bg-[#f2f0ff] ">
         <PageInfo title={"404 Not Found"} />
       </div>

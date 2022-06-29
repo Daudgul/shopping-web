@@ -1,13 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Header from "../components/Header";
 import PageInfo from "../components/PageInfo";
 import image from "../img/contactPic.png";
 
 const Contact = () => {
   return (
     <div>
-      <Header />
       <PageInfo title={"Contact Us"} />
 
       <section className="max-w-6xl mx-auto mt-16 sm:flex justify-between">

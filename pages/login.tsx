@@ -9,6 +9,7 @@ import logo5 from "../img/logo5.png";
 import { SubmitHandler, useForm } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
 import PageInfo from "../components/PageInfo";
+import { Tooltip } from "@mui/material";
 
 interface Inputs {
   email: string;
@@ -72,20 +73,27 @@ const index = () => {
                 </p>
               )}
             </label>
-            <button
-              onClick={() => setLogin(true)}
-              className=" bg-[#FB2E86] hover:bg-pink-600 w-full text-white py-2 rounded-sm"
+            <Tooltip
+              title="If you have already Created your account"
+              placement="right"
             >
-              Log In
-            </button>
+              <button
+                onClick={() => setLogin(true)}
+                className=" bg-[#FB2E86] hover:bg-pink-600 w-full text-white py-2 rounded-sm"
+              >
+                Log In
+              </button>
+            </Tooltip>
             <p>
               Don't have an Account?{" "}
-              <button
-                onClick={() => setLogin(false)}
-                className=" hover:text-red-500"
-              >
-                Create account
-              </button>
+              <Tooltip title="to create an account fill your Emial Address, make a Password and  CLICK  Create account">
+                <button
+                  onClick={() => setLogin(false)}
+                  className=" hover:text-red-500"
+                >
+                  Create account
+                </button>
+              </Tooltip>
             </p>
           </form>
         </div>

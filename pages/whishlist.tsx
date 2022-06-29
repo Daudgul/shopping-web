@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import NoItems from "../components/NoItems";
 import PageInfo from "../components/PageInfo";
 import WhishlistCard from "../components/WhishlistCard";
@@ -10,7 +9,6 @@ const whishlist = () => {
 
   return (
     <>
-      <Header />
       <section>
         <div className=" w-full  bg-[#f2f0ff] ">
           <PageInfo title={"Shop List"} />

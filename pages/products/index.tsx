@@ -1,6 +1,5 @@
 import { Pagination } from "@mui/material";
 import React, { useState } from "react";
-import Header from "../../components/Header";
 import PageInfo from "../../components/PageInfo";
 import ProductsCard from "../../components/ProductsCard";
 import storeItems from "../../data/allData.json";
@@ -17,7 +16,6 @@ const Products = () => {
 
   return (
     <div>
-      <Header />
       <PageInfo title="Ecommerce Acceories" />
       <section className="max-w-6xl mx-auto">
         <div className="my-20">
@@ -47,4 +45,3 @@ const Products = () => {
 };
 
 export default Products;
-

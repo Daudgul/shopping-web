@@ -1,7 +1,6 @@
 import { Button, Grid, Paper } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import Header from "../components/Header";
 import PageInfo from "../components/PageInfo";
 import image from "../img/pic-aboutus.webp";
 import clientOne from "../img/client1.webp";
@@ -15,7 +14,6 @@ import FeatureFour from "../img/stickers4.webp";
 const AcoutUs = () => {
   return (
     <>
-      <Header />
       <PageInfo title=" About Us" />
       <section className=" max-w-6xl mx-auto flex flex-col md:flex-row my-20">
         <div className="sm:w-[500px] mr-6 ">

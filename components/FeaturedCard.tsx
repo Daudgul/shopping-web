@@ -22,9 +22,17 @@ const FeaturedCard = ({
   price,
   imgUrl,
 }: StoreItemProps) => {
-  const { increaseCartQuantity, addFavoritreItem } = useShoppingCart();
-  const item = storeItems.find((i) => i.id === id);
-  if (item == null) return null;
+  const { increaseCartQuantity, addFavoritreItem, cartItems } =
+    useShoppingCart();
+
+  const item = cartItems.find((i) => i.id === id);
+
+  // const itemsz = storeItems.filter((item) => {
+  //   return item.category?.includes(id);
+  // });
+
+  // if (item == null) return null;
+  // console.log(item);
   const router = useRouter();
 
   const takeToProductDetail = (id: number) => {
@@ -37,6 +45,7 @@ const FeaturedCard = ({
           <div className=" text-sky-400 space-x-4  translate-y-0.5 scale-75 opacity-0 group-hover:opacity-100   -mb-4 ">
             <IconButton size="small">
               <AddShoppingCartOutlinedIcon
+                className={`${item && "bg-slate-600"}`}
                 onClick={() => increaseCartQuantity(id)}
               />
             </IconButton>
