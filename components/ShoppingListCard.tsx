@@ -36,11 +36,11 @@ const ShoppingListCard = ({ id, quantity }: CartItemProps) => {
       </div>
       <h6 className="text-[#151875] w-[120px] my-auto">${item.price}.00</h6>
       <div className="w-[170px] my-auto text-gray-300  ">
-        <div className=" w-[83px] ">
+        <div className=" w-[95px] flex justify-between ">
           <button className="bg-slate-500 hover:bg-slate-600">
             <AddOutlinedIcon onClick={() => increaseCartQuantity(id)} />
           </button>
-          <span className="px-3 text-black">{quantity}</span>
+          <p className="px-3  text-black">{quantity}</p>
           <button className="bg-slate-500 hover:bg-slate-600">
             <RemoveOutlinedIcon onClick={() => decreaseCartQuantity(id)} />
           </button>

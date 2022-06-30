@@ -1,16 +1,15 @@
 import type { NextPage } from "next";
 
-import Header from "../components/Header";
 import SectionOne from "../components/SectionOne";
 
 import Footer from "../components/Footer";
-import UniqueFeatures from "../components/UniqueFeatures";
 import TopCategory from "../components/TopCategory";
 import TrendingProducts from "../components/TrendingProducts";
 import DiscountItems from "../components/DiscountItems";
 import FeaturedProducts from "../components/FeaturedProducts";
 import LatestProducts from "../components/LatestProducts";
 import ShopexOffer from "../components/ShopexOffer";
+import UniqueFeatures from "../components/UniqueFeatures";
 
 const Home: NextPage = () => {
   return (

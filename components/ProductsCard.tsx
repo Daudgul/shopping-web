@@ -2,7 +2,7 @@ import React from "react";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { IconButton } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 import { useRouter } from "next/router";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
@@ -30,24 +30,68 @@ const ProductsCard = ({
   };
 
   ////////////////////////////////////////
-  const { increaseCartQuantity, addFavoritreItem } = useShoppingCart();
+  const {
+    increaseCartQuantity,
+    addFavoritreItem,
+    cartItems,
+    removeFromCart,
+    favoriteItems,
+    removeFavItem,
+  } = useShoppingCart();
+
+  const cartItem = cartItems.find((i) => i.id === id);
+  const favItem = favoriteItems.find((i) => i.id === id);
 
   return (
     <div className="group my-2 ">
       <div className=" flex bg-[#f7f8f7] group-hover:bg-inherit  ">
         <div className="flex flex-col justify-end space-y-3 ml-3 mb-3 text-[#151875] opacity-0 group-hover:opacity-100">
-          <IconButton size="small">
-            <AddShoppingCartOutlinedIcon
-              onClick={() => increaseCartQuantity(id)}
-            />
-          </IconButton>
-
-          <IconButton size="small">
-            <SavedSearchIcon onClick={() => takeToProductDetail(id)} />
-          </IconButton>
-          <IconButton size="small">
-            <FavoriteBorderOutlinedIcon onClick={() => addFavoritreItem(id)} />
-          </IconButton>
+          {cartItem ? (
+            <Tooltip placement="right" title="Remove from cart">
+              <IconButton color="primary" size="small">
+                <AddShoppingCartOutlinedIcon
+                  onClick={() => removeFromCart(id)}
+                />
+              </IconButton>
+            </Tooltip>
+          ) : (
+            <Tooltip
+              placement="right"
+              title="Add to cart"
+              className=" hover:text-pink-600"
+            >
+              <IconButton size="small">
+                <AddShoppingCartOutlinedIcon
+                  onClick={() => increaseCartQuantity(id)}
+                />
+              </IconButton>
+            </Tooltip>
+          )}
+          {/* ////////////////////////// favItem \\\\\\\\\\\\\\\\\\\\\\\\\\ */}
+          {favItem ? (
+            <Tooltip placement="right" title="Remove from cart">
+              <IconButton color="primary" size="small">
+                <FavoriteBorderOutlinedIcon onClick={() => removeFavItem(id)} />
+              </IconButton>
+            </Tooltip>
+          ) : (
+            <Tooltip
+              placement="right"
+              title="Add to cart"
+              className=" hover:text-pink-600"
+            >
+              <IconButton size="small">
+                <FavoriteBorderOutlinedIcon
+                  onClick={() => addFavoritreItem(id)}
+                />
+              </IconButton>
+            </Tooltip>
+          )}
+          <Tooltip placement="right" title="show more details">
+            <IconButton size="small" className=" hover:text-pink-600">
+              <SavedSearchIcon onClick={() => takeToProductDetail(id)} />
+            </IconButton>
+          </Tooltip>
         </div>
         <img
           src={imgUrl}

@@ -1,5 +1,5 @@
 import { TabContext, TabList, TabPanel } from "@mui/lab";
-import { Box, Button, Card, Grid, Rating, Tab } from "@mui/material";
+import { Box, Button, Rating, Tab } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import PageInfo from "../../components/PageInfo";
@@ -11,8 +11,10 @@ import logo4 from "../../img/logo4.png";
 import logo5 from "../../img/logo5.png";
 import storeItems from "../../data/allData.json";
 import { useRouter } from "next/router";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 const productDetail = () => {
+  const { increaseCartQuantity } = useShoppingCart();
   const [value, setValue] = React.useState("1");
   const router = useRouter();
   const itemId = router.query.productDetail;
@@ -38,9 +40,8 @@ const productDetail = () => {
             <img
               src={dataMatch?.imgUrl}
               alt="product"
-              className="scale-90 w-[400px] h-[400px]    "
+              className="scale-90 w-[400px] h-[400px]  object-contain "
             />
-            {/* <Image src={dataMatch?.imgUrl} height={400} width={400} /> */}
             <div className=" space-y-2">
               <h1 className="text-2xl ">{dataMatch?.title}</h1>
               <Rating value={dataMatch?.rating} className="text-sm" />
@@ -57,7 +58,7 @@ const productDetail = () => {
                 disableElevation
                 variant="contained"
                 sx={{ textTransform: "capitalize" }}
-                href="/baskit"
+                onClick={() => increaseCartQuantity(newId)}
               >
                 Add To Cart
               </Button>

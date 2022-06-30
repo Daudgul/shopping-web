@@ -16,7 +16,16 @@ const LatestProducts = () => {
     setValue(newValue);
   };
   const newArrival = Data.filter((item) => {
+    return item.category?.includes("specialOffer");
+  });
+  const bestSeller = Data.filter((item) => {
+    return item.category?.includes("bestSeller");
+  });
+  const specialOffer = Data.filter((item) => {
     return item.category?.includes("NewArrival");
+  });
+  const featuredItem = Data.filter((item) => {
+    return item.category?.includes("featuredItem");
   });
 
   return (
@@ -53,7 +62,7 @@ const LatestProducts = () => {
             </TabPanel>
             <TabPanel value="2">
               <Grid container columnSpacing={4}>
-                {newArrival.map((item) => (
+                {bestSeller.map((item) => (
                   <Grid key={item.id} item sm={6} md={4}>
                     <LatestPCard {...item} />
                   </Grid>
@@ -71,7 +80,7 @@ const LatestProducts = () => {
             </TabPanel>
             <TabPanel value="4">
               <Grid container columnSpacing={4}>
-                {newArrival.map((item) => (
+                {featuredItem.map((item) => (
                   <Grid key={item.id} item sm={6} md={4}>
                     <LatestPCard {...item} />
                   </Grid>

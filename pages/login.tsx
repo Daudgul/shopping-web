@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Image from "next/image";
 import React, { useState } from "react";
 import logo1 from "../img/logo1.png";
@@ -35,7 +34,6 @@ const index = () => {
   console.log(login);
   return (
     <>
-      <Header />
       <section>
         <div className=" w-full  bg-[#f2f0ff] ">
           <PageInfo title={"My Account"} />

@@ -15,7 +15,7 @@ interface Props {
 }
 
 const Header = ({ children }: Props) => {
-  const { cartQuantity } = useShoppingCart();
+  const { cartQuantity, favoriteItems } = useShoppingCart();
   const { user, logout } = useAuth();
   const id = user?.email || "";
   const length = id.indexOf("@");
@@ -67,7 +67,11 @@ const Header = ({ children }: Props) => {
                 <div className=" cursor-pointer">
                   Whishlist{"  "}
                   <span>
-                    <FavoriteBorderOutlinedIcon />
+                    <FavoriteBorderOutlinedIcon
+                      className={`${
+                        favoriteItems.length > 0 && "text-green-500"
+                      }`}
+                    />
                   </span>
                 </div>
               </Link>

@@ -193,7 +193,7 @@
   },
   {
     "title": "Wooden Chair",
-    "imgUrl": "/imgs/clint1.png",
+    "imgUrl": "/imgs/client1.png",
     "id": 20,
     "rating": 4,
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
@@ -203,7 +203,7 @@
   },
   {
     "title": "Wooden Chair",
-    "imgUrl": "/imgs/clint2.png",
+    "imgUrl": "/imgs/client2.png",
     "id": 21,
     "rating": 3,
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
@@ -213,7 +213,7 @@
   },
   {
     "title": "Relaxing Chair",
-    "imgUrl": "/imgs/clint3.png",
+    "imgUrl": "/imgs/client3.png",
     "id": 22,
     "rating": 3,
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
@@ -745,6 +745,204 @@
     "oldPrise": 96,
     "rating": 3,
     "id": 126,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Chair Furniture Upholstery graphy Seat",
+    "imgUrl": "/imgs/best-1.png",
+    "category": "bestSeller",
+
+    "price": 200,
+    "oldPrise": 42,
+    "id": 999,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Chair Furniture Upholstery graphy Seat",
+    "imgUrl": "/imgs/best-2.png",
+    "category": "bestSeller",
+
+    "price": 201,
+    "oldPrise": 42,
+    "id": 901,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Chair Furniture Upholstery graphy Seat",
+    "imgUrl": "/imgs/best-3.png",
+    "category": "bestSeller",
+
+    "price": 202,
+    "oldPrise": 42,
+    "id": 902,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Chair Furniture Upholstery graphy Seat",
+    "imgUrl": "/imgs/best-4.png",
+    "category": "bestSeller",
+
+    "price": 203,
+    "oldPrise": 42,
+    "id": 903,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Chair Furniture Upholstery graphy Seat",
+    "imgUrl": "/imgs/best-5.png",
+    "category": "bestSeller",
+
+    "price": 204,
+    "oldPrise": 42,
+    "id": 904,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Chair Furniture Upholstery graphy Seat",
+    "imgUrl": "/imgs/best-6.png",
+    "category": "bestSeller",
+
+    "price": 205,
+    "oldPrise": 42,
+    "id": 905,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Couch Furniture Chair Living room ",
+    "imgUrl": "/imgs/feture-1.png",
+    "category": "featuredItem",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 906,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Couch Furniture Chair Living room ",
+    "imgUrl": "/imgs/feture-2.png",
+    "category": "featuredItem",
+
+    "price": 207,
+    "oldPrise": 42,
+    "id": 907,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Couch Furniture Chair Living room ",
+    "imgUrl": "/imgs/feture-3.png",
+    "category": "featuredItem",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 908,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Couch Furniture Chair Living room ",
+    "imgUrl": "/imgs/feture-4.png",
+    "category": "featuredItem",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 909,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Couch Furniture Chair Living room ",
+    "imgUrl": "/imgs/feture-5.png",
+    "category": "featuredItem",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 910,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Couch Furniture Chair Living room ",
+    "imgUrl": "/imgs/feture-6.png",
+    "category": "featuredItem",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 911,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Table Wing chair Fredericia Furniture ",
+    "imgUrl": "/imgs/special-1.png",
+    "category": "specialOffer",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 912,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Table Wing chair Fredericia Furniture ",
+    "imgUrl": "/imgs/special-2.png",
+    "category": "specialOffer",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 913,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Table Wing chair Fredericia Furniture ",
+    "imgUrl": "/imgs/special-3.png",
+    "category": "specialOffer",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 914,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Table Wing chair Fredericia Furniture ",
+    "imgUrl": "/imgs/special-4.png",
+    "category": "specialOffer",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 915,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Table Wing chair Fredericia Furniture ",
+    "imgUrl": "/imgs/special-5.png",
+    "category": "specialOffer",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 916,
+    "rating": 4,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+  },
+  {
+    "title": "Table Wing chair Fredericia Furniture ",
+    "imgUrl": "/imgs/special-6.png",
+    "category": "specialOffer",
+
+    "price": 206,
+    "oldPrise": 42,
+    "id": 917,
+    "rating": 4,
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   }
 ]

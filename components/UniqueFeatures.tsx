@@ -1,9 +1,12 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 import Data from "../data/allData.json";
 
 const UniqueFeatures = () => {
+  const { increaseCartQuantity } = useShoppingCart();
+
   const Unique = Data.filter((item) => {
     return item.category?.includes("Unique");
   });
@@ -21,10 +24,11 @@ const UniqueFeatures = () => {
               </div>
               {Unique.map((item) => (
                 <Image
-                  className=" z-30 "
+                  key={item.id}
                   src={item.imgUrl}
                   width={450}
                   height={450}
+                  className="z-50"
                 />
               ))}
             </div>
@@ -55,7 +59,14 @@ const UniqueFeatures = () => {
               </li>
             </ul>
             <div className="flex space-x-6">
-              <button className="btn btn--primary">Add To Cart</button>
+              <button
+                onClick={() =>
+                  Unique.map((item) => increaseCartQuantity(item.id))
+                }
+                className="btn btn--primary"
+              >
+                Add To Cart
+              </button>
               <div>
                 <h1>B&B Italian Safe</h1>
                 <span>$32,00</span>{" "}
@@ -67,5 +78,4 @@ const UniqueFeatures = () => {
     </section>
   );
 };
-
 export default UniqueFeatures;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import PageInfo from "../components/PageInfo";
-import image from "../img/contactPic.png";
+import image from "../public/imgs/communication.png";
 
 const Contact = () => {
   return (
@@ -96,8 +96,8 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div>
-          <Image src={image} height={650} width={600} alt="background pic" />
+        <div className="flex items-center justify-center mr-10">
+          <Image src={image} height={530} width={550} alt="background pic" />
         </div>
       </section>
     </div>

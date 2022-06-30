@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import Background from "../public/imgs/NoItems.webp";
+import Background from "../public/imgs/no_cart.png";
 
 const NoItems = () => {
   return (
