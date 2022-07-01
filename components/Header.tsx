@@ -144,7 +144,7 @@ const Header = ({ children }: Props) => {
       </header>
       {children}
       <div className="flex ite justify-center py-3 bg-[#7e33e0] text-white">
-        <h1> - All CopyⒸ Rights are Reserved</h1>
+        <h1> - All Ⓒ Rights are Reserved</h1>
       </div>
     </>
   );
