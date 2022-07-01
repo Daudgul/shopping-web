@@ -4,13 +4,13 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-[400px] overflow-hidden">
+      <div className="w-full sm:h-[400px] overflow-hidden">
         <div className="flex items-center justify-center mx-auto w-full h-[450px] bg-transparent  z-20">
-          <div className="flex flex-col justify-center items-center z-30">
-            <h1 className="text-4xl text-white">
+          <div className="flex text-xl flex-col justify-center items-center z-30">
+            <h1 className="sm:text-4xl text-white">
               Get Leatest Update By Subscribe
             </h1>
-            <h1 className="text-4xl text-white">Our Newslater</h1>
+            <h1 className="sm:text-4xl text-white">Our Newslater</h1>
 
             <Button
               disableElevation

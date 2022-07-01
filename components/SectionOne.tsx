@@ -7,7 +7,7 @@ const SectionOne = () => {
   return (
     <section className="flex w-full bg-[#f2f0ff] ">
       <div
-        className=" flex justify-between flex-col sm:flex-row items-center max-w-6xl mx-auto py-3"
+        className=" flex justify-between flex-col sm:flex-row items-center max-w-6xl mx-auto py-3 p-5 sm:p-0"
         style={{ maxHeight: "500px" }}
       >
         <div className=" space-y-3 ">
@@ -18,7 +18,7 @@ const SectionOne = () => {
             New Funrniture Collection Trends in 2022
           </h1>
 
-          <p className="text-[#414e9b] ">
+          <p className="text-[#414e9b] text-xs sm:text-base ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
             distinctio recusandae sequi sunt unde, dolorum, nobispit !
           </p>

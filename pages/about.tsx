@@ -16,41 +16,43 @@ const AcoutUs = () => {
   return (
     <>
       <PageInfo title=" About Us" />
-      <section className=" max-w-6xl mx-auto flex flex-col md:flex-row my-20">
-        <div className="sm:w-[500px] mr-6 ">
-          <div className="bg-[#2f1ac4] rounded sm:w-[480px] sm:h-[360px] ">
-            <div className=" sm:w-[480px]  sm:h-[340px] rounded translate-x-4   flex ">
-              <Image
-                className="rounded "
-                src={image}
-                width={500}
-                height={440}
-                alt="Clint pic"
-              />
+      <Container>
+        <section className=" max-w-6xl mx-auto flex flex-col md:flex-row my-20">
+          <div className="sm:w-[500px] mr-6 ">
+            <div className="bg-[#2f1ac4] rounded sm:w-[480px] sm:h-[360px] ">
+              <div className=" sm:w-[480px]  sm:h-[340px] rounded translate-x-4   flex ">
+                <Image
+                  className="rounded "
+                  src={image}
+                  width={500}
+                  height={440}
+                  alt="Clint pic"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="sm:w-[500px] flex flex-col justify-center space-y-8">
-          <h1 className="text-4xl text-[#151875]">
-            Know About Our E-comerce Business, History
-          </h1>
-          <p className="text-sm text-[#2f1ac4]">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod dolor
-            provident enim porro doloremque sed, minima facilis maiores odio
-            magni illo nostrum perspiciatis voluptas. Pariatur iure quidem
-            minima iste quasi.
-          </p>
-          <Button
-            disableElevation
-            sx={{ textTransform: "capitalize" }}
-            variant="contained"
-            className="btn btn--primary capitalize"
-            href="/contact"
-          >
-            Contact Us
-          </Button>
-        </div>
-      </section>
+          <div className="sm:w-[500px] flex flex-col justify-center space-y-8">
+            <h1 className="sm:text-4xl mt-10 sm:mt-0 text-xl  text-[#151875]">
+              Know About Our E-comerce Business, History
+            </h1>
+            <p className="sm:text-sm text:xs text-[#2f1ac4]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+              dolor provident enim porro doloremque sed, minima facilis maiores
+              odio magni illo nostrum perspiciatis voluptas. Pariatur iure
+              quidem minima iste quasi.
+            </p>
+            <Button
+              disableElevation
+              sx={{ textTransform: "capitalize" }}
+              variant="contained"
+              className="btn btn--primary capitalize"
+              href="/contact"
+            >
+              Contact Us
+            </Button>
+          </div>
+        </section>
+      </Container>
       <section className="max-w-6xl mx-auto">
         <h1 className="mainHeading text-black font-bold">Our Features</h1>
         <Container>
@@ -157,7 +159,7 @@ const AcoutUs = () => {
           <h6 className="text-xl">Selina Gomez</h6>
           <p className="text-xs text-[#2f1ac4]">Ceo At Webcy digital</p>
 
-          <p className="md:p-5 my-5 text-[#2f1ac4]">
+          <p className="md:p-5 text-xs sm:text-base my-5 text-[#2f1ac4]">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
             aperiam non deleniti delectus sint omnis rem facere officiis!
             Suscipit reiciendis molestiae tempore porro facere dicta eaque iusto
