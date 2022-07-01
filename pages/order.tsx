@@ -18,8 +18,8 @@ const OrderCompleted = () => {
         <PageInfo title="Order Completed" />
       </section>
       <section className="max-w-6xl mx-auto flex justify-center flex-col items-center mt-20">
-        <div className="flex flex-col items-center my-20 space-y-8  md:w-[1000px] px-24 pb-16 border-b-2 border-dotted border-l-2 relative">
-          <div className="absolute -top-2 -left-11">
+        <div className="flex flex-col items-center m-20 space-y-8  lg:w-[1000px] sm:px-24 sm:pb-16 border-b-2 border-dotted border-l-2 relative">
+          <div className="absolute -top-2 -left-11 ">
             <Image src={Clock} width={80} height={80} alt="img1" />
           </div>
           <Image src={Check} width={80} height={80} alt="img1" />

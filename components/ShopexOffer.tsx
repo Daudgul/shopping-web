@@ -1,11 +1,12 @@
 import { Grid, Paper } from "@mui/material";
+import { Container } from "@mui/system";
 import React from "react";
 
 const ShopexOffer = () => {
   return (
     <div className="max-w-6xl mx-auto py-3 mt-10">
       <h1 className="mainHeading">What Shopex Offer!</h1>
-      <div>
+      <Container>
         <Grid container columnSpacing={4} rowSpacing={4}>
           <Grid item sm={6} md={3}>
             <Paper
@@ -68,7 +69,7 @@ const ShopexOffer = () => {
             </Paper>
           </Grid>
         </Grid>
-      </div>
+      </Container>
     </div>
   );
 };

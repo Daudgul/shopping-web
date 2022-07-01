@@ -10,6 +10,7 @@ import FeatureOne from "../img/stickers1.webp";
 import FeatureTwo from "../img/stickers2.webp";
 import FeatureThree from "../img/stickers3.webp";
 import FeatureFour from "../img/stickers4.webp";
+import { Container } from "@mui/system";
 
 const AcoutUs = () => {
   return (
@@ -52,98 +53,100 @@ const AcoutUs = () => {
       </section>
       <section className="max-w-6xl mx-auto">
         <h1 className="mainHeading text-black font-bold">Our Features</h1>
-        <div>
-          <Grid container columnSpacing={4} rowSpacing={4}>
-            <Grid item sm={6} md={3}>
-              <Paper
-                className="queryItems"
-                sx={{
-                  width: "1/4",
-                  height: "300px",
-                }}
-              >
-                <Image
-                  src={FeatureOne}
-                  width={80}
-                  height={80}
-                  alt="free delivery"
-                />
-                <h1 className=" text-xl mb-5">Free Delivery</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. vero
-                  in facere id dolorum.
-                </p>
-              </Paper>
+        <Container>
+          <div>
+            <Grid container columnSpacing={4} rowSpacing={4}>
+              <Grid item sm={6} md={3}>
+                <Paper
+                  className="queryItems"
+                  sx={{
+                    width: "1/4",
+                    height: "300px",
+                  }}
+                >
+                  <Image
+                    src={FeatureOne}
+                    width={80}
+                    height={80}
+                    alt="free delivery"
+                  />
+                  <h1 className=" text-xl mb-5">Free Delivery</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    vero in facere id dolorum.
+                  </p>
+                </Paper>
+              </Grid>
+              <Grid item sm={6} md={3}>
+                <Paper
+                  className="queryItems "
+                  sx={{
+                    width: "1/4",
+                    height: "300px",
+                  }}
+                >
+                  <Image
+                    src={FeatureTwo}
+                    width={80}
+                    height={80}
+                    alt="free delivery"
+                  />
+                  <h1 className=" text-xl mb-5">100% Cash Back</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    vero in facere id dolorum.
+                  </p>
+                </Paper>
+              </Grid>
+              <Grid item sm={6} md={3}>
+                <Paper
+                  className="queryItems "
+                  sx={{
+                    width: "1/4",
+                    height: "300px",
+                  }}
+                >
+                  <Image
+                    src={FeatureThree}
+                    width={80}
+                    height={80}
+                    alt="free delivery"
+                  />
+                  <h1 className=" text-xl mb-5">Quality Product</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    vero in facere id dolorum.
+                  </p>
+                </Paper>
+              </Grid>
+              <Grid item sm={6} md={3}>
+                <Paper
+                  className="queryItems "
+                  sx={{
+                    width: "1/4",
+                    height: "300px",
+                  }}
+                >
+                  <Image
+                    src={FeatureFour}
+                    width={80}
+                    height={80}
+                    alt="free delivery"
+                  />
+                  <h1 className=" text-xl mb-5">24/7 Support</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    vero in facere id dolorum.
+                  </p>
+                </Paper>
+              </Grid>
             </Grid>
-            <Grid item sm={6} md={3}>
-              <Paper
-                className="queryItems "
-                sx={{
-                  width: "1/4",
-                  height: "300px",
-                }}
-              >
-                <Image
-                  src={FeatureTwo}
-                  width={80}
-                  height={80}
-                  alt="free delivery"
-                />
-                <h1 className=" text-xl mb-5">100% Cash Back</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. vero
-                  in facere id dolorum.
-                </p>
-              </Paper>
-            </Grid>
-            <Grid item sm={6} md={3}>
-              <Paper
-                className="queryItems "
-                sx={{
-                  width: "1/4",
-                  height: "300px",
-                }}
-              >
-                <Image
-                  src={FeatureThree}
-                  width={80}
-                  height={80}
-                  alt="free delivery"
-                />
-                <h1 className=" text-xl mb-5">Quality Product</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. vero
-                  in facere id dolorum.
-                </p>
-              </Paper>
-            </Grid>
-            <Grid item sm={6} md={3}>
-              <Paper
-                className="queryItems "
-                sx={{
-                  width: "1/4",
-                  height: "300px",
-                }}
-              >
-                <Image
-                  src={FeatureFour}
-                  width={80}
-                  height={80}
-                  alt="free delivery"
-                />
-                <h1 className=" text-xl mb-5">24/7 Support</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. vero
-                  in facere id dolorum.
-                </p>
-              </Paper>
-            </Grid>
-          </Grid>
-        </div>
+          </div>
+        </Container>
       </section>
       <section className="w-full bg-purple-50 mt-8">
         <div className="max-w-6xl mx-auto flex flex-col items-center justify-center p-[100px]">
-          <h2 className="text-4xl mb-8">Our Client Say!</h2>
+          <h2 className="sm:text-4xl text-xl mb-8">Our Client Say!</h2>
           <div className="w-[220px] h-[100px] flex items-center">
             <Image src={clientThree} width={60} height={60} alt="cllintOne" />
             <div className="mx-3 -translate-y-3">

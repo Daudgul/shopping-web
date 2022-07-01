@@ -34,7 +34,7 @@ const TrendingProducts = () => {
 
       {/* Making a flex container where we show our 2nd list of this section */}
 
-      <div className="w-full flex sm:flex-row my-10 flex-col space-x-5">
+      <div className="w-full flex sm:flex-row my-10 flex-col sm:space-x-5">
         {/*/////////////// 1st flex container ///////////////////  */}
 
         <div className=" flex-1 p-7 w-full bg-[#eeeffb] shadow my-6 ">
@@ -95,7 +95,7 @@ const TrendingProducts = () => {
 
         {/*//////////////////// @3rd flex container  //////////////////*/}
 
-        <div className=" sm:flex hidden w-72 flex-col justify-center items-start space-y-3">
+        <div className=" md:flex hidden w-72 flex-col justify-center items-start space-y-3">
           <div className="text-[#151875] text-xs flex justify-center items-center space-x-3 ">
             <Image
               className="bg-[#f7f8f7] "

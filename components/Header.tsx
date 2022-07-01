@@ -88,7 +88,7 @@ const Header = ({ children }: Props) => {
         <div className=" flex justify-between items-center max-w-6xl mx-auto  flex-col sm:flex-row my-3 ">
           <div className="flex space-x-10 flex-col sm:flex-row  ">
             <h1 className="font-semibold text-3xl mx-auto">Hekto</h1>
-            <ul className="  flex justify-between items-center space-x-5 font-semibold   ">
+            <ul className="  flex justify-between items-center text-sm sm:text-base space-x-2 sm:space-x-5 font-semibold   ">
               <Link href="/">
                 <a
                   className={`childItem ${

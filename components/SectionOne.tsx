@@ -14,8 +14,8 @@ const SectionOne = () => {
           <h2 className="text-[#FB2E86] font-semibold ">
             Best Furniture For Your Castle...
           </h2>
-          <h1 className=" text-4xl md:text-6xl">
-            New Funrniture Collection Trends in 2020
+          <h1 className=" text-2xl md:text-6xl">
+            New Funrniture Collection Trends in 2022
           </h1>
 
           <p className="text-[#414e9b] ">

@@ -36,7 +36,7 @@ const productDetail = () => {
       <PageInfo title="Product Details" />
       <section>
         <div className="max-w-6xl mx-auto my-20">
-          <div className="flex w-full h-[450px] p-10 shadow-lg items-center space-x-10 text-[#151875]">
+          <div className="flex w-full sm:h-[450px] flex-col sm:flex-row p-10 shadow-lg items-center space-x-10 text-[#151875]">
             <img
               src={dataMatch?.imgUrl}
               alt="product"

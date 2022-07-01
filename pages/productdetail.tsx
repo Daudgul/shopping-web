@@ -1,5 +1,5 @@
 import { TabContext, TabList, TabPanel } from "@mui/lab";
-import { Box, Button, Card, Grid, Rating, Tab } from "@mui/material";
+import { Box, Button, Rating, Tab } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import PageInfo from "../components/PageInfo";
