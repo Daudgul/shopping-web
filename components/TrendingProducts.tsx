@@ -14,7 +14,7 @@ const TrendingProducts = () => {
     return item.category?.includes("Trending");
   });
   return (
-    <section className=" max-w-6xl mx-auto py-3 my-12 ">
+    <section className=" max-w-6xl mx-auto py-3 mt-28 ">
       <h1 className="mainHeading">Trending Products</h1>
       <Grid justifyContent="center" container rowSpacing={4} columnSpacing={3}>
         {Trending.map((item) => (

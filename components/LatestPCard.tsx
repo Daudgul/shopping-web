@@ -45,9 +45,12 @@ const LatestPCard = ({
   const cartItem = cartItems.find((i) => i.id === id);
   const favItem = favoriteItems.find((i) => i.id === id);
   return (
-    <div className="group ">
-      <div className=" flex bg-[#f7f8f7] flex-col sm:flex-row group-hover:bg-inherit  ">
-        <div className="flex sm:flex-col justify-end space-y-3 ml-3 mb-3 text-[#151875] opacity-0 group-hover:opacity-100">
+    <div
+      onClick={() => takeToProductDetail(id)}
+      className="group w-[360px ] h-[306px] m-3 cursor-pointer "
+    >
+      <div className=" w-full h-[270px] flex bg-[#f7f8f7] flex-col items-end justify-center sm:flex-row group-hover:bg-inherit  ">
+        <div className="flex sm:flex-col justify-end space-y-3 -ml-7 mb-4 text-[#151875] opacity-0 group-hover:opacity-100">
           {cartItem ? (
             <Tooltip placement="right" title="Remove from cart">
               <IconButton color="primary" size="small">
@@ -98,7 +101,7 @@ const LatestPCard = ({
         <img
           src={imgUrl}
           alt="product"
-          className="scale-90  w-[280px] h-[350px] object-contain  "
+          className=" w-[222px] h-[222px] object-contain  "
         />
       </div>
       <div className="flex mt-3 justify-between  text-[#151875] mb-5">

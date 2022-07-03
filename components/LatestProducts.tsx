@@ -32,34 +32,34 @@ const LatestProducts = () => {
   return (
     <>
       <div className="max-w-6xl mx-auto py-3 mt-10">
-        <h1 className="mainHeading">Latest Products</h1>
-        <Container>
-          <Box
-            sx={{
-              width: "100%",
-              typography: "body1",
-              textTransform: "capitalize",
-            }}
-          >
-            <TabContext value={value}>
-              <Box>
-                <TabList
-                  onChange={handleChange}
-                  centered
-                  TabIndicatorProps={{
-                    style: {
-                      display: "none",
-                    },
-                  }}
-                >
-                  <Tab className="tab-items" label="New arival" value="1" />
-                  <Tab className="tab-items" label="Best seller" value="2" />
-                  <Tab className="tab-items" label="featured" value="3" />
-                  <Tab className="tab-items" label="Special offer" value="4" />
-                </TabList>
-              </Box>
+        <h1 className="mainHeading mt-6">Latest Products</h1>
+        <Box
+          sx={{
+            width: "100%",
+            typography: "body1",
+            textTransform: "capitalize",
+          }}
+        >
+          <TabContext value={value}>
+            <Box>
+              <TabList
+                onChange={handleChange}
+                centered
+                TabIndicatorProps={{
+                  style: {
+                    display: "none",
+                  },
+                }}
+              >
+                <Tab className="tab-items" label="New arival" value="1" />
+                <Tab className="tab-items" label="Best seller" value="2" />
+                <Tab className="tab-items" label="featured" value="3" />
+                <Tab className="tab-items" label="Special offer" value="4" />
+              </TabList>
+            </Box>
+            <Box className="w-full lg:h-[728px] flex items-center justify-center">
               <TabPanel value="1">
-                <Grid container columnSpacing={4} sx={{ mx: "auto" }}>
+                <Grid container sx={{ mx: "auto" }}>
                   {newArrival.map((item) => (
                     <Grid key={item.id} item sm={6} md={4}>
                       <LatestPCard {...item} />
@@ -94,9 +94,9 @@ const LatestProducts = () => {
                   ))}
                 </Grid>
               </TabPanel>
-            </TabContext>
-          </Box>
-        </Container>
+            </Box>
+          </TabContext>
+        </Box>
       </div>
     </>
   );

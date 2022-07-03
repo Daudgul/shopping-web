@@ -25,7 +25,7 @@ const Header = ({ children }: Props) => {
   return (
     <>
       <header>
-        <div className="w-full bg-[#7e33e0] ">
+        <div className="w-full py-[2px] bg-[#7e33e0] ">
           <div className=" flex text-[#fff] justify-between items-center max-w-6xl mx-auto  py-2">
             <div className=" space-x-10 items-center hidden sm:flex ">
               <h3>
@@ -85,7 +85,7 @@ const Header = ({ children }: Props) => {
             </div>
           </div>
         </div>
-        <div className=" flex justify-between items-center max-w-6xl mx-auto  flex-col sm:flex-row my-3 ">
+        <div className=" py-2 flex justify-between items-center max-w-6xl mx-auto  flex-col sm:flex-row my-3 ">
           <div className="flex space-x-10 flex-col sm:flex-row  ">
             <h1 className="font-semibold text-3xl mx-auto">Hekto</h1>
             <ul className="  flex justify-between items-center text-sm sm:text-base space-x-2 sm:space-x-5 font-semibold   ">

@@ -12,10 +12,10 @@ const UniqueFeatures = () => {
     return item.category?.includes("Unique");
   });
   return (
-    <section className="w-full  bg-[#f2f0ff] ">
+    <section className="w-full max-h-[570px]  bg-[#f2f0ff] lg:mt-20 ">
       <div className="max-w-6xl mx-auto py-3 my-12">
         <Container>
-          <Grid container columnSpacing={4}>
+          <Grid alignItems="center" container>
             <Grid item sm={6}>
               <div className="relative justify-center flex items-center">
                 <div
@@ -28,8 +28,8 @@ const UniqueFeatures = () => {
                   <Image
                     key={item.id}
                     src={item.imgUrl}
-                    width={450}
-                    height={450}
+                    width={558}
+                    height={550}
                     className="z-50"
                   />
                 ))}

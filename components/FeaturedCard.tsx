@@ -2,10 +2,9 @@ import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutl
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
 import { useShoppingCart } from "../context/ShoppingCartContext";
-import storeItems from "../data/allData.json";
 import { IconButton, Tooltip } from "@mui/material";
 import { useRouter } from "next/router";
-import { color } from "@mui/system";
+
 type StoreItemProps = {
   id: number;
   title: string;
@@ -35,21 +34,19 @@ const FeaturedCard = ({
   const item = cartItems.find((i) => i.id === id);
   const favItem = favoriteItems.find((i) => i.id === id);
 
-  // const itemsz = storeItems.filter((item) => {
-  //   return item.category?.includes(id);
-  // });
-
-  // if (item == null) return null;
-  // console.log(item);
   const router = useRouter();
 
   const takeToProductDetail = (id: number) => {
     router.push(`products/${id}`);
   };
+
   return (
     <div>
-      <div className="flex rounded flex-col w-60 my-8  group shadow-2xl   ">
-        <div className="flex flex-col bg-[#f6f7fb]">
+      <div
+        onClick={() => takeToProductDetail(id)}
+        className="flex rounded flex-col w-[260px] cursor-pointer h-[361px] my-8  group shadow-2xl   "
+      >
+        <div className="flex flex-col bg-[#f6f7fb] w-full h-[236px]">
           <div className=" text-sky-400 space-x-4  translate-y-0.5 scale-75 opacity-0 group-hover:opacity-100   -mb-4 ">
             {item ? (
               <Tooltip placement="top" title="Remove from cart">
@@ -105,7 +102,7 @@ const FeaturedCard = ({
             <img
               src={imgUrl}
               alt="product"
-              className="scale-90 group-hover:scale-75 transition duration-500 h-[250px] w-[180px] object-contain "
+              className="group-hover:scale-75 transition duration-500 h-[178px] w-[178px] object-contain "
             />
           </div>
           <button
@@ -115,7 +112,7 @@ const FeaturedCard = ({
             View Detail
           </button>
         </div>
-        <div className="  w-60 flex flex-col justify-center text-[#151875] items-center space-y-1 group-hover:text-white group-hover:bg-[#2f1ac4] mt-1 transition duration-200">
+        <div className="  w-full h-[125px] flex flex-col justify-center text-[#151875] items-center space-y-1 group-hover:text-white group-hover:bg-[#2f1ac4] mt-1 transition duration-200">
           <h2 className=" text-xl text-[#FB2E86] group-hover:text-white mt-1 ">
             {title}
           </h2>
