@@ -44,7 +44,7 @@ const ProductsCard = ({
 
   return (
     <div className="group my-2 ">
-      <div className=" flex bg-[#f7f8f7] group-hover:bg-inherit  ">
+      <div className=" flex group-hover:bg-[#EBF4F3] bg-[#F6F7FB] group-hover:bg-inherit  ">
         <div className="flex flex-col justify-end space-y-3 ml-3 mb-3 text-[#151875] opacity-0 group-hover:opacity-100">
           {cartItem ? (
             <Tooltip placement="right" title="Remove from cart">

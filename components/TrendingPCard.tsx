@@ -1,5 +1,6 @@
 import { HandymanTwoTone } from "@mui/icons-material";
 import { Button } from "@mui/material";
+import { useRouter } from "next/router";
 type StoreItemProps = {
   id: number;
   title: string;
@@ -17,22 +18,23 @@ const TrendingPCard = ({
   price,
   imgUrl,
 }: StoreItemProps) => {
+  const router = useRouter();
+
+  const takeToProductDetail = (id: number) => {
+    router.push(`products/${id}`);
+  };
+
   return (
-    <div className="group ">
-      <div className=" flex bg-[#f7f8f7] flex-col ">
+    <div
+      onClick={() => takeToProductDetail(id)}
+      className="group w-[270px] h-[350px] cursor-pointer  "
+    >
+      <div className=" flex w-[247px] items-center justify-center h-[244px]  bg-[#f7f8f7] flex-col  ">
         <img
           src={imgUrl}
           alt="product"
-          className="w-[220px] h-[250px] scale-90 object-contain"
+          className="w-[187px] h-[187px] object-contain group-hover:scale-110 duration-200"
         />
-        <Button
-          disableElevation
-          href="/products"
-          variant="contained"
-          sx={{ textTransform: "capitalize", mt: "-18px" }}
-        >
-          Shop Now
-        </Button>
       </div>
       <div className=" mt-3 flex flex-col items-center  text-[#151875] ">
         <h3>{title}</h3>
@@ -48,3 +50,14 @@ const TrendingPCard = ({
 };
 
 export default TrendingPCard;
+
+{
+  /* <Button
+          disableElevation
+          href="/products"
+          variant="contained"
+          sx={{ textTransform: "capitalize", mt: "-18px" }}
+        >
+          Shop Now
+        </Button> */
+}

@@ -8,11 +8,19 @@ import chairPic1 from "../img/exclusiveChair1.webp";
 import chairPic2 from "../img/exclusiveChair2.webp";
 import chairPic3 from "../img/exclusiveChair3.webp";
 import Data from "../data/allData.json";
+import { useRouter } from "next/router";
 
 const TrendingProducts = () => {
   const Trending = Data.filter((item) => {
     return item.category?.includes("Trending");
   });
+
+  const router = useRouter();
+
+  const takeToProductDetail = () => {
+    router.push(`/products`);
+  };
+
   return (
     <section className=" max-w-6xl mx-auto py-3 mt-28 ">
       <h1 className="mainHeading">Trending Products</h1>
@@ -34,10 +42,13 @@ const TrendingProducts = () => {
 
       {/* Making a flex container where we show our 2nd list of this section */}
 
-      <div className="w-full flex sm:flex-row my-10 flex-col sm:space-x-5">
+      <div className="w-full flex sm:flex-row items-center my-3 justify-between  flex-col ">
         {/*/////////////// 1st flex container ///////////////////  */}
 
-        <div className=" flex-1 p-7 w-full bg-[#eeeffb] shadow my-6 ">
+        <div
+          onClick={takeToProductDetail}
+          className=" cursor-pointer p-7 w-[420px] h-[270px] bg-[#FFF6FB] hover:shadow-lg my-6 "
+        >
           <div className=" -mb-10 mt-1">
             <h1 className="sm:text-2xl text-[#151875] whitespace-nowrap">
               23% off in all products
@@ -58,15 +69,18 @@ const TrendingProducts = () => {
             <Image
               src={trendingPOne}
               alt="product image"
-              width={220}
-              height={220}
+              width={213}
+              height={207}
             />
           </div>
         </div>
 
         {/* /////////////////////// @2nd flex container \\\\\\\\\\\\\\\\\\\\\\\\\\\*/}
 
-        <div className=" flex-1 p-7 w-full bg-[#eeeffb] shadow my-6   md:overflow-hidden">
+        <div
+          onClick={takeToProductDetail}
+          className=" cursor-pointer p-7 w-[420px] h-[270px] group bg-[#eeeffb] my-6   md:overflow-hidden hover:shadow-md"
+        >
           <div className="  mt-1">
             <h1 className="sm:text-2xl text-[#151875] whitespace-nowrap">
               23% off in all products
@@ -87,24 +101,29 @@ const TrendingProducts = () => {
             <Image
               src={trendingPTwo}
               alt="product image"
-              width={290}
-              height={220}
+              width={312}
+              height={173}
             />
           </div>
         </div>
 
         {/*//////////////////// @3rd flex container  //////////////////*/}
 
-        <div className=" md:flex hidden w-72 flex-col justify-center items-start space-y-3">
-          <div className="text-[#151875] text-xs flex justify-center items-center space-x-3 ">
-            <Image
-              className="bg-[#f7f8f7] "
-              src={chairPic1}
-              alt="product image"
-              width={90}
-              height={90}
-            />
-            <div className="">
+        <div className=" md:flex hidden w-[267px] flex-col justify-between h-[270px]">
+          <div
+            onClick={takeToProductDetail}
+            className="text-[#151875] hover:shadow-lg cursor-pointer text-xs flex justify-center items-center space-x-3 w-[267px] h-[74px] "
+          >
+            <div className="bg-[#f7f8f7] flex items-center justify-center w-[107px] h-[74px]  ">
+              <Image
+                className="bg-[#f7f8f7] "
+                src={chairPic1}
+                alt="product image"
+                width={64}
+                height={71}
+              />
+            </div>
+            <div className="w-[151px] h-[33px]">
               <h3 className="text-sm whitespace-nowrap">
                 Exclusive Seat chair
               </h3>
@@ -114,15 +133,20 @@ const TrendingProducts = () => {
 
           {/* /////////////// Item #2 ////////////////////// */}
 
-          <div className="text-[#151875] text-xs flex justify-center items-center space-x-3 ">
-            <Image
-              className="bg-[#f7f8f7]"
-              src={chairPic2}
-              alt="product image"
-              width={90}
-              height={90}
-            />
-            <div className="">
+          <div
+            onClick={takeToProductDetail}
+            className="text-[#151875] hover:shadow-lg cursor-pointer text-xs flex justify-center items-center space-x-3 w-[267px] h-[74px] "
+          >
+            <div className="bg-[#f7f8f7] flex items-center justify-center w-[107px] h-[74px]  ">
+              <Image
+                className="bg-[#f7f8f7]"
+                src={chairPic2}
+                alt="product image"
+                width={64}
+                height={71}
+              />
+            </div>
+            <div className="w-[151px] h-[33px]">
               <h3 className="text-sm whitespace-nowrap">
                 Exclusive Seat chair
               </h3>
@@ -132,15 +156,19 @@ const TrendingProducts = () => {
 
           {/* /////////////// Item #3 ////////////////////// */}
 
-          <div className="text-[#151875] text-xs flex justify-center items-center space-x-3 ">
-            <Image
-              className="bg-[#f7f8f7]"
-              src={chairPic3}
-              alt="product image"
-              width={90}
-              height={90}
-            />
-            <div className="">
+          <div
+            onClick={takeToProductDetail}
+            className="text-[#151875] hover:shadow-lg cursor-pointer text-xs flex justify-center items-center space-x-3 w-[267px] h-[74px] "
+          >
+            <div className="bg-[#f7f8f7] flex items-center justify-center w-[107px] h-[74px]  ">
+              <Image
+                src={chairPic3}
+                alt="product image"
+                width={64}
+                height={71}
+              />
+            </div>
+            <div className="w-[151px] h-[33px]">
               <h3 className="text-sm whitespace-nowrap">
                 Exclusive Seat chair
               </h3>

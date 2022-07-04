@@ -12,7 +12,7 @@ const SectionOne = () => {
             Best Furniture For Your Castle...
           </h2>
           <h1 className=" text-2xl md:text-6xl my-2 max-w-[614px]">
-            New Funrniture Collection Trends in 2022
+            New Furniture Collection Trends in 2022
           </h1>
 
           <p className="text-[#414e9b] text-xs sm:text-base my-4 lg:mb-20 max-w-[559px]">

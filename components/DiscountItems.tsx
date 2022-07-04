@@ -21,9 +21,9 @@ const DiscountItems = () => {
 
   return (
     <>
-      <div className="max-w-6xl mx-auto py-3 mt-10">
-        <h1 className="mainHeading mb-0">Discount Items</h1>
-        <Box sx={{ width: "100%", typography: "body1" }}>
+      <div className="max-w-6xl mx-auto pt-3 mt-10">
+        <h1 className="mainHeading mb-0 mt-2">Discount Items</h1>
+        <Box sx={{ width: "100%", height: "597px", typography: "body1" }}>
           <TabContext value={value}>
             <Box>
               <TabList
@@ -35,21 +35,28 @@ const DiscountItems = () => {
                   },
                 }}
               >
-                <Tab className="tab-items mx-1" label="Wood Chair" value="1" />
                 <Tab
+                  className="tab-items mx-1"
+                  style={{ textTransform: "capitalize" }}
+                  label="Wood Chair"
+                  value="1"
+                />
+                <Tab
+                  style={{ textTransform: "capitalize" }}
                   className="tab-items mx-1"
                   label="Plastic Chair"
                   value="2"
                 />
                 <Tab
+                  style={{ textTransform: "capitalize" }}
                   className="tab-items mx-1"
                   label="Sofa Colletion"
                   value="3"
                 />
               </TabList>
             </Box>
-            <TabPanel value="1">
-              <Grid container>
+            <TabPanel className="-mt-10" value="1">
+              <Grid alignItems={"center"} container>
                 <Grid className="mainContent" item sm={6}>
                   <h3 className=" md:text-4xl font-semibold">
                     20% Discount Of All Products
@@ -104,7 +111,7 @@ const DiscountItems = () => {
                   </div>
                 </Grid>
                 <Grid item sm={6}>
-                  <Image src={MainPic2} width={450} height={450} />
+                  <Image src={MainPic2} width={699} height={597} />
                 </Grid>
               </Grid>
             </TabPanel>
@@ -112,7 +119,7 @@ const DiscountItems = () => {
             {/* ///////////////////////// TAB #2 ////////////////////  */}
 
             <TabPanel value="2">
-              <Grid container>
+              <Grid alignItems={"center"} container>
                 <Grid className="mainContent" item sm={6}>
                   <h3 className=" md:text-4xl font-semibold">
                     20% Discount Of All Products
@@ -167,7 +174,7 @@ const DiscountItems = () => {
                   </div>
                 </Grid>
                 <Grid item sm={6}>
-                  <Image src={MainPic1} width={450} height={450} />
+                  <Image src={MainPic1} width={699} height={597} />
                 </Grid>
               </Grid>
             </TabPanel>
@@ -175,7 +182,7 @@ const DiscountItems = () => {
             {/* ///////////////////////// TAB #3 ////////////////////  */}
 
             <TabPanel value="3">
-              <Grid container>
+              <Grid alignItems={"center"} container>
                 <Grid className="mainContent" item sm={6}>
                   <h3 className=" md:text-4xl font-semibold">
                     20% Discount Of All Products
@@ -243,8 +250,8 @@ const DiscountItems = () => {
                     <Image
                       className=" z-30 "
                       src={productPic}
-                      width={450}
-                      height={450}
+                      width={699}
+                      height={597}
                     />
                   </div>
                 </Grid>

@@ -51,10 +51,36 @@ const LatestProducts = () => {
                   },
                 }}
               >
-                <Tab className="tab-items" label="New arival" value="1" />
-                <Tab className="tab-items" label="Best seller" value="2" />
-                <Tab className="tab-items" label="featured" value="3" />
-                <Tab className="tab-items" label="Special offer" value="4" />
+                <Tab
+                  style={{ textTransform: "capitalize" }}
+                  className="tab-items"
+                  label="New arival"
+                  value="1"
+                />
+                <Tab
+                  style={{ textTransform: "capitalize" }}
+                  className="tab-items"
+                  label="Best seller"
+                  value="2"
+                />
+                <Tab
+                  style={{ textTransform: "capitalize" }}
+                  className="tab-items"
+                  label="featured"
+                  value="3"
+                />
+                <Tab
+                  style={{ textTransform: "capitalize" }}
+                  className="tab-items"
+                  label="featured"
+                  value="3"
+                />
+                <Tab
+                  style={{ textTransform: "capitalize" }}
+                  className="tab-items"
+                  label="Special offer"
+                  value="4"
+                />
               </TabList>
             </Box>
             <Box className="w-full lg:h-[728px] flex items-center justify-center">

@@ -13,15 +13,15 @@ type StoreItemProps = {
 
 const TopCard = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   return (
-    <div className="group">
-      <div className=" bg-purple-500 rounded-full">
-        <div className=" flex items-center justify-center rounded-full flex-col text-white text-xs w-56 h-56 bg-[#f6f7fb] shadow  hover:-translate-y-2 hover:translate-x-1 duration-300 ">
+    <div className="group w-[269px] h-[345px]">
+      <div className=" bg-purple-500 rounded-full w-[261px] h-[269px]">
+        <div className=" flex items-center justify-center rounded-full flex-col text-white text-xs w-[261px] h-[269px] bg-[#f6f7fb] shadow-lg  hover:-translate-y-2 hover:translate-x-1 duration-300 ">
           <Image
             objectFit="contain"
             src={imgUrl}
             alt="product"
-            width={120}
-            height={150}
+            width={178}
+            height={178}
           />
           <Button
             disableElevation
@@ -37,7 +37,7 @@ const TopCard = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
           </Button>
         </div>
       </div>
-      <div className=" mt-3 flex flex-col items-center  text-[#151875] ">
+      <div className=" mt-6 flex flex-col items-center  text-[#151875] ">
         <h3>{title}</h3>
         <h3>
           ${price}:00{" "}
