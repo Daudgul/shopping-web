@@ -45,10 +45,7 @@ const LatestPCard = ({
   const cartItem = cartItems.find((i) => i.id === id);
   const favItem = favoriteItems.find((i) => i.id === id);
   return (
-    <div
-      onClick={() => takeToProductDetail(id)}
-      className="group w-[360px ] h-[306px] m-3 cursor-pointer "
-    >
+    <div className="group w-[360px ] h-[306px] m-3  ">
       <div className=" w-full h-[270px] flex bg-[#f7f8f7] flex-col items-end justify-center sm:flex-row group-hover:bg-inherit  ">
         <div className="flex sm:flex-col justify-end space-y-3 -ml-7 mb-4 text-[#151875] opacity-0 group-hover:opacity-100">
           {cartItem ? (
@@ -67,6 +64,7 @@ const LatestPCard = ({
             >
               <IconButton size="small">
                 <AddShoppingCartOutlinedIcon
+                  color="success"
                   onClick={() => increaseCartQuantity(id)}
                 />
               </IconButton>
@@ -87,6 +85,7 @@ const LatestPCard = ({
             >
               <IconButton size="small">
                 <FavoriteBorderOutlinedIcon
+                  color="success"
                   onClick={() => addFavoritreItem(id)}
                 />
               </IconButton>
@@ -94,7 +93,10 @@ const LatestPCard = ({
           )}
           <Tooltip placement="right" title="show more details">
             <IconButton size="small" className=" hover:text-pink-600">
-              <SavedSearchIcon onClick={() => takeToProductDetail(id)} />
+              <SavedSearchIcon
+                color="success"
+                onClick={() => takeToProductDetail(id)}
+              />
             </IconButton>
           </Tooltip>
         </div>

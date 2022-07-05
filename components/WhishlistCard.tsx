@@ -42,17 +42,22 @@ const WhishlistCard = ({ id, quantity }: CartItemProps) => {
             <Tooltip title="Add to Cart " arrow placement="top-end">
               <IconButton size="small">
                 <AddShoppingCartOutlinedIcon
+                  color="success"
                   onClick={() => increaseCartQuantity(id)}
                 />
               </IconButton>
             </Tooltip>
             <IconButton size="small">
-              <SavedSearchIcon onClick={() => takeToProductDetail(id)} />
+              <SavedSearchIcon
+                color="success"
+                onClick={() => takeToProductDetail(id)}
+              />
             </IconButton>
 
             <Tooltip title="Remove from Whish List" arrow placement="top-end">
               <IconButton size="small">
                 <CloseOutlinedIcon
+                  color="success"
                   onClick={() => removeFavItem(item.id)}
                   fontSize="small"
                 />

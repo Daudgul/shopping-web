@@ -1,16 +1,10 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 
-const ShoppingCartContext = createContext({} as ShoppingCartContext);
-
 type ShoppingCartProviderProps = {
   children: ReactNode;
 };
 
-type CartItem = {
-  id: number;
-  quantity: number;
-};
-type FavoriteItem = {
+type Items = {
   id: number;
   quantity: number;
 };
@@ -24,17 +18,19 @@ type ShoppingCartContext = {
   removeFavItem: (id: number) => void;
   cartQuantity: number;
   clearCart: () => void;
-  cartItems: CartItem[];
-  favoriteItems: FavoriteItem[];
+  cartItems: Items[];
+  favoriteItems: Items[];
 };
+
+const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
 export function useShoppingCart() {
   return useContext(ShoppingCartContext);
 }
 
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
-  const [cartItems, setCartItems] = useState<CartItem[]>([]);
-  const [favoriteItems, setFavoriteItems] = useState<FavoriteItem[]>([]);
+  const [cartItems, setCartItems] = useState<Items[]>([]);
+  const [favoriteItems, setFavoriteItems] = useState<Items[]>([]);
 
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,

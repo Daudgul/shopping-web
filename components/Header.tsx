@@ -37,7 +37,7 @@ const Header = ({ children }: Props) => {
                 <span>
                   <EmailOutlinedIcon />{" "}
                 </span>
-                {user === null ? "Please Log In to your account" : user.email}
+                {user === null ? "Please Log In your account" : user.email}
               </h3>
               <h3>
                 <PermIdentityOutlinedIcon />{" "}

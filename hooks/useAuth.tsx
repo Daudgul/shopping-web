@@ -19,6 +19,10 @@ interface IAuth {
   loading: boolean;
 }
 
+interface AuthProviderProps {
+  children: React.ReactNode;
+}
+
 const AuthContext = createContext<IAuth>({
   user: null,
   signUp: async () => {},
@@ -27,10 +31,6 @@ const AuthContext = createContext<IAuth>({
   error: null,
   loading: false,
 });
-
-interface AuthProviderProps {
-  children: React.ReactNode;
-}
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [loading, setLoading] = useState(false);
@@ -51,13 +51,15 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
           // Not logged in...
           setUser(null);
           setLoading(true);
-          router.push("/login");
         }
 
         setInitialLoading(false);
       }),
     [auth]
   );
+
+  // router.push("/login");
+
   const signUp = async (email: string, password: string) => {
     setLoading(true);
 

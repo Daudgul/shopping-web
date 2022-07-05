@@ -42,10 +42,7 @@ const FeaturedCard = ({
 
   return (
     <div>
-      <div
-        onClick={() => takeToProductDetail(id)}
-        className="flex rounded flex-col w-[260px] cursor-pointer h-[361px] my-8  group shadow-2xl   "
-      >
+      <div className="flex rounded flex-col w-[260px]  h-[361px] my-8  group shadow-2xl   ">
         <div className="flex flex-col bg-[#f6f7fb] w-full h-[236px]">
           <div className=" text-sky-400 space-x-4  translate-y-0.5 scale-75 opacity-0 group-hover:opacity-100   -mb-4 ">
             {item ? (
@@ -64,7 +61,7 @@ const FeaturedCard = ({
               >
                 <IconButton size="small">
                   <AddShoppingCartOutlinedIcon
-                    className={`${item && "bg-slate-600"}`}
+                    color="success"
                     onClick={() => increaseCartQuantity(id)}
                   />
                 </IconButton>
@@ -87,6 +84,7 @@ const FeaturedCard = ({
               >
                 <IconButton size="small">
                   <FavoriteBorderOutlinedIcon
+                    color="success"
                     onClick={() => addFavoritreItem(id)}
                   />
                 </IconButton>
@@ -94,7 +92,10 @@ const FeaturedCard = ({
             )}
             <Tooltip placement="top" title="show more details">
               <IconButton size="small" className=" hover:text-pink-600">
-                <SavedSearchIcon onClick={() => takeToProductDetail(id)} />
+                <SavedSearchIcon
+                  color="success"
+                  onClick={() => takeToProductDetail(id)}
+                />
               </IconButton>
             </Tooltip>
           </div>
@@ -107,7 +108,7 @@ const FeaturedCard = ({
           </div>
           <button
             onClick={() => takeToProductDetail(id)}
-            className=" -mt-6 opacity-0 group-hover:opacity-100 text-xs p-2  rounded bg-[#09d15d] hover:bg-green-600 mx-auto text-white"
+            className=" opacity-0 group-hover:opacity-100 text-xs p-2  rounded bg-[#09d15d] hover:bg-green-600 mx-auto text-white"
           >
             View Detail
           </button>

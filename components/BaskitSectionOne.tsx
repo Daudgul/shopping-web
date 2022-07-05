@@ -2,9 +2,11 @@ import { Button } from "@mui/material";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import ShoppingListCard from "./ShoppingListCard";
 import storeItems from "../data/allData.json";
+import useAuth from "../hooks/useAuth";
 
 const BaskitSectionOne = () => {
   const { cartItems, clearCart } = useShoppingCart();
+  const { user } = useAuth();
 
   const total = cartItems.reduce((total, cartItem) => {
     const item = storeItems.find((i) => i.id === cartItem.id);
@@ -64,16 +66,39 @@ const BaskitSectionOne = () => {
             <h4>Total</h4>
             <h6>${total + 14.4}</h6>
           </div>
-          <Button
-            disableElevation
-            href="/order"
-            variant="contained"
-            color="secondary"
-            sx={{ textTransform: "capitalize" }}
-            className="w-full py-2 rounded-sm hover:bg-green-500 bg-[#19d16f] text-white capitalize"
-          >
-            Proceed To Checkout
-          </Button>
+          {user === null ? (
+            <Button
+              disableElevation
+              href="/login"
+              variant="contained"
+              // color="secondary"
+              sx={{ textTransform: "capitalize" }}
+              className="w-full py-2 rounded-sm hover:bg-orange-500 bg-[#ef630c] text-white capitalize"
+            >
+              Please Log in your Account
+            </Button>
+          ) : (
+            <Button
+              disableElevation
+              href="/order"
+              variant="contained"
+              color="secondary"
+              sx={{ textTransform: "capitalize" }}
+              className="w-full py-2 rounded-sm hover:bg-green-500 bg-[#19d16f] text-white capitalize"
+            >
+              Proceed To Checkout
+            </Button>
+          )}
+          {/* // <Button
+          //   disableElevation
+          //   href="/order"
+          //   variant="contained"
+          //   color="secondary"
+          //   sx={{ textTransform: "capitalize" }}
+          //   className="w-full py-2 rounded-sm hover:bg-green-500 bg-[#19d16f] text-white capitalize"
+          // >
+          //   Proceed To Checkout
+          // </Button> */}
         </div>
       </div>
     </>
