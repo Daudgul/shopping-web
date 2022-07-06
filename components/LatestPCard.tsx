@@ -50,10 +50,12 @@ const LatestPCard = ({
         <div className="flex sm:flex-col justify-end space-y-3 -ml-7 mb-4 text-[#151875] opacity-0 group-hover:opacity-100">
           {cartItem ? (
             <Tooltip placement="right" title="Remove from cart">
-              <IconButton color="primary" size="small">
-                <AddShoppingCartOutlinedIcon
-                  onClick={() => removeFromCart(id)}
-                />
+              <IconButton
+                onClick={() => removeFromCart(id)}
+                color="primary"
+                size="small"
+              >
+                <AddShoppingCartOutlinedIcon />
               </IconButton>
             </Tooltip>
           ) : (
@@ -62,19 +64,20 @@ const LatestPCard = ({
               title="Add to cart"
               className=" hover:text-pink-600"
             >
-              <IconButton size="small">
-                <AddShoppingCartOutlinedIcon
-                  color="success"
-                  onClick={() => increaseCartQuantity(id)}
-                />
+              <IconButton onClick={() => increaseCartQuantity(id)} size="small">
+                <AddShoppingCartOutlinedIcon color="success" />
               </IconButton>
             </Tooltip>
           )}
           {/* ////////////////////////// favItem \\\\\\\\\\\\\\\\\\\\\\\\\\ */}
           {favItem ? (
             <Tooltip placement="right" title="Remove from cart">
-              <IconButton color="primary" size="small">
-                <FavoriteBorderOutlinedIcon onClick={() => removeFavItem(id)} />
+              <IconButton
+                onClick={() => removeFavItem(id)}
+                color="primary"
+                size="small"
+              >
+                <FavoriteBorderOutlinedIcon />
               </IconButton>
             </Tooltip>
           ) : (
@@ -83,20 +86,18 @@ const LatestPCard = ({
               title="Add to cart"
               className=" hover:text-pink-600"
             >
-              <IconButton size="small">
-                <FavoriteBorderOutlinedIcon
-                  color="success"
-                  onClick={() => addFavoritreItem(id)}
-                />
+              <IconButton onClick={() => addFavoritreItem(id)} size="small">
+                <FavoriteBorderOutlinedIcon color="success" />
               </IconButton>
             </Tooltip>
           )}
           <Tooltip placement="right" title="show more details">
-            <IconButton size="small" className=" hover:text-pink-600">
-              <SavedSearchIcon
-                color="success"
-                onClick={() => takeToProductDetail(id)}
-              />
+            <IconButton
+              onClick={() => takeToProductDetail(id)}
+              size="small"
+              className=" hover:text-pink-600"
+            >
+              <SavedSearchIcon color="success" />
             </IconButton>
           </Tooltip>
         </div>

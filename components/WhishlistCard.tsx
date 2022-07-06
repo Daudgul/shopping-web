@@ -40,27 +40,17 @@ const WhishlistCard = ({ id, quantity }: CartItemProps) => {
           <p className=" text-[#2f1ac4]">{item.details}</p>
           <div className="flex items-center pt-2 text-[#151875] space-x-8">
             <Tooltip title="Add to Cart " arrow placement="top-end">
-              <IconButton size="small">
-                <AddShoppingCartOutlinedIcon
-                  color="success"
-                  onClick={() => increaseCartQuantity(id)}
-                />
+              <IconButton onClick={() => increaseCartQuantity(id)} size="small">
+                <AddShoppingCartOutlinedIcon color="success" />
               </IconButton>
             </Tooltip>
-            <IconButton size="small">
-              <SavedSearchIcon
-                color="success"
-                onClick={() => takeToProductDetail(id)}
-              />
+            <IconButton onClick={() => takeToProductDetail(id)} size="small">
+              <SavedSearchIcon color="success" />
             </IconButton>
 
             <Tooltip title="Remove from Whish List" arrow placement="top-end">
-              <IconButton size="small">
-                <CloseOutlinedIcon
-                  color="success"
-                  onClick={() => removeFavItem(item.id)}
-                  fontSize="small"
-                />
+              <IconButton onClick={() => removeFavItem(item.id)} size="small">
+                <CloseOutlinedIcon color="success" fontSize="small" />
               </IconButton>
             </Tooltip>
           </div>

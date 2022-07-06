@@ -18,8 +18,7 @@ interface Inputs {
 const index = () => {
   const [newSignUp, setNewSignUp] = useState<boolean>(false);
   const [login, setLogin] = useState<boolean>(false);
-  const { signIn, signUp } = useAuth();
-
+  const { signIn, signUp, error } = useAuth();
 
   const {
     register,
@@ -27,7 +26,6 @@ const index = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
-  
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     if (login) {
       await signIn(data.email, data.password);
@@ -36,6 +34,7 @@ const index = () => {
     }
   };
 
+  const checkLogin = login && error === null;
 
   return (
     <>
@@ -45,13 +44,17 @@ const index = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          {newSignUp ? (
+          {newSignUp && (
             <form
               onSubmit={handleSubmit(onSubmit)}
               className=" sm:w-[450px] shadow mx-auto my-10 flex flex-col justify-center items-center space-y-5 p-10 text-[#a8a8b3]   "
             >
               <h2 className="text-3xl text-black">Sing Up</h2>
-              <p>Please add your account dtails below</p>
+              {error ? (
+                <p className="text-red-500 text-center text-lg">{error}</p>
+              ) : (
+                <p>Please add your account dtails below</p>
+              )}
               <label className="w-full block">
                 <input
                   className="w-full border rounded-sm p-2"
@@ -91,7 +94,7 @@ const index = () => {
                 )}
               </label>
 
-              {login ? (
+              {checkLogin ? (
                 <button className=" bg-[#f3ebee] w-full text-gray-600 py-2 rounded-sm">
                   Loading...
                 </button>
@@ -114,13 +117,20 @@ const index = () => {
                 </button>
               </p>
             </form>
-          ) : (
+          )}
+
+          {!newSignUp && (
             <form
               onSubmit={handleSubmit(onSubmit)}
               className=" sm:w-[450px] h-[450px] shadow mx-auto my-10 flex flex-col justify-center items-center space-y-5 p-10 text-[#a8a8b3]   "
             >
               <h2 className="text-3xl text-black">Login</h2>
-              <p>Please login using account dtails below</p>
+              {error ? (
+                <p className="text-red-500 text-center text-lg">{error}</p>
+              ) : (
+                <p> Please login using account dtails below</p>
+              )}
+              <p></p>
               <label className="w-full block">
                 <input
                   className="w-full border rounded-sm p-2"
@@ -148,7 +158,7 @@ const index = () => {
                 )}
               </label>
 
-              {login ? (
+              {checkLogin ? (
                 <button className=" bg-[#f3ebee] w-full text-gray-600 py-2 rounded-sm">
                   Loading...
                 </button>
@@ -172,7 +182,6 @@ const index = () => {
               </p>
             </form>
           )}
-          
         </div>
         <div className="flex justify-around my-28 mx-10">
           <Image src={logo1} height={100} width={160} />
@@ -187,4 +196,3 @@ const index = () => {
 };
 
 export default index;
-

@@ -51,11 +51,8 @@ const ShoppingListCard = ({ id, quantity }: CartItemProps) => {
         <span className="absolute -top-10 right-2 ">
           {" "}
           <Tooltip title="Delete " arrow placement="top-end">
-            <IconButton size="small">
-              <CloseOutlinedIcon
-                onClick={() => removeFromCart(item.id)}
-                fontSize="small"
-              />
+            <IconButton onClick={() => removeFromCart(item.id)} size="small">
+              <CloseOutlinedIcon fontSize="small" />
             </IconButton>
           </Tooltip>
         </span>
