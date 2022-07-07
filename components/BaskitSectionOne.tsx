@@ -89,16 +89,6 @@ const BaskitSectionOne = () => {
               Proceed To Checkout
             </Button>
           )}
-          {/* // <Button
-          //   disableElevation
-          //   href="/order"
-          //   variant="contained"
-          //   color="secondary"
-          //   sx={{ textTransform: "capitalize" }}
-          //   className="w-full py-2 rounded-sm hover:bg-green-500 bg-[#19d16f] text-white capitalize"
-          // >
-          //   Proceed To Checkout
-          // </Button> */}
         </div>
       </div>
     </>

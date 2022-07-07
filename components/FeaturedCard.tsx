@@ -15,13 +15,7 @@ type StoreItemProps = {
   details: string;
 };
 
-const FeaturedCard = ({
-  id,
-  title,
-  oldPrise,
-  price,
-  imgUrl,
-}: StoreItemProps) => {
+const FeaturedCard = ({ id, title, price, imgUrl }: StoreItemProps) => {
   const {
     increaseCartQuantity,
     addFavoritreItem,

@@ -1,8 +1,7 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import SearchIcon from "@mui/icons-material/Search";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import { Badge, Button, Tooltip } from "@mui/material";
 import PersonOffOutlinedIcon from "@mui/icons-material/PersonOffOutlined";
@@ -10,6 +9,8 @@ import Link from "next/link";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import useAuth from "../hooks/useAuth";
 import { useRouter } from "next/router";
+import FindInput from "./FindInput";
+
 interface Props {
   children?: ReactNode;
 }
@@ -26,6 +27,17 @@ const Header = ({ children }: Props) => {
   const takeToHome = () => {
     router.push("/");
   };
+
+  // const title: void[] = item.map((e) => {
+  //   <p key={e.id}>{e.title}</p>;
+  // });
+
+  // matchProduct();
+
+  // setFindItems(matchProduct);
+
+  // console.log(title);
+  // console.log(<p>hello</p>);
 
   return (
     <>
@@ -136,17 +148,26 @@ const Header = ({ children }: Props) => {
             </ul>
           </div>
 
-          <form className="group relative flex">
-            <input
-              className="focus:ring-2 group-focus:ring-[#FB2E86] focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400  py-2 pl-10 ring-1 ring-slate-200 shadow-sm"
-              type="text"
-              aria-label="Filter projects"
-              placeholder="Search projects..."
-            />
-            <button className=" bg-[#FB2E86] w-16 text-white border border-[#FB2E86] scale-105">
-              <SearchIcon />
-            </button>
-          </form>
+          <div>
+            <FindInput />
+            {/* <form className="group relative flex">
+              <input
+                className="focus:ring-2 group-focus:ring-[#FB2E86] focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400  py-2 pl-10 ring-1 ring-slate-200 shadow-sm"
+                type="text"
+                aria-label="Filter projects"
+                placeholder="Search projects..."
+                onChange={(e) => setSearchItems(e.target.value)}
+              />
+              <button className=" bg-[#FB2E86] w-16 text-white border border-[#FB2E86] scale-105">
+                <SearchIcon />
+              </button>
+              <div className="absolute top-14 left-11">
+              {item.map((e) => {
+                <SearchItem key={e.id} {...e} />;
+              })}
+            </div> 
+              </form> */}
+          </div>
         </div>
       </header>
       {children}
