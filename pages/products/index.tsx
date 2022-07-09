@@ -1,4 +1,5 @@
 import { Pagination } from "@mui/material";
+import { documentId } from "firebase/firestore";
 import React, { useState } from "react";
 import PageInfo from "../../components/PageInfo";
 import ProductsCard from "../../components/ProductsCard";
@@ -10,6 +11,8 @@ const Products = () => {
 
   const handleChange = (event: any, value: any) => {
     setPage(value);
+
+    document.getElementById("newPage")?.scrollIntoView({ behavior: "smooth" });
   };
 
   // ?????????????
@@ -17,7 +20,7 @@ const Products = () => {
   return (
     <div>
       <PageInfo title="Ecommerce Acceories" />
-      <section className="max-w-6xl mx-auto">
+      <section id="newPage" className="max-w-6xl mx-auto">
         <div className="my-20">
           <h2 className="text-2xl text-[#151875]">
             Ecommerce Acceories & Fashion Items
