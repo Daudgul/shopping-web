@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+
 import logo1 from "../img/logo1.png";
 import logo2 from "../img/logo2.png";
 import logo3 from "../img/logo3.png";
@@ -9,6 +10,7 @@ import logo5 from "../img/logo5.png";
 import { SubmitHandler, useForm } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
 import PageInfo from "../components/PageInfo";
+import { LoadingButton } from "@mui/lab";
 
 interface Inputs {
   email: string;
@@ -18,7 +20,7 @@ interface Inputs {
 const index = () => {
   const [newSignUp, setNewSignUp] = useState<boolean>(false);
   const [login, setLogin] = useState<boolean>(false);
-  const { signIn, signUp, error } = useAuth();
+  const { signIn, signUp, error, loading } = useAuth();
 
   const {
     register,
@@ -33,8 +35,6 @@ const index = () => {
       await signUp(data.email, data.password);
     }
   };
-
-  const checkLogin = login && error === null;
 
   return (
     <>
@@ -93,19 +93,16 @@ const index = () => {
                   </p>
                 )}
               </label>
-
-              {checkLogin ? (
-                <button className=" bg-[#f3ebee] w-full text-gray-600 py-2 rounded-sm">
-                  Loading...
-                </button>
-              ) : (
-                <button
-                  onClick={() => setLogin(false)}
-                  className=" bg-[#FB2E86] hover:bg-pink-600 w-full text-white py-2 rounded-sm"
-                >
-                  Sign Up
-                </button>
-              )}
+              <LoadingButton
+                disableElevation
+                className="w-full capitalize"
+                loading={loading}
+                type="submit"
+                onClick={() => setLogin(false)}
+                variant="contained"
+              >
+                sign Up
+              </LoadingButton>
 
               <p>
                 Already a member?{" "}
@@ -157,19 +154,16 @@ const index = () => {
                   </p>
                 )}
               </label>
-
-              {checkLogin ? (
-                <button className=" bg-[#f3ebee] w-full text-gray-600 py-2 rounded-sm">
-                  Loading...
-                </button>
-              ) : (
-                <button
-                  onClick={() => setLogin(true)}
-                  className=" bg-[#FB2E86] hover:bg-pink-600 w-full text-white py-2 rounded-sm"
-                >
-                  Log In
-                </button>
-              )}
+              <LoadingButton
+                disableElevation
+                className="w-full capitalize"
+                loading={loading}
+                type="submit"
+                onClick={() => setLogin(true)}
+                variant="contained"
+              >
+                log in
+              </LoadingButton>
 
               <p>
                 Don't have an Account?{" "}
@@ -183,6 +177,7 @@ const index = () => {
             </form>
           )}
         </div>
+
         <div className="flex justify-around my-28 mx-10">
           <Image src={logo1} height={100} width={160} />
           <Image src={logo2} height={100} width={160} />

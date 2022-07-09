@@ -39,8 +39,6 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [initialLoading, setInitialLoading] = useState(true);
   const router = useRouter();
 
-  console.log(error);
-
   // Persiiting user
   useEffect(
     () =>
@@ -52,7 +50,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         } else {
           // Not logged in...
           setUser(null);
-          setLoading(true);
+          setLoading(false);
         }
 
         setInitialLoading(false);
