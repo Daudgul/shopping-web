@@ -11,7 +11,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Bag",
+    "title": " Red and Black school Bag",
 
     "id": 2,
     "imgUrl": "/imgs/bag2.png",
@@ -21,7 +21,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Bag",
+    "title": "Blue school bag",
 
     "id": 3,
     "imgUrl": "/imgs/bag3.png",
@@ -31,7 +31,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Bag",
+    "title": "Gray School Bag",
 
     "id": 4,
     "imgUrl": "/imgs/bag4.png",
@@ -41,7 +41,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Bag",
+    "title": "Doremon School Bag",
 
     "id": 5,
     "imgUrl": "/imgs/bag5.png",
@@ -51,7 +51,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Bag",
+    "title": "Trally school Bag",
 
     "id": 6,
     "imgUrl": "/imgs/bag6.png",
@@ -61,7 +61,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Bag",
+    "title": "ladies Purse",
 
     "id": 7,
     "imgUrl": "/imgs/bag7.png",
@@ -71,7 +71,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Camera",
+    "title": " Sony Camera",
     "category": "TopCategory",
 
     "id": 8,
@@ -82,7 +82,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Camera",
+    "title": "Cannon Camera",
 
     "id": 9,
     "imgUrl": "/imgs/camera2.png",
@@ -92,7 +92,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Camera",
+    "title": "Video Camera",
 
     "id": 10,
     "imgUrl": "/imgs/camera3.png",
@@ -102,7 +102,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Camera",
+    "title": "Big lance Camera",
 
     "id": 11,
     "imgUrl": "/imgs/camera4.png",
@@ -112,7 +112,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Camera",
+    "title": " Camera With-out lence",
 
     "id": 12,
     "imgUrl": "/imgs/camera5.png",
@@ -122,7 +122,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "CCTV-Camera",
+    "title": "Wall CCTV-Camera",
 
     "id": 13,
     "imgUrl": "/imgs/cctv-camera1.png",
@@ -132,7 +132,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "CCTV-Camera",
+    "title": "Hikvision CCTV-Camera",
 
     "id": 14,
     "imgUrl": "/imgs/cctv-camera2.png",
@@ -142,7 +142,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "CCTV-Camera",
+    "title": " Remote control CCTV-Camera",
 
     "id": 15,
     "imgUrl": "/imgs/cctv-camera3.png",
@@ -152,7 +152,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Plastic Chair",
+    "title": "Curve gray Chair",
     "category": "Trending",
 
     "id": 16,
@@ -163,7 +163,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Plastic Chair",
+    "title": "Wooden light-brown Chair",
     "id": 17,
     "imgUrl": "/imgs/chair15.png",
     "price": 26,
@@ -172,7 +172,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Plastic Chair",
+    "title": "Wooden white Chair",
     "id": 18,
     "imgUrl": "/imgs/chair16.png",
     "price": 26,
@@ -182,7 +182,7 @@
   },
 
   {
-    "title": "Wooden Chair",
+    "title": "Swing Wooden Chair light-brown ",
     "imgUrl": "/imgs/chair17.png",
     "id": 19,
     "rating": 3,
@@ -192,7 +192,7 @@
     "oldPrise": 52
   },
   {
-    "title": "Wooden Chair",
+    "title": "Green Wheel Chair",
     "imgUrl": "/imgs/client1.png",
     "id": 20,
     "rating": 4,
@@ -202,7 +202,7 @@
     "oldPrise": 52
   },
   {
-    "title": "Wooden Chair",
+    "title": "Yellow Sofa / With Stool",
     "imgUrl": "/imgs/client2.png",
     "id": 21,
     "rating": 3,
@@ -212,7 +212,7 @@
     "oldPrise": 52
   },
   {
-    "title": "Relaxing Chair",
+    "title": "White cureve sofa",
     "imgUrl": "/imgs/client3.png",
     "id": 22,
     "rating": 3,
@@ -223,7 +223,7 @@
   },
 
   {
-    "title": "Relaxing Couch",
+    "title": "Relaxing light-blue Couch",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/couch.png",
@@ -233,7 +233,7 @@
     "category": "Unique"
   },
   {
-    "title": "Relaxing Couch",
+    "title": "Relaxing Wooden brown Chair",
     "price": 42,
     "oldPrise": 66,
     "imgUrl": "/imgs/couch1.png",
@@ -242,7 +242,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Relaxing Couch",
+    "title": "Red-pink Relaxing Couch",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/couch2.png",
@@ -252,7 +252,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Relaxing Couch",
+    "title": "Light-pink relaxing Couch",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/couch3.png",
@@ -261,7 +261,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Relaxing Couch",
+    "title": "White strainght Couch",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/couch4.png",
@@ -270,7 +270,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Relaxing Couch",
+    "title": "Black Maharaja style Sofa",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/couch5.png",
@@ -279,7 +279,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Comfort Relaxing Couch",
+    "title": "Slide Type Couch",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/couch6.png",
@@ -288,7 +288,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Earpod",
+    "title": "Boat wirelessEarpod",
     "price": 42,
     "oldPrise": 6,
     "imgUrl": "/imgs/earpod1.png",
@@ -297,7 +297,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Earpod",
+    "title": "Jebra wireless Earpod",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/earpod2.png",
@@ -306,7 +306,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Earpod",
+    "title": "Boat bluetooth earphone",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/earpod3.png",
@@ -315,7 +315,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Earpod",
+    "title": "Chinees earphoons",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/earpod4.png",
@@ -324,7 +324,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Earpod",
+    "title": "Chinees wireless Earpod",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/earpod5.png",
@@ -333,7 +333,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Comfort Handy Chair",
+    "title": "Stylish marbel Chair",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/exclusiveChair1.png",
@@ -342,7 +342,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Comfort Handy  Chair",
+    "title": "Stylish wooden light-brown Chair",
     "price": 42,
     "oldPrise": 6,
     "imgUrl": "/imgs/exclusiveChair2.png",
@@ -351,7 +351,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Comfort Handy  Chair",
+    "title": "Stylish white plastic  Chair",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/exclusiveChair3.png",
@@ -360,7 +360,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Comfort Handy Crafts",
+    "title": "Designing Wooden Craft",
     "category": "FeaturedProducts",
 
     "price": 42,
@@ -373,7 +373,7 @@
   {
     "category": "FeaturedProducts",
 
-    "title": "Comfort Handy Crafts",
+    "title": "Comfort Sofatype Chair",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/featuredProductsChair2.png",
@@ -382,7 +382,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Comfort Handy Crafts",
+    "title": "Comfort Plastic with wooden leg chair",
     "price": 42,
     "oldPrise": 65,
     "category": "FeaturedProducts",
@@ -393,7 +393,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Comfort Handy Crafts",
+    "title": "Flexible wooden chaie",
     "price": 42,
     "oldPrise": 65,
     "category": "FeaturedProducts",
@@ -404,7 +404,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Head-Phone",
+    "title": " Boat Pink Head-Phone",
     "price": 42,
     "oldPrise": 6,
     "imgUrl": "/imgs/head-phone1.png",
@@ -413,7 +413,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Head-Phone",
+    "title": " Pro orange Head-Phone",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/head-phone2.png",
@@ -422,7 +422,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Head-Phone",
+    "title": "Gaming Black Head-Phone",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/head-phone3.png",
@@ -431,7 +431,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Head-Phone",
+    "title": "Black Head-Phone with mic",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/head-phone4.png",
@@ -440,7 +440,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Head-Phone",
+    "title": " Head-Phone with pen drive",
     "price": 42,
     "oldPrise": 65,
     "imgUrl": "/imgs/head-phone5.png",
@@ -451,7 +451,7 @@
 
   {
     "imgUrl": "/imgs/head-phone6.png",
-    "title": "Head-Phone",
+    "title": " Flexible gray Head-Phone ",
     "price": 26,
     "oldPrise": 42,
     "id": 47,
@@ -460,7 +460,7 @@
   },
   {
     "imgUrl": "/imgs/latestProduct (0).png",
-    "title": "Cantilever chair",
+    "title": "Red&Brown wooden couch",
     "category": "NewArrival",
 
     "price": 26,
@@ -471,7 +471,7 @@
   },
   {
     "imgUrl": "/imgs/latestProduct (1).png",
-    "title": "Cantilever chair",
+    "title": "Plastic white chair",
     "category": "NewArrival",
 
     "price": 26,
@@ -482,7 +482,7 @@
   },
   {
     "imgUrl": "/imgs/latestProduct (2).png",
-    "title": "Cantilever chair",
+    "title": "Wooden chair with white cushion",
     "category": "NewArrival",
 
     "price": 26,
@@ -492,7 +492,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Stylish chair",
+    "title": "Yellow Wooden chair",
     "imgUrl": "/imgs/latestProduct (3).png",
     "category": "NewArrival",
 
@@ -503,7 +503,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Relaxing Chair",
+    "title": "Cushion Stylish Chair",
     "imgUrl": "/imgs/latestProduct (4).png",
     "price": 32,
     "category": "NewArrival",
@@ -514,7 +514,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "plastic Chair",
+    "title": "Black&Red Stuylish plastic Chair",
     "imgUrl": "/imgs/latestProduct (5).png",
     "category": "NewArrival",
 
@@ -526,7 +526,7 @@
   },
 
   {
-    "title": "Smart Watch",
+    "title": "Mi Black Smart Watch",
     "id": 54,
     "rating": 3,
     "price": 40,
@@ -536,7 +536,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Smart Watch",
+    "title": "Realme black Smart Watch",
     "id": 55,
     "rating": 3,
     "price": 25,
@@ -546,7 +546,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Smart Watch",
+    "title": " MI yellow Smart Bnad",
     "id": 56,
     "rating": 4,
     "price": 62,
@@ -558,7 +558,7 @@
   },
 
   {
-    "title": "Smart Watch",
+    "title": "Huawai smart band",
     "imgUrl": "/imgs/smart-watch4.png",
 
     "price": 56,
@@ -569,7 +569,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Smart Watch",
+    "title": "Pink Smart Watch",
     "imgUrl": "/imgs/smart-watch5.png",
 
     "price": 56,
@@ -580,7 +580,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Smart Watch",
+    "title": "Smart chinees Watch",
     "imgUrl": "/imgs/smart-watch6.png",
 
     "price": 56,
@@ -591,7 +591,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Smart Watch",
+    "title": "IWatch waterproof",
     "imgUrl": "/imgs/smart-watch7.png",
 
     "price": 56,
@@ -603,7 +603,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Stylish Chair",
+    "title": "White&Red Stylish Chair",
     "imgUrl": "/imgs/trendingProduct(1).png",
 
     "price": 56,
@@ -616,7 +616,7 @@
   },
   {
     "id": 115,
-    "title": "Stylish Chair",
+    "title": "Red wooden leg Chair",
     "imgUrl": "/imgs/trendingProduct(2).png",
     "price": 56,
     "oldPrise": 75,
@@ -626,7 +626,7 @@
   },
   {
     "id": 116,
-    "title": "plastic Student Chair",
+    "title": "Gray Student Chair",
     "imgUrl": "/imgs/trendingProduct(3).png",
     "price": 56,
     "oldPrise": 75,
@@ -636,7 +636,7 @@
   },
   {
     "id": 117,
-    "title": "Stylish Chair",
+    "title": "Black Table watch",
     "imgUrl": "/imgs/trendingProduct(4).png",
     "price": 56,
     "oldPrise": 75,
@@ -645,7 +645,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Stylish Clock",
+    "title": "Wooden drawer",
     "imgUrl": "/imgs/trendingProduct(5).png",
     "price": 56,
     "oldPrise": 75,
@@ -654,7 +654,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Branded Watch",
+    "title": "Branded Black Watch",
     "imgUrl": "/imgs/watch1.png",
     "price": 56,
     "oldPrise": 75,
@@ -663,7 +663,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Watch",
+    "title": "Dedpool pockit Watch",
     "imgUrl": "/imgs/watch2.png",
     "price": 56,
     "oldPrise": 75,
@@ -672,7 +672,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Branded Watch",
+    "title": "Jord brown Watch",
     "imgUrl": "/imgs/watch3.png",
     "price": 56,
     "oldPrise": 75,
@@ -683,7 +683,7 @@
   },
 
   {
-    "title": "Branded Watch",
+    "title": "MVMT Branded Watch",
     "imgUrl": "/imgs/watch4.png",
     "price": 76,
     "oldPrise": 95,
@@ -694,7 +694,7 @@
   {
     "id": 121,
     "imgUrl": "/imgs/watch5.png",
-    "title": "Branded Watch",
+    "title": "Pink ladies Branded Watch",
     "price": 76,
     "oldPrise": 95,
     "rating": 5,
@@ -702,7 +702,7 @@
   },
   {
     "imgUrl": "/imgs/watch6.png",
-    "title": "Branded Watch",
+    "title": "Ladies pink&red Watch",
     "price": 86,
     "oldPrise": 116,
     "rating": 3,
@@ -711,7 +711,7 @@
   },
   {
     "imgUrl": "/imgs/watch7.png",
-    "title": "Branded Watch",
+    "title": "Tudor mens Watch",
     "price": 7,
     "oldPrise": 13,
     "rating": 4,
@@ -722,7 +722,7 @@
     "imgUrl": "/imgs/watch8.png",
     "category": "TopCategory",
 
-    "title": "Branded Watch",
+    "title": "Jord gray mens Watch",
     "price": 85,
     "oldPrise": 105,
     "rating": 5,
@@ -731,7 +731,7 @@
   },
   {
     "imgUrl": "/imgs/watch9.png",
-    "title": "Branded Watch",
+    "title": "Mens Chinees black Watch",
     "price": 90,
     "oldPrise": 104,
     "rating": 4,
@@ -740,7 +740,7 @@
   },
   {
     "imgUrl": "/imgs/watch10.png",
-    "title": "Branded Watch",
+    "title": "Silver mens Watch",
     "price": 76,
     "oldPrise": 96,
     "rating": 3,
@@ -748,7 +748,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Chair Furniture Upholstery graphy Seat",
+    "title": "Upholstery graphy golden Seat",
     "imgUrl": "/imgs/best-1.png",
     "category": "bestSeller",
 
@@ -759,7 +759,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Chair Furniture Upholstery graphy Seat",
+    "title": "Purple Upholstery graphy Seat",
     "imgUrl": "/imgs/best-2.png",
     "category": "bestSeller",
 
@@ -770,7 +770,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Chair Furniture Upholstery graphy Seat",
+    "title": "Red Upholstery graphy Seat",
     "imgUrl": "/imgs/best-3.png",
     "category": "bestSeller",
 
@@ -781,7 +781,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Chair Furniture Upholstery graphy Seat",
+    "title": "Brown Upholstery graphy Seat",
     "imgUrl": "/imgs/best-4.png",
     "category": "bestSeller",
 
@@ -792,7 +792,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Chair Furniture Upholstery graphy Seat",
+    "title": "Silver Upholstery graphy Seat with new design",
     "imgUrl": "/imgs/best-5.png",
     "category": "bestSeller",
 
@@ -803,7 +803,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Chair Furniture Upholstery graphy Seat",
+    "title": "Old style chair",
     "imgUrl": "/imgs/best-6.png",
     "category": "bestSeller",
 
@@ -825,7 +825,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Couch Furniture Chair Living room ",
+    "title": "White Chair Living room ",
     "imgUrl": "/imgs/feture-2.png",
     "category": "featuredItem",
 
@@ -836,7 +836,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Couch Furniture Chair Living room ",
+    "title": "White Sofa for Living room ",
     "imgUrl": "/imgs/feture-3.png",
     "category": "featuredItem",
 
@@ -847,7 +847,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Couch Furniture Chair Living room ",
+    "title": "Pink Chair Living room ",
     "imgUrl": "/imgs/feture-4.png",
     "category": "featuredItem",
 
@@ -858,7 +858,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Couch Furniture Chair Living room ",
+    "title": "Yellow Sofa Living room ",
     "imgUrl": "/imgs/feture-5.png",
     "category": "featuredItem",
 
@@ -869,7 +869,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Couch Furniture Chair Living room ",
+    "title": "Curve style Chair Living room ",
     "imgUrl": "/imgs/feture-6.png",
     "category": "featuredItem",
 
@@ -880,7 +880,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Table Wing chair Furniture ",
+    "title": "White simple sofa ",
     "imgUrl": "/imgs/special-1.png",
     "category": "specialOffer",
 
@@ -891,7 +891,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Table Wing chair Furniture ",
+    "title": "Wooden couch for garden ",
     "imgUrl": "/imgs/special-2.png",
     "category": "specialOffer",
 
@@ -902,7 +902,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Table Wing chair Furniture ",
+    "title": "Designing red couch ",
     "imgUrl": "/imgs/special-3.png",
     "category": "specialOffer",
 
@@ -913,7 +913,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Table Wing chair Furniture ",
+    "title": "A new style couch for dining room  ",
     "imgUrl": "/imgs/special-4.png",
     "category": "specialOffer",
 
@@ -924,7 +924,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Table Wing chair Furniture ",
+    "title": "Table Wing chair for bedroom ",
     "imgUrl": "/imgs/special-5.png",
     "category": "specialOffer",
 
@@ -935,7 +935,7 @@
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
   },
   {
-    "title": "Table Wing chair Furniture ",
+    "title": "New style pink Couch ",
     "imgUrl": "/imgs/special-6.png",
     "category": "specialOffer",
 

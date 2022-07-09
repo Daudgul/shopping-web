@@ -1,41 +1,69 @@
 import React, { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import Data from "../data/allData.json";
+import data from "../data/allData.json";
+import { Autocomplete, TextField } from "@mui/material";
+import { useRouter } from "next/router";
+
+type Product = {
+  id: number;
+  label: string;
+};
 
 const FindInput = () => {
-  const [searchItems, setSearchItems] = useState("");
+  const [searchItem, setSearchItem] = useState<Product | null>(null);
 
-  const item = Data.filter((e) => {
-    if (searchItems === "") {
-      return "";
+  const products = data.map((item) => ({
+    id: item.id,
+    label: item.title,
+  }));
+
+  console.log(searchItem);
+  const sameId = searchItem?.id;
+
+  const router = useRouter();
+
+  const takeToProductDetail = (id: number | undefined) => {
+    if (router.pathname.includes("products/")) {
+      return router.replace(`${id}`);
     } else {
-      return e.title?.toLowerCase().includes(searchItems.toLowerCase());
+      router.replace(`products/${id}`);
     }
-  });
-  console.log(item);
+    setSearchItem(null);
+  };
 
   return (
-    <div>
-      <form className="group relative flex">
-        <input
-          className="focus:ring-2 group-focus:ring-[#FB2E86] focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400  py-2 pl-10 ring-1 ring-slate-200 shadow-sm"
-          type="text"
-          aria-label="Filter projects"
-          placeholder="Search projects..."
-          onChange={(e) => setSearchItems(e.target.value)}
-        />
-        <button className=" bg-[#FB2E86] w-16 text-white border border-[#FB2E86] scale-105">
-          <SearchIcon />
-        </button>
-        <div className="absolute top-14 left-11">
-          {/* <>
-            {item.map((e) => {
-              <p key={e.id}>{e.title}hello</p>;
-            })}
-          </> */}
+    <>
+      <div>
+        <div className="group relative flex">
+          <Autocomplete
+            className=" w-full text-sm leading-6 text-slate-900 placeholder-slate-400  ring-1 ring-slate-200 shadow-sm"
+            sx={{
+              "& input": {
+                padding: "4px",
+              },
+            }}
+            id="custom-input-demo"
+            options={products}
+            renderInput={(params) => (
+              <div ref={params.InputProps.ref}>
+                <input type="text" {...params.inputProps} />
+              </div>
+            )}
+            value={searchItem}
+            onChange={(event: any, newValue: Product | null) =>
+              setSearchItem(newValue)
+            }
+          />
+
+          <button
+            onClick={() => takeToProductDetail(sameId)}
+            className=" bg-[#FB2E86] w-16 text-white border border-[#FB2E86] scale-105"
+          >
+            <SearchIcon />
+          </button>
         </div>
-      </form>
-    </div>
+      </div>
+    </>
   );
 };
 

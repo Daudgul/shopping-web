@@ -28,6 +28,12 @@ const Header = ({ children }: Props) => {
     router.push("/");
   };
 
+  // {items.map((i) => (
+  //   <div>
+  //     <p>{i.title}</p>
+  //     </div>
+  // ))}
+
   // const title: void[] = item.map((e) => {
   //   <p key={e.id}>{e.title}</p>;
   // });

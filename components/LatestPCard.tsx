@@ -36,6 +36,7 @@ const LatestPCard = ({
 
   const item = storeItems.find((i) => i.id === id);
   if (item == null) return null;
+
   const router = useRouter();
 
   const takeToProductDetail = (id: number) => {
