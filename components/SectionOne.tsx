@@ -6,7 +6,7 @@ import productPic from "../img/promotionChair.png";
 const SectionOne = () => {
   return (
     <section className="flex w-full bg-[#f2f0ff] ">
-      <div className="  max-h-[764px] flex justify-between flex-col sm:flex-row items-center max-w-6xl lg:max-w-[1300px] mx-auto py-3 p-5 sm:p-0 overflow-visible">
+      <div className="  max-h-[764px] flex justify-between flex-col sm:flex-row items-center max-w-6xl lg:max-w-[1300px] mx-auto py-14 lg:py-0 px-5 sm:px-0 overflow-visible">
         <div className=" lg:ml-8 mg:w-[644px] max-h-[348px] ">
           <h2 className="text-[#FB2E86] font-semibold  ">
             Best Furniture For Your Castle...

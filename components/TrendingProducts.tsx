@@ -44,7 +44,7 @@ const TrendingProducts = () => {
 
         <div
           onClick={takeToProductDetail}
-          className=" cursor-pointer p-7 w-[420px] h-[270px] bg-[#FFF6FB] hover:shadow-lg my-6 "
+          className=" cursor-pointer p-7 w-[350px] lg:w-[420px] h-[270px] bg-[#FFF6FB] hover:shadow-lg my-6 "
         >
           <div className=" -mb-10 mt-1">
             <h1 className="sm:text-2xl text-[#151875] whitespace-nowrap">
@@ -76,7 +76,7 @@ const TrendingProducts = () => {
 
         <div
           onClick={takeToProductDetail}
-          className=" cursor-pointer p-7 w-[420px] h-[270px] group bg-[#eeeffb] my-6   md:overflow-hidden hover:shadow-md"
+          className=" cursor-pointer p-7 w-[350px] lg:w-[420px] h-[270px] group bg-[#eeeffb] my-6   md:overflow-hidden hover:shadow-md"
         >
           <div className="  mt-1">
             <h1 className="sm:text-2xl text-[#151875] whitespace-nowrap">
@@ -106,7 +106,7 @@ const TrendingProducts = () => {
 
         {/*//////////////////// @3rd flex container  //////////////////*/}
 
-        <div className=" md:flex hidden w-[267px] flex-col justify-between h-[270px]">
+        <div className=" md:flex hidden w-[200px] lg:w-[267px] flex-col justify-between h-[270px]">
           <div
             onClick={takeToProductDetail}
             className="text-[#151875] hover:shadow-lg cursor-pointer text-xs flex justify-center items-center space-x-3 w-[267px] h-[74px] "
