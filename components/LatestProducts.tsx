@@ -85,7 +85,7 @@ const LatestProducts = () => {
             </Box>
             <Box className="w-full lg:h-[728px] flex items-center justify-center">
               <TabPanel value="1">
-                <Grid container sx={{ mx: "auto" }}>
+                <Grid justifyContent="center" container sx={{ mx: "auto" }}>
                   {newArrival.map((item) => (
                     <Grid key={item.id} item sm={6} md={4}>
                       <LatestPCard {...item} />
@@ -94,7 +94,7 @@ const LatestProducts = () => {
                 </Grid>
               </TabPanel>
               <TabPanel value="2">
-                <Grid container columnSpacing={4}>
+                <Grid justifyContent="center" container columnSpacing={4}>
                   {bestSeller.map((item) => (
                     <Grid key={item.id} item sm={6} md={4}>
                       <LatestPCard {...item} />
@@ -112,7 +112,7 @@ const LatestProducts = () => {
                 </Grid>
               </TabPanel>
               <TabPanel value="4">
-                <Grid container columnSpacing={4}>
+                <Grid justifyContent="center" container columnSpacing={4}>
                   {featuredItem.map((item) => (
                     <Grid key={item.id} item sm={6} md={4}>
                       <LatestPCard {...item} />

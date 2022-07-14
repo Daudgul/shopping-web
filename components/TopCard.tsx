@@ -13,9 +13,9 @@ type StoreItemProps = {
 
 const TopCard = ({ id, title, oldPrise, price, imgUrl }: StoreItemProps) => {
   return (
-    <div className="group w-[269px] h-[345px]">
-      <div className=" bg-purple-500 rounded-full w-[261px] h-[269px]">
-        <div className=" flex items-center justify-center rounded-full flex-col text-white text-xs w-[261px] h-[269px] bg-[#f6f7fb] shadow-lg  hover:-translate-y-2 hover:translate-x-1 duration-300 ">
+    <div className="group w-full h-full">
+      <div className=" bg-purple-500 rounded-full w-[261px] h-[269px] lg:w-[200px] lg:h-[205px] xl:w-[261px] xl:h-[269px]  ">
+        <div className="  flex items-center justify-center rounded-full flex-col text-white text-xs w-[261px] h-[269px] lg:w-[200px] lg:h-[205px] xl:w-[261px] xl:h-[269px] bg-[#f6f7fb] shadow-lg  hover:-translate-y-2 hover:translate-x-1 duration-300 ">
           <Image
             objectFit="contain"
             src={imgUrl}

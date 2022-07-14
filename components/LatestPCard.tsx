@@ -46,9 +46,9 @@ const LatestPCard = ({
   const cartItem = cartItems.find((i) => i.id === id);
   const favItem = favoriteItems.find((i) => i.id === id);
   return (
-    <div className="group w-[360px ] h-[306px] m-3  ">
+    <div className="group w-[280px] lg:w-[310px] xl:w-[360px] h-[306px] m-3  ">
       <div className=" w-full h-[270px] flex bg-[#f7f8f7] flex-col items-end justify-center sm:flex-row group-hover:bg-inherit  ">
-        <div className="flex sm:flex-col justify-end space-y-3 -ml-7 mb-4 text-[#151875] opacity-0 group-hover:opacity-100">
+        <div className="flex items-end sm:flex-col sm:justify-end space-y-3 -ml-7 mb-4 text-[#151875] opacity-0 group-hover:opacity-100">
           {cartItem ? (
             <Tooltip placement="right" title="Remove from cart">
               <IconButton
@@ -108,7 +108,7 @@ const LatestPCard = ({
           className=" w-[222px] h-[222px] object-contain  "
         />
       </div>
-      <div className="flex mt-3 justify-between  text-[#151875] mb-5">
+      <div className="flex mt-3 justify-between text-sm lg:text-base text-[#151875] mb-5">
         <h3>{title}</h3>
         <h3>
           ${price}.00

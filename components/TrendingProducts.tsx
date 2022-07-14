@@ -22,17 +22,14 @@ const TrendingProducts = () => {
   };
 
   return (
-    <section className=" max-w-6xl mx-auto py-3 mt-28 ">
+    <section className=" max-w-6xl mx-auto py-3 mt-40 sm:mt-28 ">
       <h1 className="mainHeading">Trending Products</h1>
       <Grid justifyContent="center" container rowSpacing={4} columnSpacing={3}>
         {Trending.map((item) => (
           <Grid key={item.id} item sm={6} md={3}>
             <Paper
-              className="space-y-2 text-[#151875] pb-8 p-4"
-              sx={{
-                width: "1/4",
-                height: "350px",
-              }}
+              className=" flex justify-center items-center space-y-2 text-[#151875] pb-8 p-4"
+              sx={{}}
             >
               <TrendingPCard {...item} />
             </Paper>
