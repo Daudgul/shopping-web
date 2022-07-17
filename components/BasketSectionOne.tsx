@@ -4,7 +4,7 @@ import ShoppingListCard from "./ShoppingListCard";
 import storeItems from "../data/allData.json";
 import useAuth from "../hooks/useAuth";
 
-const BaskitSectionOne = () => {
+const BasketSectionOne = () => {
   const { cartItems, clearCart } = useShoppingCart();
   const { user } = useAuth();
 
@@ -95,4 +95,4 @@ const BaskitSectionOne = () => {
   );
 };
 
-export default BaskitSectionOne;
+export default BasketSectionOne;

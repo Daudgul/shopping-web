@@ -12,7 +12,7 @@ type CartItemProps = {
   quantity: number;
 };
 
-const WhishlistCard = ({ id, quantity }: CartItemProps) => {
+const WishlistCard = ({ id, quantity }: CartItemProps) => {
   const router = useRouter();
   const takeToProductDetail = (id: number) => {
     router.push(`products/${id}`);
@@ -60,4 +60,4 @@ const WhishlistCard = ({ id, quantity }: CartItemProps) => {
   );
 };
 
-export default WhishlistCard;
+export default WishlistCard;

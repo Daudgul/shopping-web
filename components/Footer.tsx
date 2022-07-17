@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="flex items-center justify-center mx-auto w-full h-[450px] bg-transparent  z-20">
           <div className="flex text-xl flex-col justify-center items-center z-30">
             <h1 className="sm:text-4xl text-white">
-              Get Leatest Update By Subscribe
+              Get Latest Update By Subscribe
             </h1>
-            <h1 className="sm:text-4xl text-white">Our Newslater</h1>
+            <h1 className="sm:text-4xl text-white">Our Newsletter</h1>
 
             <Button
               disableElevation

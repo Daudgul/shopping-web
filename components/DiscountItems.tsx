@@ -50,7 +50,7 @@ const DiscountItems = () => {
                 <Tab
                   style={{ textTransform: "capitalize" }}
                   className="tab-items mx-1"
-                  label="Sofa Colletion"
+                  label="Sofa Collection"
                   value="3"
                 />
               </TabList>

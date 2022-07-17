@@ -86,9 +86,9 @@ const Header = ({ children }: Props) => {
                 </Tooltip>
               )}
 
-              <Link href="/whishlist">
+              <Link href="/wishlist">
                 <div className=" cursor-pointer">
-                  Whishlist{"  "}
+                  Wishlist{"  "}
                   <span>
                     <FavoriteBorderOutlinedIcon
                       className={`${
@@ -98,7 +98,7 @@ const Header = ({ children }: Props) => {
                   </span>
                 </div>
               </Link>
-              <Link href="/baskit">
+              <Link href="/basket">
                 <div className=" cursor-pointer">
                   <Badge badgeContent={cartQuantity} color="secondary">
                     <AddShoppingCartOutlinedIcon />
@@ -156,23 +156,6 @@ const Header = ({ children }: Props) => {
 
           <div>
             <FindInput />
-            {/* <form className="group relative flex">
-              <input
-                className="focus:ring-2 group-focus:ring-[#FB2E86] focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400  py-2 pl-10 ring-1 ring-slate-200 shadow-sm"
-                type="text"
-                aria-label="Filter projects"
-                placeholder="Search projects..."
-                onChange={(e) => setSearchItems(e.target.value)}
-              />
-              <button className=" bg-[#FB2E86] w-16 text-white border border-[#FB2E86] scale-105">
-                <SearchIcon />
-              </button>
-              <div className="absolute top-14 left-11">
-              {item.map((e) => {
-                <SearchItem key={e.id} {...e} />;
-              })}
-            </div> 
-              </form> */}
           </div>
         </div>
       </header>
@@ -192,39 +175,61 @@ const Header = ({ children }: Props) => {
                 variant="contained"
                 disableElevation
               >
-                Singn up
+                Sign up
               </Button>
               <p>Contact info</p>
               <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
             </div>
             <div>
               <h1 className="text-xl text-black mb-8">Categories</h1>
-              <ul className="space-y-4 cursor-pointer">
-                <li>Laptops & Computers</li>
-                <li>Cameras & Photography</li>
-                <li>Smart Phones & Tablets</li>
-                <li>Video Games & Consoles</li>
-                <li>Waterproof Headphones</li>
+              <ul className="space-y-4 cursor-pointer ">
+                <li className="hover:underline underline-offset-1">
+                  Laptops & Computers
+                </li>
+                <li className="hover:underline underline-offset-1">
+                  Cameras & Photography
+                </li>
+                <li className="hover:underline underline-offset-1">
+                  Smart Phones & Tablets
+                </li>
+                <li className="hover:underline underline-offset-1">
+                  Video Games & Consoles
+                </li>
+                <li className="hover:underline underline-offset-1">
+                  Waterproof Headphones
+                </li>
               </ul>
             </div>
             <div>
               <h1 className="text-xl mb-8 text-black">Customer Care</h1>
-              <ul className="space-y-4 cursor-pointer">
-                <li>My Account</li>
-                <li>Discout</li>
-                <li>Returns</li>
-                <li>Orders History</li>
-                <li>Order Tracking</li>
+              <ul className="space-y-4 cursor-pointer ">
+                <li className="hover:underline underline-offset-1">
+                  My Account
+                </li>
+                <li className="hover:underline underline-offset-1">Discount</li>
+                <li className="hover:underline underline-offset-1">Returns</li>
+                <li className="hover:underline underline-offset-1">
+                  Orders History
+                </li>
+                <li className="hover:underline underline-offset-1">
+                  Order Tracking
+                </li>
               </ul>
             </div>
             <div>
               <h1 className="text-xl mb-8 text-black">Page</h1>
               <ul className="space-y-4 cursor-pointer">
-                <li>Blog</li>
-                <li>Browse The Shoup</li>
-                <li>Category</li>
-                <li>Pre-Bulit-Pages</li>
-                <li>Visual Composer Elements</li>
+                <li className="hover:underline underline-offset-1">Blog</li>
+                <li className="hover:underline underline-offset-1">
+                  Browse The Shop
+                </li>
+                <li className="hover:underline underline-offset-1">Category</li>
+                <li className="hover:underline underline-offset-1">
+                  Pre-Built-Pages
+                </li>
+                <li className="hover:underline underline-offset-1">
+                  Visual Composer Elements
+                </li>
               </ul>
             </div>
           </div>

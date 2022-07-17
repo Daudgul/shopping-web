@@ -8,7 +8,6 @@ import TabPanel from "@mui/lab/TabPanel";
 import { Grid } from "@mui/material";
 import Data from "../data/allData.json";
 import LatestPCard from "./LatestPCard";
-import { Container } from "@mui/system";
 
 const LatestProducts = () => {
   const [value, setValue] = React.useState("1");
@@ -54,7 +53,7 @@ const LatestProducts = () => {
                 <Tab
                   style={{ textTransform: "capitalize" }}
                   className="tab-items"
-                  label="New arival"
+                  label="New arrival"
                   value="1"
                 />
                 <Tab

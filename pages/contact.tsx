@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="sm:w-[500px] space-y-5 ">
-            <h1 className="text-2xl text-[#151875]">Contect Way</h1>
+            <h1 className="text-2xl text-[#151875]">Contact Way</h1>
             <div className="flex space-x-5">
               <div className="flex text-sm text-[#2f1ac4] space-x-3">
                 <div className="w-7 h-7  rounded-full bg-[#2f1ac4]"></div>
@@ -51,7 +51,7 @@ const Contact = () => {
               <div className="flex text-sm text-[#2f1ac4] space-x-3">
                 <div className="w-7 h-7  rounded-full bg-[#1fe586]"></div>
                 <div>
-                  <h6>Free statndard shipping</h6>
+                  <h6>Free standard shipping</h6>
                   <h6>On all orders</h6>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const Contact = () => {
                 className="border w-full p-2"
                 cols={30}
                 rows={5}
-                placeholder="Type Your Massege"
+                placeholder="Type Your Massage"
               ></textarea>
               <div>
                 <button className="btn btn--primary">Send Mail</button>

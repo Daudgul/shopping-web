@@ -19,11 +19,11 @@ const Products = () => {
 
   return (
     <div>
-      <PageInfo title="Ecommerce Acceories" />
+      <PageInfo title="Ecommerce Accessories" />
       <section id="newPage" className="max-w-6xl mx-auto">
         <div className="my-20">
           <h2 className="text-2xl text-[#151875]">
-            Ecommerce Acceories & Fashion Items
+            Ecommerce Accessories & Fashion Items
           </h2>
           <p>About 9,620 results(0.63seconds)</p>
         </div>

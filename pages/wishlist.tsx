@@ -1,10 +1,10 @@
 import React from "react";
 import NoItems from "../components/NoItems";
 import PageInfo from "../components/PageInfo";
-import WhishlistCard from "../components/WhishlistCard";
+import WishlistCard from "../components/WishlistCard";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
-const whishlist = () => {
+const wishlist = () => {
   const { favoriteItems } = useShoppingCart();
 
   return (
@@ -34,7 +34,7 @@ const whishlist = () => {
           {favoriteItems.length === 0 && <NoItems />}
           <div className="my-16">
             {favoriteItems.map((item) => (
-              <WhishlistCard key={item.id} {...item} />
+              <WishlistCard key={item.id} {...item} />
             ))}
           </div>
         </div>
@@ -43,4 +43,4 @@ const whishlist = () => {
   );
 };
 
-export default whishlist;
+export default wishlist;

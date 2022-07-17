@@ -80,7 +80,7 @@ const productDetail = () => {
                   },
                 }}
               >
-                <Tab className="tab-items" label="New arival" value="1" />
+                <Tab className="tab-items" label="New arrival" value="1" />
                 <Tab className="tab-items" label="Best seller" value="2" />
                 <Tab className="tab-items" label="featured" value="3" />
                 <Tab className="tab-items" label="Special offer" value="4" />
@@ -89,7 +89,7 @@ const productDetail = () => {
 
             <TabPanel value="1">
               <div className=" space-y-3">
-                <h3 className="text-2xl ">Varius tempor</h3>
+                <h3 className="text-2xl ">Various tempore</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Placeat, porro odio? Blanditiis, rerum rem ipsum vel voluptate

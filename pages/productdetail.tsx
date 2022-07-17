@@ -24,7 +24,7 @@ const productdetail = () => {
           <div className="flex w-full h-[450px] p-10 shadow-lg items-center space-x-10 text-[#151875]">
             <Image src={Pic} height={400} width={400} />
             <div className=" space-y-2">
-              <h1 className="text-2xl ">Playwood arm chair</h1>
+              <h1 className="text-2xl ">Plywood arm chair</h1>
               <Rating value={4} className="text-sm" />
               <h6 className="">
                 $32.00{" "}
@@ -35,7 +35,7 @@ const productdetail = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.at
                 pariatur voluptatum quia aliquid.
               </p>
-              <Button href="/baskit">Add To Cart</Button>
+              <Button href="/basket">Add To Cart</Button>
               <h6>Categories:</h6>
               <h6>Tags</h6>
             </div>
@@ -54,7 +54,7 @@ const productdetail = () => {
                   },
                 }}
               >
-                <Tab className="tab-items" label="New arival" value="1" />
+                <Tab className="tab-items" label="New arrival" value="1" />
                 <Tab className="tab-items" label="Best seller" value="2" />
                 <Tab className="tab-items" label="featured" value="3" />
                 <Tab className="tab-items" label="Special offer" value="4" />
@@ -63,7 +63,7 @@ const productdetail = () => {
 
             <TabPanel value="1">
               <div className=" space-y-3">
-                <h3 className="text-2xl ">Varius tempor</h3>
+                <h3 className="text-2xl ">Various tempore</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Placeat, porro odio? Blanditiis, rerum rem ipsum vel voluptate

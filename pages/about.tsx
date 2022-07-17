@@ -12,7 +12,7 @@ import FeatureThree from "../img/stickers3.webp";
 import FeatureFour from "../img/stickers4.webp";
 import { Container } from "@mui/system";
 
-const AcoutUs = () => {
+const AboutUs = () => {
   return (
     <>
       <PageInfo title=" About Us" />
@@ -33,7 +33,7 @@ const AcoutUs = () => {
           </div>
           <div className="sm:w-[500px] flex flex-col justify-center space-y-8">
             <h1 className="sm:text-4xl mt-10 sm:mt-0 text-xl  text-[#151875]">
-              Know About Our E-comerce Business, History
+              Know About Our E-commerce Business, History
             </h1>
             <p className="sm:text-sm text:xs text-[#2f1ac4]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
@@ -150,13 +150,13 @@ const AcoutUs = () => {
         <div className="max-w-6xl mx-auto flex flex-col items-center justify-center p-[100px]">
           <h2 className="sm:text-4xl text-xl mb-8">Our Client Say!</h2>
           <div className="w-[220px] h-[100px] flex items-center">
-            <Image src={clientThree} width={60} height={60} alt="cllintOne" />
+            <Image src={clientThree} width={60} height={60} alt="clintOne" />
             <div className="mx-3 -translate-y-3">
-              <Image src={clientTwo} width={60} height={60} alt="cllintTwo" />
+              <Image src={clientTwo} width={60} height={60} alt="clintTwo" />
             </div>
-            <Image src={clientOne} width={60} height={60} alt="cllintThree" />
+            <Image src={clientOne} width={60} height={60} alt="clintThree" />
           </div>
-          <h6 className="text-xl">Selina Gomez</h6>
+          <h6 className="text-xl">Selena Gomez</h6>
           <p className="text-xs text-[#2f1ac4]">Ceo At Webcy digital</p>
 
           <p className="md:p-5 text-xs sm:text-base my-5 text-[#2f1ac4]">
@@ -178,4 +178,4 @@ const AcoutUs = () => {
   );
 };
 
-export default AcoutUs;
+export default AboutUs;

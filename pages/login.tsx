@@ -49,11 +49,11 @@ const index = () => {
               onSubmit={handleSubmit(onSubmit)}
               className=" sm:w-[450px] shadow mx-auto my-10 flex flex-col justify-center items-center space-y-5 p-10 text-[#a8a8b3]   "
             >
-              <h2 className="text-3xl text-black">Sing Up</h2>
+              <h2 className="text-3xl text-black">Sign Up</h2>
               {error ? (
                 <p className="text-red-500 text-center text-lg">{error}</p>
               ) : (
-                <p>Please add your account dtails below</p>
+                <p>Please add your account details below</p>
               )}
               <label className="w-full block">
                 <input
@@ -121,11 +121,11 @@ const index = () => {
               onSubmit={handleSubmit(onSubmit)}
               className=" sm:w-[450px] h-[450px] shadow mx-auto my-10 flex flex-col justify-center items-center space-y-5 p-10 text-[#a8a8b3]   "
             >
-              <h2 className="text-3xl text-black">Login</h2>
+              <h2 className="text-3xl text-black">Log In</h2>
               {error ? (
                 <p className="text-red-500 text-center text-lg">{error}</p>
               ) : (
-                <p> Please login using account dtails below</p>
+                <p> Please login using account details below</p>
               )}
               <p></p>
               <label className="w-full block">

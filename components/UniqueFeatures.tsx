@@ -37,7 +37,7 @@ const UniqueFeatures = () => {
             </Grid>
             <Grid className="mainContent  " item sm={6}>
               <h3 className=" md:text-4xl font-semibold">
-                Unique Features Of leatest & Trending Product
+                Unique Features Of latest & Trending Product
               </h3>
 
               <ul className=" text-xs list-disc">
